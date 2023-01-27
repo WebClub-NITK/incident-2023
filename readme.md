@@ -8,6 +8,7 @@
 4. [Contributing](https://github.com/WebClub-NITK/incident-2023/blob/main/readme.md#contributing)
 5. [Installation Guide](https://github.com/WebClub-NITK/incident-2023/blob/main/readme.md#installation-guide)
 6. [Sample Git Workflow](https://github.com/WebClub-NITK/incident-2023/blob/main/readme.md#sample-git-workflow)
+7. [Color Scheme](https://github.com/WebClub-NITK/incident-2023/blob/main/readme.md#color-scheme)
    <br>
 
 ## Tech Stack 🧰
@@ -108,6 +109,8 @@ our community aspires to be a respectful place both during online and in-person 
 - [Submit a Pull Request](https://docs.github.com/en/get-started/quickstart/contributing-to-projects#making-a-pull-request) to the main branch.
 - After any questions or changes have been resolved, your contribution would be merged in!
 
+## Color Scheme
+
+![Color Scheme](/src/assets/Color%20Swatch.png)
+
 #### If you found this repo helpful in anyway, considering giving it a star! 🌟
-
-
