@@ -42,7 +42,7 @@
 
 Three main things have to be changed to customize it your way (please open an issue if you find more such instances):
 
-1. Personal Information
+1. Information
 
 - [/src/constants/index.js](https://github.com/WebClub-NITK/incident-2023/blob/main/src/constants/index.js) contains all the information one needs to change. Each website section is written as a JavaScript object and is pretty intuitive to change.
 
@@ -70,10 +70,21 @@ our community aspires to be a respectful place both during online and in-person 
 
 ### Using Git and Github
 
-- [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) the repo
-- [Clone](https://docs.github.com/en/get-started/quickstart/contributing-to-projects#cloning-a-fork) the forked repository
+- [Clone](https://docs.github.com/en/get-started/quickstart/contributing-to-projects#cloning-a-fork) the repository
 - Enter the new `portfolio` directory with `cd portfolio`
 - Set the upstream remote to the original repository url so that git knows where to fetch updates from in future: `git remote add upstream https://github.com/WebClub-NITK/incident-2023.git`
+
+### Commit Discipline
+
+- Make sure to write clear and descriptive commit messages
+- The commit message:
+    - is written in the imperative (e.g., "Fix …", "Add …")
+    - is kept short (max 76 characters, ideally less), while concisely explaining what the commit does
+    - is clear about what part of the code is affected – often by prefixing with the name of the section and a colon, like `events: …` or `footer: …`
+
+- Examples:
+    - `footer: Add contact links`
+    - `events: Fix scrolling issues`
 
 ### Install required packages
 
