@@ -111,6 +111,6 @@ our community aspires to be a respectful place both during online and in-person 
 
 ## Color Scheme
 
-![Color Scheme](/src/assets/Color%20Swatch.png)
+![Color Swatch](https://user-images.githubusercontent.com/76661350/215046553-27102f9f-d3b7-445a-aa3c-79ad3afa0b7d.png)
 
 #### If you found this repo helpful in anyway, considering giving it a star! 🌟
