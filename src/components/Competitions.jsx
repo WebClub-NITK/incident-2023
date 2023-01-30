@@ -1,4 +1,5 @@
 import React from 'react';
+import Filter from './CompUtils/Filter';
 import CompetitionCard from './CompUtils/CompetitionCard';
 import {compDetails} from '../constants/competition';
 const Competitions = () => {
@@ -7,12 +8,11 @@ const Competitions = () => {
       <h1 className='flex-1 font-poppins font-semibold text-[45px] text-primary leading-[80px] justify-center'>
         Competitions
       </h1>
-      <div className='transition-all duration-100 flex flex-wrap  md:flex-row md:space-x-8 justify-center items-center '>{
-      compDetails.map((competition)=>(
-      <div className="md:w-20 md:h-20 md:bg-primary md:rounded-full "id={competition.id}>{competition.title}</div>
-      ))
-}
-    </div>
+            <div className='md:transition-all md:duration-100 md:flex flex-wrap  md:flex-row md:space-x-8 md:justify-center md:items-center '>{
+            compDetails.map((competition)=>(
+              <Filter title={competition.title} details={competition.details} date={competition.date}/>
+            ))
+            }</div>
       <div className='flex flex-wrap sm:flex-row md:flex-row'>
         {
           compDetails.map((competition)=>(
