@@ -3,7 +3,18 @@ import CompetitionCard from './CompUtils/CompetitionCard'
 import {compDetails} from '../constants/competition';
 const Competitions = () => {
   return (
+    
     <section id="competitions">
+      <div className='flex flex-wrap sm:flex-row md:flex-row'>
+    <div className=" md:w-40 md:h-40 bg-primary  overflow-hidden md:border-yellow-200  md:rounded-full"></div>
+    <div className=" md:w-40 md:h-40 bg-primary  overflow-hidden md:border-yellow-200  md:rounded-full"></div>
+    <div className=" md:w-40 md:h-40 bg-primary  overflow-hidden md:border-yellow-200  md:rounded-full"></div>
+    <div className=" md:w-40 md:h-40 bg-primary  overflow-hidden md:border-yellow-200  md:rounded-full"></div>
+    <div className=" md:w-40 md:h-40 bg-primary  overflow-hidden md:border-yellow-200  md:rounded-full"></div>
+    <div className=" md:w-40 md:h-40 bg-primary  overflow-hidden md:border-yellow-200  md:rounded-full"></div>
+    <div className=" md:w-40 md:h-40 bg-primary  overflow-hidden md:border-yellow-200  md:rounded-full"></div>
+    <div className=" md:w-40 md:h-40 bg-primary  overflow-hidden md:border-yellow-200  md:rounded-full"></div>
+    </div>
       <div className='flex flex-wrap sm:flex-row md:flex-row'>
 
         <div className='w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3'>
