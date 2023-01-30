@@ -55,7 +55,7 @@ const Competitions = () => {
       
         <div class=" text-white font-bold py-2 px-4 border-b-4 flex items-center p-1 ">
           {
-            ['1', '2', '3', '4', '5', '6', '7', 'All'].map((item, index) => (
+            ['All','1', '2', '3', '4', '5', '6', '7'].map((item, index) => (
               
               <button 
                 key={index}
