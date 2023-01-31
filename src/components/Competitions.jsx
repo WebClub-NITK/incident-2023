@@ -95,15 +95,16 @@ const Competitions = () => {
       <div className='flex flex-wrap sm:flex-row md:flex-row'>
         {
           filterCompetitions.map((competitions, index)=>(
-            <div className='w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3'>
-              <div className='w-full rounded-lg overflow-hidden' id={competitions.id} >
+            <div className='w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 flex flex-wrap justify-center'>
+              <div className='w-full rounded-lg overflow-hidden flex justify-center' id={competitions.id} >
                 <CompetitionCard 
-                key={competitions.id}
+                key={competitions.id} 
                 index = {index}
                 title={competitions.title} 
                 details={competitions.details} 
-                date={competitions.date}/>
-                
+                date={competitions.date}
+                image={competitions.image}
+                />
               </div>
             </div>
           ))
