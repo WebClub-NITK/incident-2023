@@ -5,8 +5,8 @@ const EventDetails = (props) => {
 
     useEffect(() => {
         const closePopUp = (e) => {
-            console.log(e.target.alt)
-            if (e.target.alt !== "incident-events") {
+            console.log(e)
+            if (e.target.id == "background") {
                 props.closeHandler(false)
             }
         }
@@ -20,7 +20,7 @@ const EventDetails = (props) => {
 
 
     return (
-        <div className="fixed top-0 left-0 w-full min-h-screen bg-slate-900/20 flex justify-center items-center backdrop-blur-md " >
+        <div id="background" className="fixed top-0 left-0 w-full min-h-screen bg-slate-900/20 flex justify-center items-center backdrop-blur-md " >
             <div className="fixed left-30% z-20 bg-slate-800 text-lg flex gap-2 rounded-xl ">
                 <div>
                     <img src={props.data.src} className="w-56 h-80 object-cover rounded-lg " />
