@@ -53,17 +53,25 @@ const Competitions = () => {
 
   <div className='md:transition-all md:duration-100 md:flex flex-wrap md:flex-row md:space-x-9 md:justify-center md:items-center flex items-center justify-center'>
       
-        <div class="w-[90%] text-white font-bold py-2 px-4 border-b-4 flex flex-row justify-evenly p-1 ">
+        <div class="w-auto text-white font-bold py-2 px-4 border-b-4 flex flex-row justify-evenly p-1 space-x-1">
           {
             ['All','1', '2', '3', '4', '5', '6', '7'].map((item, index) => (
               
               <button 
                 key={index}
-                onClick = {() => handleCompetitionFilter(item)}
-                className={`${activeFilter !== item? "hover:bg-primary" : " "} md:rounded-full text-white font-bold py-2 px-4 border-b-4 rounded ${
-                  activeFilter === item ? "bg-rose-800 border-primary" : ""
-                }`}
+                // onClick = {() => handleCompetitionFilter(item)}
+                // className={`text-white font-bold py-2 p-2 px-4`}
+                // className={`${activeFilter !== item? "hover:bg-primary" : " "} md:rounded-full text-white font-bold py-2 px-4 border-b-4 rounded ${
+                //   activeFilter === item ? "bg-rose-800 border-primary" : ""
+                // }`}
               >
+                
+                <img src="src\assets\incilogo.png" alt=""
+                  onClick = {() => handleCompetitionFilter(item)}
+                  className={`font-bold p-2 hover:scale-[1.05]`}
+                  key={index}
+                />
+             
                 {item}
               </button>
               
