@@ -66,7 +66,7 @@ const Competitions = () => {
                 // }`}
               >
                 
-                <img src="src\assets\incilogo.png" alt=""
+                <img src="..\src\assets\incilogo.png" alt=""
                   onClick = {() => handleCompetitionFilter(item)}
                   className={`font-bold p-2 hover:scale-[1.05]`}
                   key={index}
