@@ -1,9 +1,11 @@
 import React, { useCallback } from 'react'
 import { useState } from 'react'
+import EventDetails from "./EventDetails"
 
 const Events = () => {
 
   const [currentImage, setCurrentImage] = useState(1)
+  const [selected, setSelected] = useState(false)
 
   const slidedata = [
     {
@@ -30,6 +32,14 @@ const Events = () => {
 
   const currentImageHandler = (index) => {
     setCurrentImage(index)
+    console.log(index)
+
+    setSelected(!selected)
+    console.log(selected)
+  }
+
+  const selectedHandler = (props) => {
+    setSelected(props)
   }
 
 
@@ -40,22 +50,26 @@ const Events = () => {
         {slidedata.map((data) => {
           if (data.index === currentImage) {
             return (
-              <div onClick={() => currentImageHandler(data.index)} className="w-full z-10">
+              <div onClick={() => currentImageHandler(data.index)} className="w-full">
                 <img src={data.src} alt='incident-events' className="w-56 h-80 object-cover mx-5 rounded-lg" />
                 <div>{data.info}</div>
               </div>
             )
           } else {
             return (
-              <div onClick={() => currentImageHandler(data.index)} className="z-0">
+              <div onClick={() => currentImageHandler(data.index)}>
                 <img src={data.src} alt='incident-events' className="w-56 h-80 object-cover opacity-50 mx-5 rounded-lg" />
                 <div>{data.info}</div>
               </div>
             )
           }
-
         })
         }
+        {selected == true
+        ?<EventDetails data={slidedata[currentImage-1]} closeHandler={selectedHandler} className="transition-all ease-in-out duration-300"/>
+        :<div></div>
+        }
+        
       </div>
     </div>
   )
