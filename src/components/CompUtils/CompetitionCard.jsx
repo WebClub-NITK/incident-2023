@@ -28,7 +28,7 @@ const CompetitionCard = (competition) => {
                 <img src={competition.image} alt="Logo" className='max-w-1/2'/>
             </div>
           <div className="flex w-full justify-center px-2 mt-2">
-              <button className="rounded-md bg-primary px-3 text-md font-poppins text-rose-900 hover:text-black hover:bg-gradient-to-br from-orange-700 via-oorange-800 to-transparent">Click For more info</button>
+              <button className="rounded-md bg-primary px-3 text-md font-poppins text-rose-900 hover:text-black hover:bg-gradient-to-br from-orange-700 via-orange-600 to-transparent">Click For more info</button>
           </div>
         </div>
     </div>  
