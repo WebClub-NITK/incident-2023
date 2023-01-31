@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Filter from './CompUtils/Filter';
 import CompetitionCard from './CompUtils/CompetitionCard';
 import {compDetails} from '../constants/competition';
+import { logo } from "../assets"
 const Competitions = () => {
 
   const [competitions, setCompetitions] = useState([]);
@@ -54,17 +55,25 @@ const Competitions = () => {
 
   <div className='md:transition-all md:duration-100 md:flex flex-wrap md:flex-row md:space-x-9 md:justify-center md:items-center flex items-center justify-center'>
       
-        <div class=" text-white font-bold py-2 px-4 border-b-4 flex items-center p-1 ">
+        <div class="w-auto text-white font-bold py-2 px-4 border-b-4 flex flex-row justify-evenly p-1 space-x-1">
           {
             ['All','1', '2', '3', '4', '5', '6', '7'].map((item, index) => (
               
               <button 
                 key={index}
-                onClick = {() => handleCompetitionFilter(item)}
-                className={`hover:bg-primary md:rounded-full text-white font-bold py-2 px-4 border-b-4 rounded ${
-                  activeFilter === item ? "bg-primary" : ""
-                }`}
+                // onClick = {() => handleCompetitionFilter(item)}
+                // className={`text-white font-bold py-2 p-2 px-4`}
+                // className={`${activeFilter !== item? "hover:bg-primary" : " "} md:rounded-full text-white font-bold py-2 px-4 border-b-4 rounded ${
+                //   activeFilter === item ? "bg-rose-800 border-primary" : ""
+                // }`}
               >
+                
+                <img src= {logo} alt=""
+                  onClick = {() => handleCompetitionFilter(item)}
+                  className={`font-bold p-2 hover:scale-[1.05]`}
+                  key={index}
+                />
+             
                 {item}
               </button>
               
