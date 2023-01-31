@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Filter from './CompUtils/Filter';
 import CompetitionCard from './CompUtils/CompetitionCard';
 import {compDetails} from '../constants/competition';
+import { logo } from "../assets"
 const Competitions = () => {
 
   const [competitions, setCompetitions] = useState([]);
@@ -66,7 +67,7 @@ const Competitions = () => {
                 // }`}
               >
                 
-                <img src="..\src\assets\incilogo.png" alt=""
+                <img src= {logo} alt=""
                   onClick = {() => handleCompetitionFilter(item)}
                   className={`font-bold p-2 hover:scale-[1.05]`}
                   key={index}
