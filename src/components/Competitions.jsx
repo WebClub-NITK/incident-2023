@@ -36,6 +36,7 @@ const Competitions = () => {
     }, 500);
     toggleDropdown();
   };
+
   const handleCompetitionFilter = (item) => {
     setActiveFilter(item);
 
@@ -91,7 +92,9 @@ const Competitions = () => {
 {/* For dropdown */}
 <div className="block md:hidden relative ">
       <button
-      className="w-full text-left py-2 flex items-center justify-center px-4  px-4 py-2 transform translate-y-1/2 rounded-lg text-gray-600 bg-primary border border-gray-400 focus:outline-none focus:shadow-outline hover:border-gray-500"
+        // removed the following 
+        // transform translate-y-1/2
+      className="w-full text-center py-2 flex items-center justify-center px-4 px-4 py-2 rounded-lg text-gray-600 bg-primary border border-gray-400 focus:outline-none focus:shadow-outline hover:border-gray-500"
         onClick={toggleDropdown}
       >
     
@@ -102,23 +105,25 @@ const Competitions = () => {
           <path fillRule="evenodd" d="M5.293 7. 293a1 1 0 011. 414 0L10 10.586l3. 293 -3. 293a1 1 0 111. 414 1. 414l-4 4a1 1 0 01-1. 414 0l-4-4a1 1 0 010 -1. 414z" clipRule="evenodd" />
         </svg>
       </button>
-      {isOpen && (
-   <div className="absolute z-10 w-56 mt-2 origin-top-right rounded-md shadow-lg overflow-y-auto">
-   <div className="bg-white rounded-md shadow-xs">
-     <div className="py-1">
-          { ['All','1', '2', '3', '4', '5', '6', '7'].map((item, index) => (
-            <a
-            key={index}
-              href="#"
-              className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
-              onClick = {() => {handleCompetitionFilter(item); toggleDropdown();}}
-            >
-              {item}
-            </a>
-          ))}
-        </div>
-        </div></div>
-      )}
+      
+          {isOpen && (
+      <div className="{`absolute z-20 mt-3 text-center origin-top-right rounded-md shadow-lg overflow-y-auto ">
+      <div className="bg-white rounded-md shadow-xs ">
+        <div className="py-1">
+              { ['All','1', '2', '3', '4', '5', '6', '7'].map((item, index) => (
+                <a
+                key={index}
+                  href="#"
+                  className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+                  onClick = {() => {handleCompetitionFilter(item); toggleDropdown();}}
+                >
+                  {item}
+                </a>
+              ))}
+            </div>
+            </div></div>
+          )}
+      
     </div>
 
 
@@ -179,3 +184,5 @@ export default Competitions
       </div> */}
 
 {/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */}
+
+
