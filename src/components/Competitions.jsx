@@ -61,19 +61,7 @@ const Competitions = () => {
         Competitions
       </h1>
 
-      {/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */}
-
-                                                            {/* Old filter button reference */}
-
-      {/* <div className='md:transition-all md:duration-100 md:flex flex-wrap  md:flex-row md:space-x-8 md:justify-center md:items-center '>
-        {
-          compDetails.map((competition)=>(
-            <Filter title={competition.title} details={competition.details} date={competition.date}/>
-          ))
-        }
-      </div> */}
-      {/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */}
-
+     
 {/* For coins */}
   <div className='hidden md:block md:transition-all md:duration-100 md:flex flex-wrap md:flex-row md:space-x-9 md:justify-center md:items-center flex items-center justify-center'>
       
@@ -99,7 +87,7 @@ const Competitions = () => {
         </div>
       
   </div>
- {/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */}
+ 
 {/* For dropdown */}
 <div className="block md:hidden relative ">
       <button
@@ -115,7 +103,7 @@ const Competitions = () => {
         </svg>
       </button>
       {isOpen && (
-   <div className="absolute z-10 w-56 mt-2 origin-top-right rounded-md shadow-lg">
+   <div className="absolute z-10 w-56 mt-2 origin-top-right rounded-md shadow-lg overflow-y-auto">
    <div className="bg-white rounded-md shadow-xs">
      <div className="py-1">
           { ['All','1', '2', '3', '4', '5', '6', '7'].map((item, index) => (
@@ -123,7 +111,7 @@ const Competitions = () => {
             key={index}
               href="#"
               className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
-              onClick = {() => handleCompetitionFilter(item)}
+              onClick = {() => {handleCompetitionFilter(item); toggleDropdown();}}
             >
               {item}
             </a>
@@ -134,24 +122,7 @@ const Competitions = () => {
     </div>
 
 
-  {/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */}
-{/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */}
-
-{/* Old competition structure for reference */}
-
-      {/* <div className='flex flex-wrap sm:flex-row md:flex-row'>
-        {
-          compDetails.map((competition)=>(
-            <div className='w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3'>
-              <div className='w-full rounded-lg overflow-hidden' id={competition.id} >
-                <CompetitionCard title={competition.title} details={competition.details} date={competition.date}/>
-              </div>
-            </div>
-          ))
-        }
-      </div> */}
-
-{/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */}
+ 
 
       <div className='flex flex-wrap sm:flex-row md:flex-row'>
         {
@@ -175,3 +146,36 @@ const Competitions = () => {
   )
 }
 export default Competitions
+
+ {/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */}
+
+                                                            {/* Old filter button reference */}
+
+      {/* <div className='md:transition-all md:duration-100 md:flex flex-wrap  md:flex-row md:space-x-8 md:justify-center md:items-center '>
+        {
+          compDetails.map((competition)=>(
+            <Filter title={competition.title} details={competition.details} date={competition.date}/>
+          ))
+        }
+      </div> */}
+      {/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */}
+
+
+       {/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */}
+{/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */}
+
+{/* Old competition structure for reference */}
+
+      {/* <div className='flex flex-wrap sm:flex-row md:flex-row'>
+        {
+          compDetails.map((competition)=>(
+            <div className='w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3'>
+              <div className='w-full rounded-lg overflow-hidden' id={competition.id} >
+                <CompetitionCard title={competition.title} details={competition.details} date={competition.date}/>
+              </div>
+            </div>
+          ))
+        }
+      </div> */}
+
+{/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */}
