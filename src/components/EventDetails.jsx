@@ -20,10 +20,11 @@ const EventDetails = (props) => {
 
 
     return (
-        <div id="background" className="fixed top-0 left-0 w-full min-h-screen bg-slate-900/20 flex justify-center items-center backdrop-blur-md " >
+
+        <div id="background" className="fixed top-0 left-0 w-full min-h-screen bg-slate-900/20 flex justify-center items-center backdrop-blur-md  z-50 " >
             <div className="fixed left-30% z-20 bg-slate-800 text-lg flex gap-2 rounded-xl ">
                 <div>
-                    <img src={props.data.src} className="w-56 h-80 object-cover rounded-lg " />
+                    <img src={props.data.src} className="w-56 h-80 object-cover rounded-lg z-100 " />
                 </div>
                 <div className="text-orange-600">
                     event info ${props.data.info}
