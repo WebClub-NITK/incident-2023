@@ -43,6 +43,7 @@ const Competitions = () => {
         setFilterCompetitions(
           competitions.filter((competitions) => competitions.category == item)
         );
+        setSelectedOption(item);
       }
     }, 500);
   };
