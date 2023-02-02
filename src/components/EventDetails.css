@@ -59,22 +59,8 @@
   }
 }
 
-#event-image {
-  animation: Rotate_image 0.5s ease-in-out;
-}
-
-@keyframes Rotate_image {
-  from {
-    transform: rotate3d(0, 1, 0, 0deg);
-  }
-
-  to {
-    transform: rotate3d(0, 1, 0, 360deg);
-  }
-}
-
-@media screen and (max-width:700px) {
-  #event-image {
+@media screen and (max-width:700px){
+  #event-image{
     display: none;
   }
 
