@@ -74,16 +74,19 @@ const Competitions = () => {
       </div>
 
       {/* For dropdown */}
-      <div className="block md:hidden relative ">
-        <button
-          // removed the following
-          // transform translate-y-1/2
-          className="w-full text-center py-2 flex items-center justify-center px-4 px-4 py-2 rounded-lg text-gray-600 bg-primary border border-gray-400 focus:outline-none focus:shadow-outline hover:border-gray-500"
-          onClick={toggleDropdown}
-        >
-          {setSelectedOption ? selectedOption : "Select the Category"}
-        </button>
-
+      <div className="md:hidden relative w-full min-w-max">
+        <div className="flex justify-center">
+          <button
+            // removed the following
+            // transform translate-y-1/2
+            className="w-fit text-center py-2 flex items-center justify-center px-4 px-4 py-2 rounded-lg text-gray-600 bg-primary border border-gray-400 focus:outline-none focus:shadow-outline hover:border-gray-500"
+            onClick={toggleDropdown}
+          >
+            <div className="flex justify-center">
+              <h3>{selectedOption}</h3>
+            </div>
+          </button>
+        </div>
         {isOpen && (
           <div className="{`absolute z-20 mt-3 text-center origin-top-right rounded-md shadow-lg overflow-y-auto ">
             <div className="bg-white rounded-md shadow-xs ">
@@ -111,9 +114,9 @@ const Competitions = () => {
 
       <div className="flex flex-wrap sm:flex-row md:flex-row">
         {filterCompetitions.map((competitions, index) => (
-          <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 flex flex-wrap justify-center">
+          <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 flex shrink flex-wrap justify-center">
             <div
-              className="w-full rounded-lg overflow-hidden flex justify-center "
+              className="w-full rounded-lg overflow-hidden flex-initial justify-center"
               id={competitions.id}
             >
               <CompetitionCard
