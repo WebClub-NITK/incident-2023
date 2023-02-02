@@ -26,7 +26,7 @@ const EventDetails = (props) => {
 
 
     return (
-        <div id="background" className="fixed top-0 left-0 w-full min-h-screen bg-slate-900/20 flex justify-center items-center backdrop-blur-md " >
+        <div id="background" className="fixed top-0 left-0 w-full min-h-screen bg-slate-900/20 flex justify-center items-center backdrop-blur-md z-50 " >
             <div className="fixed left-30% p-6 pt-10 bg-slate-800 text-lg flex gap-2 rounded-xl shadow-md shadow-primary ">
                 <GiCrossedSabres className="text-primary absolute top-3 right-6" onClick={onClickHandler} />
                 <div className="w-56 h-80 ">
