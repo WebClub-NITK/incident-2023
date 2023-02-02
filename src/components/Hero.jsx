@@ -1,24 +1,27 @@
-import React from 'react'
+import React from 'react';
+import knight from '../assets/knight.png';
+import bard from '../assets/bard.png';
+import art from '../assets/art-element.webp'
 
 const Hero = () => {
   return (
-    <div className='max-w-[1240px] w-full h-screen py-16 mt-12'>
-    <div className='text-secondary grid md:grid-cols-2 mt-[150px]">'>
-      
-      <div className=' mx-auto flex flex-col justify-center'>
-        <h1 className='text-gradient md:text-8xl sm:text-7xl text-6xl font-bold md:py-6 mx-auto'>Incident 23</h1>
-          <p className='md:text-5xl sm:text-4xl text-2xl mt-2 font-bold mx-auto'>A tale of Knights and Bards</p>
-          <img className='w-[300px] mx-auto' src='https://static.vecteezy.com/system/resources/previews/012/634/538/original/art-deco-outline-stroke-in-golden-color-for-classy-and-luxury-style-premium-vintage-line-art-design-element-free-png.png'/>
-        <h1 className='text-primary text-xl font-bold mx-auto mt-[-40px]'>16-19 March 2023</h1>
-
-        <div className='flex flex-col sm:flex-row items-center justify-center w-full my-12'>
-        <button className='bg-primary w-[180px] border-2 border-primary rounded-md font-medium py-4 m-3 text-black'>Register</button>
-        <button className='bg-background w-[180px] border-2 border-primary rounded-md font-medium py-4 m-3 text-primary'>About</button>
+    <div className='boxWidth h-screen py-16 mt-12'>
+      <div className='text-secondary grid md:grid-cols-2 mt-[150px]">'>
+        <div className='mx-auto flex flex-col justify-center'>
+          <h1 className='text-gradient font-[Cinzel] md:text-8xl sm:text-7xl text-5xl font-bold md:py-6 mx-auto '>Incident 23</h1>
+          <p className='md:text-5xl sm:text-4xl text-2xl mt-2 font-[Lobster] mx-auto'>A tale of Bards & Knights</p>
+          <img className='w-[300px] mx-auto' src={art}/>
+          <h1 className='text-primary text-xl font-bold mx-auto mt-[-40px]'>16-19 March 2023</h1>
+          <div className='flex flex-col sm:flex-row items-center justify-center w-full my-12'>
+            <button className='button-gradient w-[180px] border-2 border-primary rounded-md font-medium py-4 m-3 text-black hover:text-white'>Register</button>
+            <button className='bg-background w-[180px] border-2 border-primary rounded-md font-medium py-4 m-3 text-primary hover:text-secondary'>About</button>
+          </div>
+        </div>
+        <div className='flex flex-row mx-auto'>
+          <img className="sm:w-[280px] md-[400px] w-[150px] mx-auto my-4 hover:scale-105" src={bard} alt="/"/>
+          <img className="sm:w-[310px] md-[420px] w-[180px] mx-auto my-4 hover:scale-105" src={knight} alt="/"/>
         </div>
       </div>
-        <img className="w-[300px] mx-auto my-4" src="https://www.pngkey.com/png/full/66-661251_printed-vinyl-middle-age-knight-warrior-knight.png" alt="/"/>
-
-    </div>
     </div>
   )
 }

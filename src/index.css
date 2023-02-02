@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -65,12 +67,15 @@
 }
 
 .text-gradient {
-  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  background:  radial-gradient(#9f793eff, #af8544ff, #cb9a4fff, #d4a152ff, #d8aa62ff, #dcb270ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+
+.button-gradient {
+  background: linear-gradient(315deg, #9f793eff, #af8544ff, #cb9a4fff, #d4a152ff, #d8aa62ff, #dcb270ff);
 }
 
 
