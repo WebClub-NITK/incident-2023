@@ -43,6 +43,7 @@ const Competitions = () => {
         setFilterCompetitions(
           competitions.filter((competitions) => competitions.category == item)
         );
+        setSelectedOption(item);
       }
     }, 500);
   };
@@ -80,18 +81,7 @@ const Competitions = () => {
           className="w-full text-center py-2 flex items-center justify-center px-4 px-4 py-2 rounded-lg text-gray-600 bg-primary border border-gray-400 focus:outline-none focus:shadow-outline hover:border-gray-500"
           onClick={toggleDropdown}
         >
-          {selectedOption}
-          <svg
-            className="ml-2 h-5 w-5 text-gray-400"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              fillRule="evenodd"
-              d="M5.293 7. 293a1 1 0 011. 414 0L10 10.586l3. 293 -3. 293a1 1 0 111. 414 1. 414l-4 4a1 1 0 01-1. 414 0l-4-4a1 1 0 010 -1. 414z"
-              clipRule="evenodd"
-            />
-          </svg>
+          {setSelectedOption ? selectedOption : "Select the Category"}
         </button>
 
         {isOpen && (
