@@ -13,7 +13,7 @@ const Competitions = () => {
     setFilterCompetitions(compDetails);
   }, []);
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("Select the Category");
+  const [selectedOption, setSelectedOption] = useState("All Events");
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -37,13 +37,13 @@ const Competitions = () => {
     setActiveFilter(item);
 
     setTimeout(() => {
+      setSelectedOption(item);
       if (item === "All") {
         setFilterCompetitions(competitions);
       } else {
         setFilterCompetitions(
           competitions.filter((competitions) => competitions.category == item)
         );
-        setSelectedOption(item);
       }
     }, 500);
   };
@@ -57,7 +57,7 @@ const Competitions = () => {
       {/* For coins */}
       <div className="hidden md:block md:transition-all md:duration-100 md:flex flex-wrap md:flex-row md:space-x-9 md:justify-center md:items-center flex items-center justify-center">
         <div class="w-auto text-white font-bold py-2 px-4 border-b-4 flex flex-row justify-evenly p-1 space-x-1">
-          {["All", "1", "2", "3", "4", "5", "6", "7"].map((item, index) => (
+          {["All Events", "1", "2", "3", "4", "5", "6", "7"].map((item, index) => (
             <button key={index}>
               <img
                 src={logo}
