@@ -2,13 +2,11 @@ import React, { useCallback } from 'react'
 import { useState } from 'react'
 import EventDetails from "./EventDetails"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import { EffectCoverflow } from 'swiper';
+import { Navigation, Scrollbar, A11y,Autoplay} from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import 'swiper/css/effect-coverflow';
+
 
 const Events = () => {
 
@@ -69,10 +67,6 @@ const Events = () => {
 
     },
   ]
-  const a=slidedata.map((data) => data.src);
-  const b=slidedata.map((data) => data.info);
-  const c=slidedata.map((data) => data.index);
-  console.log(c);
 
  
 
@@ -94,18 +88,20 @@ const Events = () => {
       <div  id='imgBox' className="flex relative">
         <Swiper
         spaceBetween={50}
-        modules={[Navigation, Pagination, Scrollbar, A11y,EffectCoverflow]}
-        effect="Coverflow"
-        navigation
-        pagination={{ clickable: true }}
-        slidesPerView={3}
+        modules={[Navigation, Scrollbar, A11y,Autoplay]}
+        navigation={true}
+        slidesPerView={5}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
         {slidedata.map(data=>(
           <SwiperSlide key={data.index} className='top-[-30px]'>
-            <div className='py-3 justify-center'>
-              <img id={data.index} className='w-56 h-64 relative left-[100px]' src={data.src} onClick={()=>{currentImageHandler(data.index)}} />
+            <div className='py-9 justify-center'>
+              <img id={data.index} className='w-56 h-64 relative' src={data.src} onClick={()=>{currentImageHandler(data.index)}} />
             </div>
           </SwiperSlide>
           
