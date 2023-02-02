@@ -11,9 +11,13 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-icons": "^4.7.1",
     "swiper": "^9.0.0",
     "tailwind-scrollbar-hide": "^1.1.7"
+=======
+    "react-icons": "^4.7.1"
+>>>>>>> 4fa3f443fd477a6c7ac5b52ba12dab4599b1f2c8
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
