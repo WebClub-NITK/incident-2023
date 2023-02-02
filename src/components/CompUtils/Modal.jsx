@@ -12,7 +12,7 @@ const Modal = ({ visible, details, title, date, onClose }) => {
       id="backdrop-div"
       onClick={handleOnClose}
     >
-      <div className="bg-secondary rounded max-w-[50%]">
+      <div className="bg-secondary rounded max-w-[90%] md:max-w-[50%]">
         <div className="flex flex-row md-2 border-b-2 border-dimMaroon">
           <h1 className="font-poppins text-lg font-medium text-black px-2 inline-flex justify-start items-center basis-1/6">
             {title}
