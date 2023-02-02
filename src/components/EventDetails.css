@@ -1,0 +1,32 @@
+.textContent{
+    color: aquamarine;
+    align-items: center;
+    -webkit-animation: EventsPopUp_revealSide__jA5SY 1s ease;
+    animation: EventsPopUp_revealSide__jA5SY 2s ease;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    height: 90%;
+    align-items: flex-start;
+    overflow-x: hidden;
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    transition: all 2s ease;
+    width:48vw;
+}
+
+@keyframes  EventsPopUp_revealSide__jA5SY{
+    from {
+        width: 0vw;
+      }
+    
+      to {
+        width: 48vw;
+      }
+}
+
+.popUpText{
+    width: 48vw;
+    transform-origin: 0 50%;
+}
