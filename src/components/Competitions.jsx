@@ -6,14 +6,14 @@ import { logo } from "../assets";
 const Competitions = () => {
   const [competitions, setCompetitions] = useState([]);
   const [filterCompetitions, setFilterCompetitions] = useState([]);
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState("All Categories");
 
   useEffect(() => {
     setCompetitions(compDetails);
     setFilterCompetitions(compDetails);
   }, []);
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("All Events");
+  const [selectedOption, setSelectedOption] = useState("All Categories");
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -22,7 +22,7 @@ const Competitions = () => {
   const handleOptionSelection = (option) => {
     setSelectedOption(option);
     setTimeout(() => {
-      if (item === "All") {
+      if (item === "All Categories") {
         setFilterCompetitions(competitions);
       } else {
         setFilterCompetitions(
@@ -38,7 +38,7 @@ const Competitions = () => {
 
     setTimeout(() => {
       setSelectedOption(item);
-      if (item === "All") {
+      if (item === "All Categories") {
         setFilterCompetitions(competitions);
       } else {
         setFilterCompetitions(
@@ -57,19 +57,20 @@ const Competitions = () => {
       {/* For coins */}
       <div className="hidden md:block md:transition-all md:duration-100 md:flex flex-wrap md:flex-row md:space-x-9 md:justify-center md:items-center flex items-center justify-center">
         <div class="w-auto text-white font-bold py-2 px-4 border-b-4 flex flex-row justify-evenly p-1 space-x-1">
-          {["All Events", "1", "2", "3", "4", "5", "6", "7"].map((item, index) => (
-            <button key={index}>
-              <img
-                src={logo}
-                alt=""
-                onClick={() => handleCompetitionFilter(item)}
-                className={`font-bold p-2 hover:scale-[1.05]`}
-                key={index}
-              />
-
-              {item}
-            </button>
-          ))}
+          {["All Categories", "1", "2", "3", "4", "5", "6", "7"].map(
+            (item, index) => (
+              <button key={index}>
+                <img
+                  src={logo}
+                  alt=""
+                  onClick={() => handleCompetitionFilter(item)}
+                  className={`font-bold p-2 hover:scale-[1.05]`}
+                  key={index}
+                />
+                {item}
+              </button>
+            )
+          )}
         </div>
       </div>
 
@@ -91,7 +92,7 @@ const Competitions = () => {
           <div className="{`absolute z-20 mt-3 text-center origin-top-right rounded-md shadow-lg overflow-y-auto ">
             <div className="bg-white rounded-md shadow-xs ">
               <div className="py-1">
-                {["All", "1", "2", "3", "4", "5", "6", "7"].map(
+                {["All Categories", "1", "2", "3", "4", "5", "6", "7"].map(
                   (item, index) => (
                     <a
                       key={index}
@@ -112,7 +113,7 @@ const Competitions = () => {
         )}
       </div>
 
-      <div className="flex flex-wrap sm:flex-row md:flex-row">
+      <div className="flex flex-wrap sm:flex-row md:flex-row justify-center">
         {filterCompetitions.map((competitions, index) => (
           <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 flex shrink flex-wrap justify-center">
             <div
@@ -125,6 +126,7 @@ const Competitions = () => {
                 title={competitions.title}
                 details={competitions.details}
                 date={competitions.date}
+                poc={competitions.poc}
                 image={competitions.image}
               />
             </div>

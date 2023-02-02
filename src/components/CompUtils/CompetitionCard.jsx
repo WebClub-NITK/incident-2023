@@ -41,6 +41,7 @@ const CompetitionCard = (competition) => {
         details={competition.details}
         title={competition.title}
         date={competition.date}
+        poc={competition.poc}
         onClose={handleOnClose}
       />
     </div>
