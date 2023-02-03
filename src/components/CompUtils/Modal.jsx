@@ -22,8 +22,8 @@ const Modal = ({ visible, details, title, date, poc, onClose }) => {
               {title}
             </h1>
           </div>
-          <div className="flex justify-end items-center basis-1/12">
-            <button className="bg-transparent lg:hover:bg-background rounded mr-5 px-2 py-1">
+          <div className="flex justify-center items-center basis-1/12">
+            <button className="bg-transparent lg:hover:bg-background rounded p-2">
               <GiCrossedSabres className="text-primary" onClick={onClose} />
             </button>
           </div>
