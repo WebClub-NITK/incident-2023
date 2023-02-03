@@ -1,5 +1,6 @@
 import React from "react";
 import { close } from "../../assets";
+import { GiCrossedSabres } from 'react-icons/gi';
 import styles from "../../style";
 import { logo } from "../../assets";
 const Modal = ({ visible, details, title, date, poc, onClose }) => {
@@ -18,17 +19,21 @@ const Modal = ({ visible, details, title, date, poc, onClose }) => {
           <h1 className="w-full font-poppins text-4xl text-center font-medium text-primary p-2">
             {title}
           </h1>
+          {/* please add the following icon besides the heading so that the modal closes on clicking */}
+          <GiCrossedSabres className="text-primary absolute top-3 right-6" id="backdrop-div" onClick={handleOnClose} />
+
+          
           {/* To be worked on */}
           {/* <div className="inline-flex justify-end items-center basis-5/6">
             <button className="bg-transparent lg:hover:bg-background rounded px-2 py-1">
-              <img
-                src={close}
-                alt="Close"
-                className="w-[28px] h-[28px] object-contain"
+            <img
+            src={close}
+            alt="Close"
+            className="w-[28px] h-[28px] object-contain"
                 onClick={onClose}
-              />
-            </button>
-          </div> */}
+                />
+                </button>
+              </div> */}
         </div>
 
         {/* To be worked on*/}
