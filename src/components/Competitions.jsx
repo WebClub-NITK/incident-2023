@@ -92,7 +92,7 @@ const Competitions = () => {
           <div className="{`absolute z-20 mt-3 text-center origin-top-right rounded-md shadow-lg overflow-y-auto ">
             <div className="bg-white rounded-md shadow-xs ">
               <div className="py-1">
-                {["All Categories", "1", "2", "3", "4", "5", "6", "7"].map(
+                {["All Categories", "Dance", "Gaming", "Music", "Robotics", "Drama", "DJ", "Indoor"].map(
                   (item, index) => (
                     <a
                       key={index}
