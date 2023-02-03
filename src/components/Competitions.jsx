@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Filter from "./CompUtils/Filter";
+// import Filter from "./CompUtils/Filter";
 import CompetitionCard from "./CompUtils/CompetitionCard";
 // import { Button } from "@headlessui/react";
 import { compDetails } from "../constants/competition";
@@ -113,43 +113,6 @@ const Competitions = () => {
           </div>
         )}
       </div>
-
-{/* <div className="md:hidden relative w-full min-w-max">
-  <div className="flex justify-center">
-    <Button
-      className="w-fit text-center py-2 flex items-center justify-center px-4 py-2 rounded-lg text-gray-600 bg-primary border border-gray-400 focus:outline-none focus:shadow-outline hover:border-gray-500"
-      onClick={toggleDropdown}
-    >
-      <div className="flex justify-center">
-        <h3>{selectedOption}</h3>
-      </div>
-    </Button>
-  </div>
-  {isOpen && (
-    <div className="{`absolute z-20 mt-3 text-center origin-top-right rounded-md shadow-lg overflow-y-auto ">
-      <div className="bg-white rounded-md shadow-xs ">
-        <div className="py-1">
-          {["All Categories", "Dance", "Gaming", "Music", "Robotics", "Drama", "DJ", "Indoor"].map(
-            (item, index) => (
-              <a
-                key={index}
-                href="#"
-                className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
-                onClick={() => {
-                  handleCompetitionFilter(item);
-                  toggleDropdown();
-                }}
-              >
-                {item}
-              </a>
-            )
-          )}
-        </div>
-      </div>
-    </div>
-  )}
-</div> */}
-
 
       <div className="flex flex-wrap sm:flex-row md:flex-row justify-center">
         {filterCompetitions.map((competitions, index) => (
