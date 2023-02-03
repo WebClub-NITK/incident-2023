@@ -4,18 +4,20 @@
 @tailwind utilities;
 @layer utilities {
     @variants responsive {
-      /* Hide scrollbar for Chrome, Safari and Opera */
-      .no-scrollbar::-webkit-scrollbar {
-          display: none;
-      }
-
-      /* Hide scrollbar for IE, Edge and Firefox */
-      .no-scrollbar {
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;  /* Firefox */
-      }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
     }
-  }
+}
+
 :root {
     --black-gradient: linear-gradient( 144.39deg, #ffffff -278.56%, #2e2e2c -78.47%, #1a2328 91.61%);
     --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
