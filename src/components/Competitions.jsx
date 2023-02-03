@@ -90,8 +90,8 @@ const Competitions = () => {
           </button>
         </div>
         {isOpen && (
-          <div className="{`absolute z-20 mt-3 text-center origin-top-right rounded-md shadow-lg overflow-y-auto ">
-            <div className="bg-white rounded-md shadow-xs ">
+          <div className="{`absolute z-20 mt-3 text-center origin-top-right rounded-md shadow-lg overflow-y-auto">
+            <div className="bg-secondary rounded-md shadow-xs">
               <div className="py-1">
                 {["All Categories", "Dance", "Gaming", "Music", "Robotics", "Drama", "DJ", "Indoor"].map(
                   (item, index) => (

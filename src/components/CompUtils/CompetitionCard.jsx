@@ -7,10 +7,10 @@ const CompetitionCard = (competition) => {
   return (
     <div>
       <div className={`${styles.card}`}>
-        <div className="p-6">
+        <div className="p-6 ">
           {/* hover to some color */}
           {/* text colors and bg are subject to change */}
-          <div className="text-primary cursor-pointer">
+          <div className="text-primary">
             <div className="flex flex-wrap flex-row justify-between">
               <h3 className="text-lg font-medium font-poppins inline">
                 {competition.title}
