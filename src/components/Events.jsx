@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import React from 'react'
 import { useState } from 'react'
 import EventDetails from "./EventDetails"
 import Slider from "react-slick"
