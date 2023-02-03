@@ -19,10 +19,13 @@ const App = () => {
         </div>
       </div>
 
-      <div className={`bg-background ${styles.flexStart}`}>
+      {/* <div className={`bg-background ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Hero />
         </div>
+      </div> */}
+      <div className={`bg-background ${styles.flexStart}`}>
+        <Hero />
       </div>
 
       <div className={`bg-background ${styles.flexCenter} ${styles.paddingX} `}>
