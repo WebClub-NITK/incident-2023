@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
 import styles from "../../style";
+import { motion } from "framer-motion";
 const CompetitionCard = (competition) => {
   const [showModal, setShowModal] = useState(false);
   const handleOnClose = () => setShowModal(false);
   return (
-    <div>
+    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} >
       <div className={`${styles.card}`}>
         <div className="p-6 ">
           {/* hover to some color */}
@@ -44,7 +45,7 @@ const CompetitionCard = (competition) => {
         poc={competition.poc}
         onClose={handleOnClose}
       />
-    </div>
+    </motion.div>
   );
 };
 
