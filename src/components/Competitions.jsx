@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from "react";
-// import Filter from "./CompUtils/Filter";
+
 import {ChevronDownIcon} from '@heroicons/react/20/solid'
 import CompetitionCard from "./CompUtils/CompetitionCard";
-// import { Button } from "@headlessui/react";
+// import Paginator from "./CompUtils/Paginator";
 import { compDetails } from "../constants/competition";
 import { logo } from "../assets";
-// import Paginator from "./CompUtils/Paginator";
+
+
 
 const Competitions = () => {
   const [competitions, setCompetitions] = useState([]);
   const [filterCompetitions, setFilterCompetitions] = useState([]);
   const [activeFilter, setActiveFilter] = useState("All Categories");
-
-  // const [currentPage, setCurrentPage] = useState(1)
-  // const [postsPerPage, setPostsPerPage] = useState(2)
 
   useEffect(() => {
     setCompetitions(compDetails);
@@ -54,12 +52,6 @@ const Competitions = () => {
       }
     }, 500);
   };
-
-  // implementing Paginator
-
-  // const lastPostIndex = currentPage * postsPerPage;
-  // const firstPostIndex = lastPostIndex - postsPerPage;
-  // const currentPosts = competitions.slice(firstPostIndex, lastPostIndex)
 
   return (
     <section id="competitions">
@@ -134,7 +126,7 @@ const Competitions = () => {
             <div
               className="w-full rounded-lg overflow-hidden flex-initial justify-center"
               id={competitions.id}
-            >
+              >
               
               <CompetitionCard
                 key={competitions.id}
@@ -144,40 +136,20 @@ const Competitions = () => {
                 date={competitions.date}
                 poc={competitions.poc}
                 image={competitions.image}
-              />
-
-              
-
+                />
             </div>
-             
           </div>
         ))}
       </div>
 
-      {/* for mobile and tablet */}
-      {/* <div className="flex flex-wrap">
-        {currentPosts.map((competitions, index) => (
-          <div className="w-full">
-            <div
-              className="w-full rounded-lg overflow-hidden flex-initial justify-center"
-              id={competitions.id}
-            >
-              
-              <CompetitionCard
-                key={competitions.id}
-                index={index}
-                title={competitions.title}
-                details={competitions.details}
-                date={competitions.date}
-                poc={competitions.poc}
-                image={competitions.image}
-              />
 
-            </div>
-             
-          </div>
-        ))}
-      </div> */}
+{/* PAGINATOR COMP GOES HERE */}
+
+        {/* <Paginator 
+    filteredCompetitions={filterCompetitions}
+    postsPerPage={postsPerPage}
+    setCurrentPage={setCurrentPage}
+    /> */}
 
     </section>
   );
