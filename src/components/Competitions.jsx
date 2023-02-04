@@ -5,10 +5,15 @@ import CompetitionCard from "./CompUtils/CompetitionCard";
 // import { Button } from "@headlessui/react";
 import { compDetails } from "../constants/competition";
 import { logo } from "../assets";
+// import Paginator from "./CompUtils/Paginator";
+
 const Competitions = () => {
   const [competitions, setCompetitions] = useState([]);
   const [filterCompetitions, setFilterCompetitions] = useState([]);
   const [activeFilter, setActiveFilter] = useState("All Categories");
+
+  // const [currentPage, setCurrentPage] = useState(1)
+  // const [postsPerPage, setPostsPerPage] = useState(2)
 
   useEffect(() => {
     setCompetitions(compDetails);
@@ -49,6 +54,12 @@ const Competitions = () => {
       }
     }, 500);
   };
+
+  // implementing Paginator
+
+  // const lastPostIndex = currentPage * postsPerPage;
+  // const firstPostIndex = lastPostIndex - postsPerPage;
+  // const currentPosts = competitions.slice(firstPostIndex, lastPostIndex)
 
   return (
     <section id="competitions">
@@ -116,6 +127,7 @@ const Competitions = () => {
         )}
       </div>
 
+      {/* for desktop */}
       <div className="flex flex-wrap sm:flex-row md:flex-row justify-center">
         {filterCompetitions.map((competitions, index) => (
           <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 flex shrink flex-wrap justify-center">
@@ -123,6 +135,7 @@ const Competitions = () => {
               className="w-full rounded-lg overflow-hidden flex-initial justify-center"
               id={competitions.id}
             >
+              
               <CompetitionCard
                 key={competitions.id}
                 index={index}
@@ -132,61 +145,42 @@ const Competitions = () => {
                 poc={competitions.poc}
                 image={competitions.image}
               />
+
+              
+
             </div>
+             
           </div>
         ))}
       </div>
+
+      {/* for mobile and tablet */}
+      {/* <div className="flex flex-wrap">
+        {currentPosts.map((competitions, index) => (
+          <div className="w-full">
+            <div
+              className="w-full rounded-lg overflow-hidden flex-initial justify-center"
+              id={competitions.id}
+            >
+              
+              <CompetitionCard
+                key={competitions.id}
+                index={index}
+                title={competitions.title}
+                details={competitions.details}
+                date={competitions.date}
+                poc={competitions.poc}
+                image={competitions.image}
+              />
+
+            </div>
+             
+          </div>
+        ))}
+      </div> */}
+
     </section>
   );
 };
 export default Competitions;
 
-{
-  /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-}
-
-{
-  /* Old filter button reference */
-}
-
-{
-  /* <div className='md:transition-all md:duration-100 md:flex flex-wrap  md:flex-row md:space-x-8 md:justify-center md:items-center '>
-        {
-          compDetails.map((competition)=>(
-            <Filter title={competition.title} details={competition.details} date={competition.date}/>
-          ))
-        }
-      </div> */
-}
-{
-  /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-}
-
-{
-  /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-}
-{
-  /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-}
-
-{
-  /* Old competition structure for reference */
-}
-
-{
-  /* <div className='flex flex-wrap sm:flex-row md:flex-row'>
-        {
-          compDetails.map((competition)=>(
-            <div className='w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3'>
-              <div className='w-full rounded-lg overflow-hidden' id={competition.id} >
-                <CompetitionCard title={competition.title} details={competition.details} date={competition.date}/>
-              </div>
-            </div>
-          ))
-        }
-      </div> */
-}
-
-{
-  /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-}
