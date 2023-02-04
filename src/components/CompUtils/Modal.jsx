@@ -11,7 +11,7 @@ const Modal = ({ visible, details, title, date, poc, onClose }) => {
     <AnimatePresence>
       { visible && 
         <motion.div
-          className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center font-poppins"
+          className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center font-poppins z-10"
           id="backdrop-div"
           key="backdrop-div"
           initial={{ opacity: 0 }}

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 // import Filter from "./CompUtils/Filter";
+import {ChevronDownIcon} from '@heroicons/react/20/solid'
 import CompetitionCard from "./CompUtils/CompetitionCard";
 // import { Button } from "@headlessui/react";
 import { compDetails } from "../constants/competition";
@@ -81,12 +82,13 @@ const Competitions = () => {
           <button
             // removed the following
             // transform translate-y-1/2
-            className="w-fit text-center py-2 flex items-center justify-center px-4 px-4 py-2 rounded-lg text-gray-600 bg-primary border border-gray-400 focus:outline-none focus:shadow-outline hover:border-gray-500"
+            className="w-fit text-center py-2 flex items-center justify-center px-4 px-4 py-2 rounded-lg text-[#1A2328] bg-primary border border-[#89352a] focus:outline-none focus:shadow-outline hover:border-gray-500"
             onClick={toggleDropdown}
           >
             <div className="flex justify-center">
               <h3>{selectedOption}</h3>
             </div>
+            <ChevronDownIcon className="-mr-1 ml-1 h-5 w-5 hover:rotate-180" aria-hidden='true' />
           </button>
         </div>
         {isOpen && (
