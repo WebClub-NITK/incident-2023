@@ -82,13 +82,13 @@ const Competitions = () => {
           <button
             // removed the following
             // transform translate-y-1/2
-            className="w-fit text-center py-2 flex items-center justify-center px-4 px-4 py-2 rounded-lg text-[#1A2328] bg-primary border border-[#89352a] focus:outline-none focus:shadow-outline hover:border-gray-500"
+            className="w-fit text-center py-2 flex items-center justify-center px-4 px-4 py-2 rounded-lg text-[#1A2328] bg-primary border border-[#89352a] focus:outline-none focus:shadow-outline hover:border-[#672c1a]"
             onClick={toggleDropdown}
           >
             <div className="flex justify-center">
               <h3>{selectedOption}</h3>
             </div>
-            <ChevronDownIcon className="-mr-1 ml-1 h-5 w-5 hover:rotate-180" aria-hidden='true' />
+            <ChevronDownIcon className={`-mr-1 ml-1 h-5 w-5 ${isOpen ? 'rotate-180' : ''}`} aria-hidden='true' />
           </button>
         </div>
         {isOpen && (
