@@ -4,9 +4,12 @@ import styles from "../../style";
 import { motion } from "framer-motion";
 const CompetitionCard = (competition) => {
   const [showModal, setShowModal] = useState(false);
-  const handleOnClose = () => setShowModal(false);
+  const handleOnClose = () => {
+    setShowModal(!showModal);
+    document.body.style.overflow = "unset";
+  };
   return (
-    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} >
+    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
       <div className={`${styles.card}`}>
         <div className="p-6 ">
           {/* hover to some color */}
@@ -30,7 +33,10 @@ const CompetitionCard = (competition) => {
           <div className="flex w-full justify-center px-2 mt-2">
             <button
               className={`${styles.card_button}`}
-              onClick={() => setShowModal(true)}
+              onClick={() => {
+                setShowModal(true);
+                document.body.style.overflow = "hidden"
+              }}
             >
               Click for more info
             </button>

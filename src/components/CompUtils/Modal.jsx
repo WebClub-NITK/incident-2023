@@ -1,8 +1,8 @@
-import React from "react";
+import { React, useEffect } from "react";
 import { GiCrossedSabres } from "react-icons/gi";
 import styles from "../../style";
 import { logo } from "../../assets";
-import { motion, AnimatePresence, easeInOut } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 const Modal = ({ visible, details, title, date, poc, onClose }) => {
   const handleOnClose = (e) => {
     if (e.target.id === "backdrop-div") onClose();
@@ -11,7 +11,7 @@ const Modal = ({ visible, details, title, date, poc, onClose }) => {
     <AnimatePresence>
       { visible && 
         <motion.div
-          className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center font-poppins z-10"
+          className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center font-poppins"
           id="backdrop-div"
           key="backdrop-div"
           initial={{ opacity: 0 }}
@@ -20,11 +20,11 @@ const Modal = ({ visible, details, title, date, poc, onClose }) => {
           transition={{ duration: 0.5 }}
           onClick={handleOnClose}
         >
-          <div className="bg-gradient-to-br from-slate-900 to-black rounded max-w-[70%] max-h-[90%] rounded-3xl shadow-md shadow-secondary overflow-y-auto no-scrollbar">
+          <div className="bg-gradient-to-br from-slate-900 to-black rounded max-w-[85%] max-h-[90%] rounded-3xl md:max-w-[70%] shadow-md shadow-secondary overflow-y-auto no-scrollbar">
             <div className="flex flex-row md-2 border-b-2 border-black">
               <div className="basis-1/12">{/*Padding*/}</div>
               <div className="basis-10/12">
-                <h1 className="w-full font-poppins text-4xl text-center font-medium text-primary p-2">
+                <h1 className="w-full font-poppins text-4xl text-center font-medium text-primary py-3">
                   {title}
                 </h1>
               </div>
@@ -57,7 +57,7 @@ const Modal = ({ visible, details, title, date, poc, onClose }) => {
                 <div className="flex h-full items-center">{details}</div>
               </div>
             </div>
-            <div className="flex justify-center items-center mt-2">
+            <div className="flex justify-center items-center my-2 ">
               <button className={`${styles.modal_button}`}>Register</button>
               <button className={`${styles.modal_button}`} onClick={onClose}>
                 Close
