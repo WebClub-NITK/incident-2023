@@ -1,27 +1,37 @@
-// import Pagination from '@material-ui/lab/Pagination';
-// import { makeStyles } from '@material-ui/core/styles';
-// import Stack from '@material-ui/core/Stack';
+// import React, { useState } from "react";
 
-// // const useStyles = makeStyles((theme) => ({
-// //   root: {
-// //     '& > *': {
-// //       marginTop: theme.spacing(2),
-// //     },
-// //   },
-// // }));
+// const Paginator = ({ itemsPerPage, items }) => {
+//   const [currentPage, setCurrentPage] = useState(1);
+//   const totalPages = Math.ceil(items.length / itemsPerPage);
 
-// function Paginator({ filteredCompetitions, postsPerPage, setCurrentPage }) {
-// //   const classes = useStyles();
-//   const pageNumbers = Math.ceil(filteredCompetitions.length / postsPerPage);
+//   const paginatedItems = items.slice(
+//     (currentPage - 1) * itemsPerPage,
+//     currentPage * itemsPerPage
+//   );
+
+//   const handlePageChange = (newPage) => {
+//     setCurrentPage(newPage);
+//   };
 
 //   return (
-//     <Stack className='p-2 mt-2'>
-//       <Pagination
-//         count={pageNumbers}
-//         onChange={(event, page) => setCurrentPage(page)}
-//       />
-//     </Stack>
+//     <div>
+//       {paginatedItems.map((item, index) => (
+//         <p key={index}>{item}</p>
+//       ))}
+//       <button
+//         disabled={currentPage === 1}
+//         onClick={() => handlePageChange(currentPage - 1)}
+//       >
+//         Prev
+//       </button>
+//       <button
+//         disabled={currentPage === totalPages}
+//         onClick={() => handlePageChange(currentPage + 1)}
+//       >
+//         Next
+//       </button>
+//     </div>
 //   );
-// }
+// };
 
 // export default Paginator;
