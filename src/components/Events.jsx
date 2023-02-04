@@ -105,6 +105,8 @@ const Events = () => {
     slidesToShow: 3,
     centerMode: true,
     centerPadding: 0,
+    autoplay: true,
+    autoplaySpeed: 1600,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     beforeChange: (current , next) => setCurrentImage(next),
