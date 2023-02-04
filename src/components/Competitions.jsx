@@ -82,7 +82,7 @@ const Competitions = () => {
           <button
             // removed the following
             // transform translate-y-1/2
-            className="w-fit text-center py-2 flex items-center justify-center px-4 px-4 py-2 rounded-lg text-[#1A2328] bg-primary border border-[#89352a] focus:outline-none focus:shadow-outline hover:border-[#672c1a]"
+            className="w-fit text-center py-2 flex items-center justify-center px-4 px-4 py-2 rounded-lg text-[#1A2328] bg-primary border border-[#89352a] focus:outline-none focus:shadow-outline hover:border-[#672c1a] shadow-2 shadow-inner shadow-[#672c1a]"
             onClick={toggleDropdown}
           >
             <div className="flex justify-center">
@@ -93,14 +93,14 @@ const Competitions = () => {
         </div>
         {isOpen && (
           <div className="{`absolute z-20 mt-3 text-center origin-top-right rounded-md shadow-lg overflow-y-auto">
-            <div className="bg-secondary rounded-md shadow-xs">
+            <div className="bg-secondary rounded-md shadow-xs shadow-2 shadow-inner shadow-[#1A2328]">
               <div className="py-1">
                 {["All Categories", "Dance", "Gaming", "Music", "Robotics", "Drama", "DJ", "Indoor"].map(
                   (item, index) => (
                     <a
                       key={index}
                       href="#"
-                      className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+                      className="block px-4 py-2 text-sm leading-5 text-[#1A2328] hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900 my-1 "
                       onClick={() => {
                         handleCompetitionFilter(item);
                         toggleDropdown();
