@@ -5,6 +5,7 @@ import CompetitionCard from "./CompUtils/CompetitionCard";
 // import { Button } from "@headlessui/react";
 import { compDetails } from "../constants/competition";
 import { logo } from "../assets";
+// import Paginator from "./CompUtils/Paginator";
 const Competitions = () => {
   const [competitions, setCompetitions] = useState([]);
   const [filterCompetitions, setFilterCompetitions] = useState([]);
@@ -123,6 +124,10 @@ const Competitions = () => {
               className="w-full rounded-lg overflow-hidden flex-initial justify-center"
               id={competitions.id}
             >
+              {/* <Paginator
+                itemsPerPage = {3}
+                
+              > */}
               <CompetitionCard
                 key={competitions.id}
                 index={index}
@@ -132,7 +137,11 @@ const Competitions = () => {
                 poc={competitions.poc}
                 image={competitions.image}
               />
+
+              {/* </Paginator> */}
+
             </div>
+             
           </div>
         ))}
       </div>
