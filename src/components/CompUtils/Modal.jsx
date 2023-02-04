@@ -24,7 +24,7 @@ const Modal = ({ visible, details, title, date, poc, onClose }) => {
             <div className="flex flex-row md-2 border-b-2 border-black">
               <div className="basis-1/12">{/*Padding*/}</div>
               <div className="basis-10/12">
-                <h1 className="w-full font-poppins text-4xl text-center font-medium text-primary p-2">
+                <h1 className="w-full font-poppins text-4xl text-center font-medium text-primary py-3">
                   {title}
                 </h1>
               </div>
@@ -57,7 +57,7 @@ const Modal = ({ visible, details, title, date, poc, onClose }) => {
                 <div className="flex h-full items-center">{details}</div>
               </div>
             </div>
-            <div className="flex justify-center items-center mt-2">
+            <div className="flex justify-center items-center my-2 ">
               <button className={`${styles.modal_button}`}>Register</button>
               <button className={`${styles.modal_button}`} onClick={onClose}>
                 Close
