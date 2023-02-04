@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import { useState } from 'react'
 import EventDetails from "./EventDetails"
 import Slider from "react-slick"
@@ -8,6 +8,7 @@ const Events = () => {
 
   const [currentImage, setCurrentImage] = useState(0)
   const [selected, setSelected] = useState(false)
+  const [selectedImage, setSelectedImage] = useState(0)
 
   const slidedata = [
     {
@@ -27,12 +28,12 @@ const Events = () => {
     },
     {
       index: 4,
-      info :"4Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, repellendus?",
+      info: "4Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, repellendus?",
       src: "https://images.unsplash.com/photo-1672812995328-2a5459b582ad?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzUwMjM1ODA&ixlib=rb-4.0.3&q=80",
     },
     {
       index: 5,
-      info :"4Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, repellendus?",
+      info: "4Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, repellendus?",
       src: "https://images.unsplash.com/photo-1672812995328-2a5459b582ad?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzUwMjM1ODA&ixlib=rb-4.0.3&q=80",
 
     },
@@ -53,17 +54,17 @@ const Events = () => {
     },
     {
       index: 9,
-      info :"4Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, repellendus?",
+      info: "4Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, repellendus?",
       src: "https://images.unsplash.com/photo-1672812995328-2a5459b582ad?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzUwMjM1ODA&ixlib=rb-4.0.3&q=80",
     },
     {
       index: 10,
-      info :"4Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, repellendus?",
+      info: "4Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, repellendus?",
       src: "https://images.unsplash.com/photo-1672812995328-2a5459b582ad?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzUwMjM1ODA&ixlib=rb-4.0.3&q=80",
 
     },
   ]
-  const a=slidedata.map((data) => data.src);
+  const a = slidedata.map((data) => data.src);
 
 
   const NextArrow = ({ onClick }) => {
@@ -83,21 +84,28 @@ const Events = () => {
     );
   };
 
-
+  const selectedImageHandler = useCallback((idx) => {
+    setSelectedImage(idx)
+  }, [selected])
 
 
 
   const currentImageHandler = (index) => {
     setCurrentImage(index)
-    console.log(index)
 
     setSelected(!selected)
-    console.log(selected)
+    selectedImageHandler(index)
+
+    // if (selectedImage == currentImage) {
+    //   console.log("hii")
+    // }
   }
+
 
   const selectedHandler = (props) => {
     setSelected(props)
   }
+
   const settings = {
     infinite: true,
     lazyLoad: true,
@@ -109,26 +117,25 @@ const Events = () => {
     autoplaySpeed: 1600,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    beforeChange: (current , next) => setCurrentImage(next),
+    beforeChange: (current, next) => setCurrentImage(next),
   };
 
   return (
     <div className=''>
       <div>Events</div>
-        <div className="Events">
-          <Slider {...settings}>
-            {a.map((img,idx) => (
-              <div className={idx === currentImage ? "slide activeSlide" : "slide"}>
-                <img src={img} alt={img} onClick={()=>{currentImageHandler(idx)}}/>
-              </div>
-            ))}
-          </Slider>
-        </div>
-        {selected == true
-        ?<EventDetails data={slidedata[currentImage]} closeHandler={selectedHandler} className="transition-all ease-in-out duration-300"/>
-        :<div></div>
-        }
-        
+      <div className="Events">
+        <Slider {...settings}>
+          {a.map((img, idx) => (
+            <div className={idx === currentImage ? "slide activeSlide" : "slide"}>
+              <img src={img} alt={img} onClick={() => { currentImageHandler(idx) }} />
+            </div>
+          ))}
+        </Slider>
+      </div>
+      {selected == true
+        ? <EventDetails data={slidedata[selectedImage]} closeHandler={selectedHandler} className="transition-all ease-in-out duration-300" />
+        : <div></div>
+      }
     </div>
   )
 }
