@@ -117,13 +117,13 @@ const Events = () => {
           <Slider {...settings}>
             {a.map((img,idx) => (
               <div className={idx === currentImage ? "slide activeSlide" : "slide"}>
-                <img src={img} alt={img} onClick={()=>{currentImageHandler(idx+1)}}/>
+                <img src={img} alt={img} onClick={()=>{currentImageHandler(idx)}}/>
               </div>
             ))}
           </Slider>
         </div>
         {selected == true
-        ?<EventDetails data={slidedata[currentImage-1]} closeHandler={selectedHandler} className="transition-all ease-in-out duration-300"/>
+        ?<EventDetails data={slidedata[currentImage]} closeHandler={selectedHandler} className="transition-all ease-in-out duration-300"/>
         :<div></div>
         }
         
