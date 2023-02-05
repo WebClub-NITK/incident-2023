@@ -7,7 +7,6 @@ import Events from "./Events";
 import Competitions from "./Competitions";
 import Sponsors from "./Sponsors";
 import Footer from "./Footer";
-import FAQ from "./FAQ";
 
 export {
     Navbar,
@@ -15,6 +14,5 @@ export {
     Events,
     Competitions,
     Sponsors,
-    Footer,
-    FAQ
+    Footer
 };
