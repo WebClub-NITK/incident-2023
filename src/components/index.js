@@ -7,12 +7,13 @@ import Events from "./Events";
 import Competitions from "./Competitions";
 import Sponsors from "./Sponsors";
 import Footer from "./Footer";
-
+import Icare from "./Icare";
 export {
     Navbar,
     Hero,
     Events,
     Competitions,
     Sponsors,
-    Footer
+    Icare,
+    Footer,
 };

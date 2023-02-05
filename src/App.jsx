@@ -9,7 +9,7 @@ import {
   Sponsors,
   Footer,
 } from "./components";
-
+import Icare from "./components/Icare";
 const App = () => {
   return (
     <div className="bg-background w-full overflow-hidden">
@@ -30,6 +30,11 @@ const App = () => {
           <Events />
           <Competitions />
           <Sponsors />
+        </div>
+      </div>
+      <div className={`bg-background ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Icare />
         </div>
       </div>
       <Footer />
