@@ -8,7 +8,6 @@ import {
   Competitions,
   Sponsors,
   Footer,
-  FAQ
 } from "./components";
 
 const App = () => {
@@ -31,7 +30,6 @@ const App = () => {
           <Events />
           <Competitions />
           <Sponsors />
-          <FAQ/>
         </div>
       </div>
       <Footer />
