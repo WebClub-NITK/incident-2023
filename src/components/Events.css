@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
 .slide {
   transform: scale(0.85);
   transition: transform 300ms;
@@ -76,6 +78,6 @@
 
 
 .prev {
-  left: 0%;
-  top: 50%;
+  left: 2%;
+  bottom: 40%;
 }
