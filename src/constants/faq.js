@@ -19,5 +19,15 @@ export const qnaSrc = [
       question: "How much does it cost?",
       answer: "Zero. Zip. Zilch. Admission to ETHIndia is entirely free, thanks to our sponsors. We'll provide you with a weekend's worth of schwag, meals, drinks, snacks, and a place to crash when you need a break from coding."
     },
+    {
+      id: "5",
+      question: "How big can a team be?",
+      answer: "You can form teams of up to 5 members. Most teams aim to have a mix of members with both design and developer skills."
+    },
+    {
+      id: "6",
+      question: "What should I bring?",
+      answer: "Weapons of any kind, drugs, or alcohol. If you’re unsure whether something will be okay, please ask ahead of time!"
+    },
     
   ];
