@@ -1,8 +1,14 @@
 import React from "react";
 import { logo } from "../assets";
+import { motion } from "framer-motion";
 const About = () => {
   return (
-    <div className="h-fit rounded-xl shadow-sm flex flex-row flex-wrap my-5">
+    <motion.div
+      className="h-fit rounded-xl shadow-sm flex flex-row flex-wrap my-5"
+      initial={{ x: "-50%", opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.75 }}
+    >
       <div className="basis-full md:basis-5/12">
         <div className="text-start font-poppins text-6xl m-3 p-4 text-primary font-semibold">
           About
@@ -31,7 +37,7 @@ const About = () => {
       <div className="basis-full md:basis-7/12 flex justify-center items-center">
         <img src={logo} alt="" class=" max-h-[350px]" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default About;
