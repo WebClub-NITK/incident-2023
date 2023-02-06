@@ -82,3 +82,20 @@
     min-height: 350px;
   }
 }
+
+#popUp {
+  /* background: url(../assets/paper-card.png);
+  background-position: center;
+  background-size: cover;
+  z-index: 55;
+  position: fixed;
+  padding: 1.5rem;
+  font-size: 1.125rem
+    /* 18px 
+  ;
+  line-height: 1.75rem;
+  display: flex;
+  gap: 0.5rem
+    /* 8px 
+  ; */
+}
