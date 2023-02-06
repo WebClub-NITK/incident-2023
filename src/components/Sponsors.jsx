@@ -2,7 +2,10 @@ import React from 'react'
 
 const Sponsors = () => {
   return (
-    <div>Sponsors</div>
+    <div>
+      <div className=' grid-cols-4 '></div>
+    </div>
+    
   )
 }
 
