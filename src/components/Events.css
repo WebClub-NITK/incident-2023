@@ -2,54 +2,106 @@
 
 @import "slick-carousel/slick/slick-theme.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
 .Events {
   width: 100%;
-  margin: 10rem auto;
-  height: 200px;
+  margin: 1rem auto;
+  height: 250px;
 }
+
+
+.slide {
+  transform: scale(0.8);
+  transition: transform 300ms;
+  opacity: 0.5;
+  width: 300px;
+
+}
+
 
 .slide img {
   width: 320px;
   margin: 0 auto;
+  object-fit: cover;
+  padding: 0;
 }
 
-.slide {
-  transform: scale(0.9);
-  transition: transform 300ms;
-  opacity: 0.5;
 
-}
 
 .activeSlide {
-  transform: scale(1.4);
+  transform: scale(1.1);
   opacity: 1;
 
 }
 
+
+.slide p {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(94.75deg,#d19a08,#f8770d 27.6%,#f85b12 50%,#efb60a 66.15%,#efd305);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: enchanted land, sans-serif;
+  font-size: 2.5vw;
+  font-weight: 700;
+  letter-spacing: .02em;
+
+}
+
+.activeSlide p {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(94.75deg,#d19a08,#f8770d 27.6%,#f85b12 50%,#efb60a 66.15%,#efd305);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family:enchanted land, sans-serif;
+  font-size: 2.5vw;
+  font-weight: 200;
+  letter-spacing: .02em;
+
+}
+
+.Heading{
+  position: relative;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(94.75deg,#d19a08,#fedb7e 27.6%,#eac460 50%,#d19a08 66.15%,#d19a08);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: enchanted land, sans-serif;
+  font-size: 5vw;
+  font-weight: 700;
+  letter-spacing: .09em;
+}
+
+
+
 .arrow {
   position: absolute;
-  cursor: pointer;
+  cursor:pointer;
   z-index: 10;
-  width:50px;
+  width:25px;
   height: auto;
 }
+
 
 .arrow svg {
   transition: color 300ms;
-  width:50px;
+  width:3vw;
   height: auto;
+  color:#eac460;
+
 }
 
+
 .arrow svg:hover {
-  color: #ff8968;
+  color: #f37703;
 }
 
 .next {
   right: 0%;
-  top: 50%;
+  bottom: 40%;
 }
 
 .prev {
-  left: 0%;
-  top: 50%;
+  left: 2%;
+  bottom: 40%;
 }
