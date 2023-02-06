@@ -2,7 +2,7 @@ import React from "react";
 import { logo } from "../assets";
 const About = () => {
   return (
-    <div className="bg-gradient-to-br from-slate-900 via-gray-900 to-neutral-900 h-fit lg:rounded-xl shadow-sm flex flex-row flex-wrap my-5">
+    <div className="h-fit rounded-xl shadow-sm flex flex-row flex-wrap my-5">
       <div className="basis-full md:basis-5/12">
         <div className="text-start font-poppins text-6xl m-3 p-4 text-primary font-semibold">
           About

@@ -31,10 +31,6 @@ const App = () => {
           <Events />
           <Competitions />
           <Sponsors />
-        </div>
-      </div>
-      <div className={`bg-background ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
           <About />
         </div>
       </div>
