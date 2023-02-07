@@ -57,7 +57,7 @@ const Navbar = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-[ARMBook]
+                className={`font-poppins
                 font-normal
                 cursor-pointer
                 text-[16px]
