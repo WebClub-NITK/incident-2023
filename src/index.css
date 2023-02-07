@@ -4,6 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Eland";   
+  src: local("EnchantedLand"),
+    url("./fonts/EnchantedLand.otf") format("opentype");
+}
+@font-face {
+  font-family: "ARMBook";   
+  src: local("AllrounderMonumentTest-Book"),
+    url("./fonts/AllrounderMonumentTest-Book.otf") format("opentype");
+}
+@font-face {
+  font-family: "RMMedium";   
+  src: local("AllrounderMonumentTest-Medium"),
+    url("./fonts/AllrounderMonumentTest-Medium.otf") format("truetype");
+}
+@font-face {
+  font-family: "ARMRegular";   
+  src: local("AllrounderMonumentTest-Regular"),
+    url("./fonts/AllrounderMonumentTest-Regular.otf") format("truetype");
+}
+
+
 :root {
   --black-gradient: linear-gradient(
     144.39deg,
