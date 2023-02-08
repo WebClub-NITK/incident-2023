@@ -3,6 +3,7 @@ import { useState } from 'react';
 import {ChevronDownIcon} from '@heroicons/react/20/solid';
 import { qnaSrc } from '../constants/faq'
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import '../index.css'
 const FAQ = () => {
 
   const [selected, setSelected] = useState(null);
@@ -33,9 +34,9 @@ const FAQ = () => {
       <div className='w-full flex flex-col md:mt-16 mt-2'>
 
         {qnaSrc.map((item,i) => (
-          <div className='m-2 p-2 px-4 rounded-md w-full'>
+          <div className='m-1 p-1 px-4 rounded-md w-full'>
             <div> 
-            <button className='flex w-full justify-between py-3 mb-2 text-left border-t-2 font-bold leading-6 xl:leading-8 tracking-wider     text-primary'type = "button" onClick={() => toggle(i)}>
+            <button className='flex w-full justify-between py-3 mb-1 text-left border-t-2 font-bold leading-6 xl:leading-8 tracking-wider text-primary'type = "button" onClick={() => toggle(i)}>
              <span className='w-3/4 text-xl'>{item.question}</span>
 
              <span>{selected!= i?  (
@@ -55,7 +56,7 @@ const FAQ = () => {
 
             </div>
 
-                <div>{selected== i ? (<div className='text-secondary py-1 '> {item.answer}</div>) : (<div className=' py-1 hidden'> {item.answer}</div>)}
+                <div>{selected== i ? (<div className='text-secondary py-1 '> {item.answer}</div>) : (<div className=' py-1 faq-dropdown-hide'> {item.answer}</div>)}
 
             </div>
             </div>
