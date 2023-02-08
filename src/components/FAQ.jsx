@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import {ChevronDownIcon} from '@heroicons/react/20/solid';
 import { qnaSrc } from '../constants/faq'
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
 const FAQ = () => {
 
   const [selected, setSelected] = useState(null);
@@ -14,14 +15,20 @@ const FAQ = () => {
   }
 
   return (
+    <section className='mt-12 relative'>
 
+    
     <div className='flex flex-wrap justify-center'>
       <div className='w-[1240px] mx-auto grid md:grid-cols-2'>
         <div>
-      <h2 className='text-primary md:text-8xl sm:text-6xl ss:text-5xl text-4xl p-4'>
-      Frequently asked questions
-    </h2>
-    </div>
+          <h2 className='text-primary md:text-8xl sm:text-6xl ss:text-5xl text-4xl p-4'>
+          Frequently asked questions
+          </h2>
+      
+      
+      
+        </div>
+
 
       <div className='w-full flex flex-col md:mt-16 mt-2'>
 
@@ -56,9 +63,20 @@ const FAQ = () => {
 
       </div>
       </div>
-
     </div>
+     <Player
+          autoplay
+          loop
+          src="https://assets9.lottiefiles.com/packages/lf20_zptgbuvm.json"
+          style={{ height: '500px', width: '500px' }}
+          mode="scroll"
+          className='md:absolute lg:bottom-12 w-[45%] 2xl:w-1/3 hidden md:block mb-2 lg:mb-0'
+          
+          >
+      </Player> 
+    </section>
   )
 }
 
 export default FAQ
+
