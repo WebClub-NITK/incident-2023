@@ -10,10 +10,10 @@ const About = () => {
       transition={{ duration: 0.75 }}
     >
       <div className="basis-full md:basis-5/12">
-        <div className="text-start font-poppins text-6xl m-3 p-4 text-primary font-semibold">
+        <div className="text-start font-[ARMRegular] text-6xl m-3 p-4 text-primary font-semibold">
           About
         </div>
-        <div className="text-wrap text-lg text-primary mx-3 p-4">
+        <div className="text-wrap font-poppins text-lg text-primary mx-3 p-4">
           <p>
             As the month of March approaches, every NITKian unanimously awaits
             in eager anticipation of one event...one such extravaganza...that is
