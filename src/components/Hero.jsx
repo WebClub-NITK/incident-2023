@@ -3,18 +3,20 @@ import knight from '../assets/knight.png';
 import bard from '../assets/bard.png';
 import art from '../assets/art-element.webp';
 import bgVideo from '../assets/BgVideo.webm';
+import bg from '../assets/BgVideo.gif';
 
 
 const Hero = () => {
+
   return (
     <div>
-      <video className='hidden md:block ' autoPlay loop muted>
-      <source src={bgVideo} type="video/mp4"/>
-     </video>
+      <div className='h-screen'>
+      <img className="object-cover min-h-full  md:block"src={bg} alt="" />
+      </div>
+      <div className='lg:block'>
      <img className="absolute top-80 left-10 sm:w-[280px] md-[400px] w-[150px] mx-auto my-4" src={bard} alt="/"/>
       <img className="absolute top-80 right-10  sm:w-[320px] md-[430px] w-[190px] mx-auto my-4" src={knight} alt="/"/>
-     <div className=' h-screen md:hidden'>
-      </div>  {/* dummy div to remove video on md and xs screens */}
+      </div>
 
     <div className='boxWidth h-screen py-16 absolute inset-x-1 top-40'>
       
