@@ -17,9 +17,9 @@ const styles = {
     marginX: "sm:mx-16 mx-6",
     marginY: "sm:my-16 my-6",
 
-    modal_button: "font-poppins text-lg text-primary border-2 border-primary rounded p-1 mx-2 mb-3 transition-all ease-in-out delay-50 lg:hover:scale-105 lg:hover:bg-transparent lg:hover:border-rose-900 lg:hover:text-white duration-150",
-    card_button:"rounded-md bg-primary px-3 py-1 text-md font-poppins text-rose-900 transition-all ease-in-out delay-50 hover:text-black active:scale-105 hover:bg-gradient-to-br from-orange-600 via-orange-500 to-transparent duration-150",
-    card:"h-auto w-auto max-w-9/10  bg-dimMaroon  shadow-2  shadow-inner  shadow-black  rounded-lg  m-4 transition-all ease-in-out hover:translate-x-0.5 hover:-translate-y-0.5 hover:bg-gradient-to-br from-dimMaroon to-rose-900 duration-150",
+    modal_button: "font-poppins text-lg text-primary border-2 border-primary rounded p-1 mx-2 mb-3 transition-all ease-in-out delay-50 md:hover:scale-105 md:hover:bg-transparent md:hover:border-rose-900 md:hover:text-white duration-150",
+    card_button:"rounded-md bg-primary px-3 py-1 text-md font-poppins text-rose-900 transition-all ease-in-out delay-50 md:hover:text-black md:active:scale-105 md:hover:bg-gradient-to-br from-orange-600 via-orange-500 to-transparent duration-150",
+    card:"h-auto w-auto max-w-9/10  bg-dimMaroon  shadow-2  shadow-inner  shadow-black  rounded-lg  m-4 transition-all ease-in-out md:hover:translate-x-0.5 md:hover:-translate-y-0.5 md:hover:bg-gradient-to-br from-dimMaroon to-rose-900 duration-150",
   };
 
   export const layout = {
