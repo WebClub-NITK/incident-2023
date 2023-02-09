@@ -22,7 +22,7 @@ const FAQ = () => {
     <div className='flex flex-wrap justify-center'>
       <div className='w-[1240px] mx-auto grid md:grid-cols-2'>
         <div>
-          <h2 className='text-primary md:text-8xl sm:text-6xl ss:text-5xl text-4xl p-4'>
+          <h2 className='text-primary md:text-7xl sm:text-6xl ss:text-5xl text-3xl p-4 font-[ARMRegular] md:leading-[6rem]' >
           Frequently asked questions
           </h2>
       
@@ -36,8 +36,8 @@ const FAQ = () => {
         {qnaSrc.map((item,i) => (
           <div className='m-1 p-1 px-4 rounded-md w-full'>
             <div> 
-            <button className='flex w-full justify-between py-3 mb-1 text-left border-t-2 font-bold leading-6 xl:leading-8 tracking-wider text-primary'type = "button" onClick={() => toggle(i)}>
-             <span className='w-3/4 text-xl'>{item.question}</span>
+            <button className='font-[ARMBook] flex w-full justify-between py-3 mb-1 text-left border-t-2 font-bold leading-6 xl:leading-8 tracking-wider text-primary'type = "button" onClick={() => toggle(i)}>
+             <span className='w-3/4 md:text-xl sm:text-xl text-sm'>{item.question}</span>
 
              <span>{selected!= i?  (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
@@ -56,7 +56,7 @@ const FAQ = () => {
 
             </div>
 
-                <div>{selected== i ? (<div className='text-secondary py-1 '> {item.answer}</div>) : (<div className=' py-1 faq-dropdown-hide'> {item.answer}</div>)}
+                <div>{selected== i ? (<div className='text-secondary py-1 '> {item.answer}</div>) : (<div className=' py-1 hidden  '> {item.answer}</div>)}
 
             </div>
             </div>
