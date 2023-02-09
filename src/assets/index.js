@@ -46,7 +46,7 @@ import world from './cards/specials/world_fest.jpg'
 
 import spike from './cards/sports/spike.jpg'
 import slam from './cards/sports/slam_dunk.jpg'
-
+import paper from "./paper-card.png";
 export {
   menu,
   close,
@@ -84,5 +84,7 @@ export {
   debate,
   lit1,
   major,
-  open
+  open,
+    paper,
+    
 };
