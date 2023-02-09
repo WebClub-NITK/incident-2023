@@ -4,9 +4,11 @@
 import menu from "./menu.svg";
 import close from "./close.svg";
 import logo from "./incilogo.png";
-
+import paper from "./paper-card.png";
 export {
     menu,
     close,
-    logo
+    logo,
+    paper,
+    
 };
