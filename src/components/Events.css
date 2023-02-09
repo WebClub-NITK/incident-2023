@@ -4,44 +4,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
-.Events {
-  width: 100%;
-  margin: 1rem auto;
-  height: 250px;
-}
-
-
 .slide {
-  transform: scale(0.8);
+  transform: scale(0.85);
   transition: transform 300ms;
   opacity: 0.5;
-  width: 300px;
+  position: relative;
+  left:-6%;
 
 }
-
-
-.slide img {
-  width: 320px;
-  margin: 0 auto;
-  object-fit: cover;
-  padding: 0;
-}
-
-
-
 .activeSlide {
-  transform: scale(1.1);
+  transform: scale(1);
   opacity: 1;
 
 }
-
 
 .slide p {
   -webkit-text-fill-color: transparent;
   background: linear-gradient(94.75deg,#d19a08,#f8770d 27.6%,#f85b12 50%,#efb60a 66.15%,#efd305);
   -webkit-background-clip: text;
   background-clip: text;
-  font-family: enchanted land, sans-serif;
   font-size: 2.5vw;
   font-weight: 700;
   letter-spacing: .02em;
@@ -53,7 +34,6 @@
   background: linear-gradient(94.75deg,#d19a08,#f8770d 27.6%,#f85b12 50%,#efb60a 66.15%,#efd305);
   -webkit-background-clip: text;
   background-clip: text;
-  font-family:enchanted land, sans-serif;
   font-size: 2.5vw;
   font-weight: 200;
   letter-spacing: .02em;
@@ -61,25 +41,22 @@
 }
 
 .Heading{
-  position: relative;
+
   -webkit-text-fill-color: transparent;
   background: linear-gradient(94.75deg,#d19a08,#fedb7e 27.6%,#eac460 50%,#d19a08 66.15%,#d19a08);
   -webkit-background-clip: text;
   background-clip: text;
-  font-family: enchanted land, sans-serif;
-  font-size: 5vw;
+  font-size: 4vw;
   font-weight: 700;
   letter-spacing: .09em;
+
 }
 
-
-
 .arrow {
-  position: absolute;
   cursor:pointer;
   z-index: 10;
-  width:25px;
-  height: auto;
+
+
 }
 
 
@@ -96,12 +73,4 @@
   color: #f37703;
 }
 
-.next {
-  right: 0%;
-  bottom: 40%;
-}
 
-.prev {
-  left: 2%;
-  bottom: 40%;
-}
