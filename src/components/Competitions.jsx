@@ -4,7 +4,16 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import CompetitionCard from "./CompUtils/CompetitionCard";
 // import { Button } from "@headlessui/react";
 import { compDetails } from "../constants/competition";
-import { logo } from "../assets";
+import {
+  logo,
+  biz,
+  dance,
+  fashion,
+  lit,
+  music,
+  special,
+  sports,
+} from "../assets/index";
 // import Paginator from "./CompUtils/Paginator";
 
 const Competitions = () => {
@@ -14,7 +23,7 @@ const Competitions = () => {
   const [showMore, setShowMore] = useState(false);
 
   const buttonText = showMore ? "Show Less" : "Show More";
-
+  const coins = [logo, biz, dance, fashion, lit, music, special, sports];
   // const [currentPage, setCurrentPage] = useState(1)
   // const [postsPerPage, setPostsPerPage] = useState(2)
 
@@ -75,17 +84,17 @@ const Competitions = () => {
         <div class="w-auto text-white font-bold py-2 px-4 border-b-4 border-[#d4a152] flex flex-row justify-evenly p-1 space-x-1">
           {[
             "All Categories",
+            "Biz",
             "Dance",
-            "Gaming",
+            "Fashion",
+            "Lit",
             "Music",
-            "Robotics",
-            "Drama",
-            "DJ",
-            "Indoor",
+            "Special",
+            "Sports",
           ].map((item, index) => (
-            <button key={index}>
+            <button key={index} className="max-w-[144px]">
               <img
-                src={logo}
+                src={coins[index]}
                 alt=""
                 onClick={() => handleCompetitionFilter(item)}
                 className={`font-bold p-2 hover:scale-[1.05]`}
@@ -123,13 +132,13 @@ const Competitions = () => {
               <div className="py-1">
                 {[
                   "All Categories",
+                  "Biz",
                   "Dance",
-                  "Gaming",
+                  "Fashion",
+                  "Lit",
                   "Music",
-                  "Robotics",
-                  "Drama",
-                  "DJ",
-                  "Indoor",
+                  "Special",
+                  "Sports",
                 ].map((item, index) => (
                   <a
                     key={index}
