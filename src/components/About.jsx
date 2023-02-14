@@ -1,6 +1,6 @@
 import React from "react";
-import { logo } from "../assets";
 import { motion } from "framer-motion";
+import { about_us_asset } from "../assets/index";
 const About = () => {
   return (
     <motion.div
@@ -9,33 +9,34 @@ const About = () => {
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.75 }}
     >
-      <div className="basis-full md:basis-5/12">
+      <div className="basis-full md:basis-1/2">
         <div className="text-start font-[ARMRegular] text-6xl m-3 p-4 text-primary font-semibold">
           About
         </div>
-        <div className="text-wrap font-poppins text-lg text-primary mx-3 p-4">
+        <div className="text-wrap font-poppins text-xl text-primary mx-3 p-4">
           <p>
-            As the month of March approaches, every NITKian unanimously awaits
-            in eager anticipation of one event...one such extravaganza...that is
-            perhaps the highlight of their year - Incident. Incident is an
-            experience that mere words can't encapture. It is an ecstasy that
-            demands to be tasted first-hand.
+            What started as a small fest with a meagre budget in the 80s now
+            stands as one of the best college festivals in India. Incident is a
+            blend of cultural, social, and musical events that'll surely give
+            the attendees an ecstatic experience. Incident 2023's unique theme,
+            "A Tale of Bards and Knights", is adapted to celebrate this 3-day
+            extravaganza with medieval grandeur.
           </p>
           <br />
           <p>
-            Incident has been one of the flag-bearers of college fiestas in
-            India and has taken huge strides, ever since its inception in 1980,
-            to attain its current prestige.
-          </p>
-          <br />
-          <p>
-            This year marks our 43rd edition and Incident promises to be grander
-            than ever before.
+            Join us at NITK, the shoreside institute, while we become 'bards' to
+            sing the hymn of this festive splendour. We, the knights of this
+            realm called "Incident" are committed to giving you all a
+            cherishable and splendid experience.
           </p>
         </div>
       </div>
-      <div className="basis-full md:basis-7/12 flex justify-center items-center">
-        <img src={logo} alt="" class=" max-h-[350px]" />
+      <div className="basis-full md:basis-1/2 flex justify-center items-end">
+          <img
+            src={about_us_asset}
+            alt=""
+            className="max-h-[384px] rounded-3xl shadow-xl shadow-slate-900 border-2 border-black"
+          />
       </div>
     </motion.div>
   );
