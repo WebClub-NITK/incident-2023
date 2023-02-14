@@ -36,7 +36,7 @@ return (
                 <button onClick={prevSlide} className='p-4 text-yellow-600 absolute top-1/2 left-0 z-10 rounded-full'>
             <ChevronLeft size={40}/>
             </button>
-            <button onClick={nextSlide} className='p-4 text-yellow-600 p-1  absolute top-1/2 right-0 z-10 rounded-full'>
+            <button onClick={nextSlide} className='p-4 text-yellow-600   absolute top-1/2 right-0 z-10 rounded-full'>
             <ChevronRight size={40}/>
             </button>
             </div>        
