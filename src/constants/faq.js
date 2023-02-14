@@ -39,20 +39,20 @@ export const qnaSrc = [
       question: "What should I bring?",
       answer: "Weapons of any kind, drugs, or alcohol. If you’re unsure whether something will be okay, please ask ahead of time!"
     },
-    {
-      id: "6",
-      question: "What should I bring?",
-      answer: "Weapons of any kind, drugs, or alcohol. If you’re unsure whether something will be okay, please ask ahead of time!"
-    },
-    {
-      id: "6",
-      question: "What should I bring?",
-      answer: "Weapons of any kind, drugs, or alcohol. If you’re unsure whether something will be okay, please ask ahead of time!"
-    },
-    {
-      id: "6",
-      question: "What should I bring?",
-      answer: "Weapons of any kind, drugs, or alcohol. If you’re unsure whether something will be okay, please ask ahead of time!"
-    },
+    // {
+    //   id: "6",
+    //   question: "What should I bring?",
+    //   answer: "Weapons of any kind, drugs, or alcohol. If you’re unsure whether something will be okay, please ask ahead of time!"
+    // },
+    // {
+    //   id: "6",
+    //   question: "What should I bring?",
+    //   answer: "Weapons of any kind, drugs, or alcohol. If you’re unsure whether something will be okay, please ask ahead of time!"
+    // },
+    // {
+    //   id: "6",
+    //   question: "What should I bring?",
+    //   answer: "Weapons of any kind, drugs, or alcohol. If you’re unsure whether something will be okay, please ask ahead of time!"
+    // },
     
   ];

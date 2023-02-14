@@ -69,9 +69,9 @@ const FAQ = () => {
           autoplay
           loop
           src="https://assets9.lottiefiles.com/packages/lf20_zptgbuvm.json"
-          style={{ height: '500px', width: '500px' }}
+          style={{ height: '370px', width: '370px' }}
           mode="scroll"
-          className='md:absolute lg:bottom-12 w-[45%] 2xl:w-1/3 hidden md:block mb-2 lg:mb-0'
+          className='md:absolute md:bottom-0 w-[45%] 2xl:w-1/3 hidden md:block md:mb-0 '
           
           >
       </Player> 
