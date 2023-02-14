@@ -3,40 +3,35 @@ import knight from '../assets/knight.png';
 import bard from '../assets/bard.png';
 import art from '../assets/art-element.webp';
 import {Player} from '@lottiefiles/react-lottie-player';
-import animationData from '../assets/Main page bg .mp4.lottie.json';
+import animationData from '../assets/Main_page_bg_lottie.json';
 
 
 
 const Hero = () => {
 
-  // const defaultOptions = {
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData: animationData,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid "
-  //   }
-  // };
-
   return (
     <div>
-      <div className=' '>
+      <div className=''>
+      
       
       <Player
-  autoplay
-  loop
-  src={animationData}
-  style={{width: '1910px' }}
->
-  
-</Player>
+      
+        autoplay
+        loop
+        src={animationData}
+        
+        className="sm:w-[1910px]  w-[1400px] "
+      >  
+      
+      <img className="absolute md:top-[662px] sm:top-[800px] top-[662px] xl:left-60 md:left-40 sm:left-10 left-4 sm:w-[210px] md:w-[315px] w-[140px] mx-auto " src={bard} alt="/"/>
+      <img className="absolute md:top-[640px] sm:top-[800px] top-[660px] xl:right-60 md:right-40 sm:right-10 right-3 sm:w-[260px] md:w-[420px] w-[180px] mx-auto " src={knight} alt="/"/>
+      
+      </Player>
 
-      <img className="absolute md:top-[632px] sm:top-[780px] top-[832px] md:left-60 sm:left-10 left-4 sm:w-[210px] md:w-[315px] w-[150px] mx-auto " src={bard} alt="/"/>
-      <img className="absolute md:top-[610px] sm:top-[780px] top-[810px] md:right-60 sm:right-10 right-4 sm:w-[260px] md:w-[420px] w-[210px] mx-auto " src={knight} alt="/"/>
       </div>
       
 
-    <div className='boxWidth h-screen py-16 absolute inset-x-1 top-[540px]'>
+    <div className='boxWidth h-screen py-16 absolute inset-x-1 sm:top-[540px] top-[410px]'>
       
       <div className='text-white ">'>
         <div className='mx-auto flex flex-col justify-center'>
