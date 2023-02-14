@@ -2,30 +2,35 @@ import React from 'react';
 import knight from '../assets/knight.png';
 import bard from '../assets/bard.png';
 import art from '../assets/art-element.webp';
-import Lottie from 'react-lottie';
+import {Player} from '@lottiefiles/react-lottie-player';
 import animationData from '../assets/Main page bg .mp4.lottie.json';
 
 
 
 const Hero = () => {
 
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid "
-    }
-  };
+  // const defaultOptions = {
+  //   loop: true,
+  //   autoplay: true,
+  //   animationData: animationData,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid "
+  //   }
+  // };
 
   return (
     <div>
       <div className=' '>
       
-      <Lottie 
-	    options={defaultOptions}
-        width={1910}
-      />
+      <Player
+  autoplay
+  loop
+  src={animationData}
+  style={{ width: '1900px' }}
+>
+  
+</Player>
+
       <img className="absolute md:top-[632px] sm:top-[780px] top-[832px] md:left-60 left-10 sm:w-[210px] md:w-[315px] w-[150px] mx-auto " src={bard} alt="/"/>
       <img className="absolute md:top-[610px] sm:top-[780px] top-[810px] md:right-60 right-10 sm:w-[260px] md:w-[420px] w-[210px] mx-auto " src={knight} alt="/"/>
       </div>
