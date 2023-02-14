@@ -3,7 +3,7 @@ import Carousel from './Carousel'
 const Icare = () => {
   return (
     <div className="bg-gradient-to-br from-zinc-900 via-gray-900 to-neutral-900 h-fit lg:rounded-xl shadow-sm flex flex-row flex-wrap my-5">
-
+    {/* I-care Content */}
       <div className="sm:basis-full text-start  font-poppins text-6xl m-3 p-4 text-primary font-semibold">
       I-CARE
       </div>
@@ -29,8 +29,8 @@ const Icare = () => {
         Since 2019, i-Care has been quite active and numerous initiatives such as paper recycling, cloth collection drive, 
         orphanage visits and multiple workshops have been carried out. We also plan to take up many more such noble initiatives in the future. 
         </p>
+    {/* carousel section */}
       </div>
-    {/* </div> */}
     <div className="basis-full md:basis-7/12 flex justify-center items-center">
       <Carousel />
     </div>
