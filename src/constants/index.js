@@ -11,4 +11,8 @@ export const navLinks = [
       id: "contactUs",
       title: "Contact Us",
     },
+    {
+      id: "icare",
+      title: "I-Care",
+    }
   ];
