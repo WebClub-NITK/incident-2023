@@ -68,8 +68,9 @@ const FAQ = () => {
      <Player
           autoplay
           loop
-          src="https://assets9.lottiefiles.com/packages/lf20_zptgbuvm.json"
-          style={{ height: '370px', width: '370px' }}
+          // src="https://assets9.lottiefiles.com/packages/lf20_zptgbuvm.json"
+          src="https://assets1.lottiefiles.com/packages/lf20_fzv34t2e.json"
+          style={{ height: '370px', width: '370px' , margin: '0px 70px'}}
           mode="scroll"
           className='md:absolute md:bottom-0 w-[45%] 2xl:w-1/3 hidden md:block md:mb-0 '
           
