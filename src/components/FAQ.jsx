@@ -31,7 +31,7 @@ const FAQ = () => {
         </div>
 
 
-      <div className='w-full flex flex-col md:mt-16 mt-2'>
+      <div className='w-full flex flex-col md:mt-9 mt-2'>
 
         {qnaSrc.map((item,i) => (
           <div className='m-1 p-1 px-4 rounded-md w-full'>
@@ -65,17 +65,18 @@ const FAQ = () => {
       </div>
       </div>
     </div>
-     <Player
+     {/* <Player
           autoplay
           loop
           // src="https://assets9.lottiefiles.com/packages/lf20_zptgbuvm.json"
           src="https://assets1.lottiefiles.com/packages/lf20_fzv34t2e.json"
+          // src="https://lottie.host/753428f3-9bc1-4b67-9e13-3ec0eb539c6f/HEbELt92rL.json"
           style={{ height: '370px', width: '370px' , margin: '0px 70px'}}
           mode="scroll"
           className='md:absolute md:bottom-0 w-[45%] 2xl:w-1/3 hidden md:block md:mb-0 '
           
           >
-      </Player> 
+      </Player>  */}
     </section>
   )
 }
