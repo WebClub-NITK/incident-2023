@@ -26,13 +26,13 @@ const Hero = () => {
   autoplay
   loop
   src={animationData}
-  style={{ width: '1900px' }}
+  style={{width: '1910px' }}
 >
   
 </Player>
 
-      <img className="absolute md:top-[632px] sm:top-[780px] top-[832px] md:left-60 left-10 sm:w-[210px] md:w-[315px] w-[150px] mx-auto " src={bard} alt="/"/>
-      <img className="absolute md:top-[610px] sm:top-[780px] top-[810px] md:right-60 right-10 sm:w-[260px] md:w-[420px] w-[210px] mx-auto " src={knight} alt="/"/>
+      <img className="absolute md:top-[632px] sm:top-[780px] top-[832px] md:left-60 sm:left-10 left-4 sm:w-[210px] md:w-[315px] w-[150px] mx-auto " src={bard} alt="/"/>
+      <img className="absolute md:top-[610px] sm:top-[780px] top-[810px] md:right-60 sm:right-10 right-4 sm:w-[260px] md:w-[420px] w-[210px] mx-auto " src={knight} alt="/"/>
       </div>
       
 
