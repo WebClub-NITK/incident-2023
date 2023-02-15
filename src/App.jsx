@@ -31,10 +31,10 @@ const App = () => {
 
       <div className={`bg-background ${styles.flexCenter} ${styles.paddingX} `}>
         <div className={`${styles.boxWidth}`}>
-          <Events />
-          <Competitions />
-          <Sponsors />
           <About />
+          {/* <Events /> */}
+          <Competitions />
+          {/* <Sponsors /> */}
         </div>
       </div>
       <Footer />
