@@ -1,30 +1,32 @@
 import { useState } from "react";
-import { close, logo, menu } from "../assets";
+import { close, menu } from "../assets";
+import incitext from "../assets/incident-text.png";
 import { navLinks } from "../constants";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex justify-between items-center navbar">
+    <nav className="md:w-[80%] w-[90%]  flex justify-between items-center fixed z-50 p-2">
       {/* Logo */}
       <a href="#home">
         <img
-          src={logo}
+          src={incitext}
           alt="Incident 2023"
-          className="w-[80px] h-[80px] mt-2"
+          className=" md:h-[40px] h-[30px]"
         />
       </a>
 
       {/* List of links */}
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+      <ul className="list-none md:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
             className={`font-[ARMBook]
-            font-normal
+            font-bold
             cursor-pointer
-            text-[16px]
+            text-[18px]
+            
             ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}
             text-primary hover:text-secondary`}
           >
@@ -34,7 +36,7 @@ const Navbar = () => {
       </ul>
 
       {/* only for mobile devices, created separately */}
-      <div className="sm:hidden flex flex-1 justify-end items-center">
+      <div className="md:hidden flex flex-1 justify-end items-center">
         {/* shows toggle icon based on its state */}
         <img
           src={toggle ? close : menu}

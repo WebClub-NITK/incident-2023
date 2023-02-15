@@ -23,15 +23,15 @@ const Hero = () => {
         className="sm:w-[1910px]  w-[1400px] "
       >  
       
-      <img className="absolute md:top-[662px] sm:top-[800px] top-[662px] xl:left-60 lg:left-14 md:left-12 sm:left-10 left-4 sm:w-[210px] md:w-[315px] w-[140px] mx-auto " src={bard} alt="/"/>
-      <img className="absolute md:top-[640px] sm:top-[800px] top-[660px] xl:right-60 lg:right-14 md:right-12 sm:right-10 right-3 sm:w-[260px] md:w-[420px] w-[180px] mx-auto " src={knight} alt="/"/>
+      <img className="absolute md:top-[580px] sm:top-[730px] top-[572px] xl:left-60 lg:left-14 md:left-12 sm:left-10 left-4 sm:w-[210px] md:w-[315px] w-[140px] mx-auto " src={bard} alt="/"/>
+      <img className="absolute md:top-[555px] sm:top-[730px] top-[570px] xl:right-60 lg:right-14 md:right-12 sm:right-10 right-3 sm:w-[260px] md:w-[420px] w-[180px] mx-auto " src={knight} alt="/"/>
       
       </Player>
 
       </div>
       
 
-    <div className='boxWidth h-screen py-16 absolute inset-x-1 sm:top-[540px] top-[410px]'>
+    <div className='boxWidth h-screen py-16 absolute inset-x-1 sm:top-[490px] top-[340px]'>
       
       <div className='text-white ">'>
         <div className='mx-auto flex flex-col justify-center'>
