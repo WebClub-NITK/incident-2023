@@ -21,7 +21,7 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins
+            className={`font-[ARMBook]
             font-normal
             cursor-pointer
             text-[16px]
@@ -54,7 +54,7 @@ const Navbar = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins
+                className={`font-[ARMBook]
                 font-normal
                 cursor-pointer
                 text-[16px]
