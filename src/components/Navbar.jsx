@@ -7,19 +7,19 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="xl:w-[80%] md:w-[90%] w-[90%] flex justify-between items-center fixed z-50 p-2">
+    <nav className="xl:w-[80%] md:w-[90%] w-[90%] flex justify-between items-center fixed z-50 md:p-3 pt-6">
       {/* Logo */}
       <a href="#home">
         <img
           src={incitext}
           alt="Incident 2023"
-          className=" md:h-[30px] sm:h-[28px] h-[22px]"
+          className="xl:h-[40px] md:h-[30px] sm:h-[28px] h-[22px]"
         />
       </a>
       
       {/* List of links */}
       <ul className="list-none md:flex hidden justify-end items-center flex-1">
-      <button className="font-[RMMedium] button-gradient p-1 px-2 font-bold text-[12px] cursor-pointer rounded-md mx-8 hover:text-secondary">REGISTER NOW</button>
+      <button className="font-[RMMedium] button-gradient p-1 px-2 font-bold xl:text-[15px] text-[12px] cursor-pointer rounded-md mx-8 hover:text-secondary">REGISTER NOW</button>
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -27,6 +27,7 @@ const Navbar = () => {
             font-bold
             cursor-pointer
             text-[12px]
+            xl:text-[15px]
             
             ${index === navLinks.length - 1 ? "mr-0" : "mr-8"}
             text-primary hover:text-secondary`}
