@@ -1,4 +1,5 @@
 export const navLinks = [
+    
     {
       id: "events",
       title: "Events",

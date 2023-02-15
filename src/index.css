@@ -19,12 +19,12 @@
 @font-face {
   font-family: "RMMedium";   
   src: local("AllrounderMonumentTest-Medium"),
-    url("./fonts/AllrounderMonumentTest-Medium.otf") format("truetype");
+    url("./fonts/AllrounderMonumentTest-Medium.otf") format("opentype");
 }
 @font-face {
   font-family: "ARMRegular";   
   src: local("AllrounderMonumentTest-Regular"),
-    url("./fonts/AllrounderMonumentTest-Regular.otf") format("truetype");
+    url("./fonts/AllrounderMonumentTest-Regular.otf") format("opentype");
 }
 
 
