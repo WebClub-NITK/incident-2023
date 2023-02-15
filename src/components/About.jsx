@@ -1,7 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { about_us_asset } from "../assets/index";
+import Lottie from "react-lottie";
+import sword from "../lotties/fire.json"
 const About = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true, 
+    animationData: sword,
+  };
   return (
     <motion.div
       className="h-fit rounded-xl shadow-sm flex flex-row flex-wrap my-5"
@@ -31,8 +38,8 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="basis-full md:basis-1/2 flex justify-center items-end mt-5">
-        <img src={about_us_asset} alt="" className="max-h-[384px] rounded-3xl"/>
+      <div className="basis-full md:basis-1/2 flex justify-center items-top">
+        <Lottie options={defaultOptions}/>
       </div>
     </motion.div>
   );
