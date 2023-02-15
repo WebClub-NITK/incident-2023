@@ -7,13 +7,13 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="xl:w-[80%] md:w-[90%] w-[90%] flex justify-between items-center fixed z-50 md:p-3 pt-6">
+    <nav className="w-full z-50 md:p-3 py-4 flex justify-between items-center backdrop-blur-md fixed top-0">
       {/* Logo */}
       <a href="#home">
         <img
           src={incitext}
           alt="Incident 2023"
-          className="xl:h-[40px] md:h-[30px] sm:h-[28px] h-[22px]"
+          className="xl:h-[40px] md:h-[30px] sm:h-[28px] h-[22px] justify-end md:mx-20 mx-10"
         />
       </a>
       
@@ -38,12 +38,12 @@ const Navbar = () => {
       </ul>
 
       {/* only for mobile and tablet devices, created separately */}
-      <div className="md:hidden flex flex-1 justify-end items-center">
+      <div className="md:hidden items-center mx-4">
         {/* shows toggle icon based on its state */}
         <img
           src={toggle ? close : menu}
           alt="menu"
-          className="sm:w-[40px] w-[28px] h-[28px] object-contain"
+          className="sm:w-[40px] h-[28px] w-[28px]"
           // correct way to change state using the prev
           // version of the same state using a callback function
           onClick={() => setToggle((prev) => !prev)}
