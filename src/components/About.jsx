@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { about_us_asset } from "../assets/index";
 import Lottie from "react-lottie";
 import sword from "../lotties/fire.json"
 const About = () => {
