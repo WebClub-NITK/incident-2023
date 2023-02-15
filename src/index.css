@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -17,12 +19,12 @@
 @font-face {
   font-family: "RMMedium";   
   src: local("AllrounderMonumentTest-Medium"),
-    url("./fonts/AllrounderMonumentTest-Medium.otf") format("truetype");
+    url("./fonts/AllrounderMonumentTest-Medium.otf") format("opentype");
 }
 @font-face {
   font-family: "ARMRegular";   
   src: local("AllrounderMonumentTest-Regular"),
-    url("./fonts/AllrounderMonumentTest-Regular.otf") format("truetype");
+    url("./fonts/AllrounderMonumentTest-Regular.otf") format("opentype");
 }
 
 
@@ -65,20 +67,17 @@
 }
 
 .text-gradient {
-  background: radial-gradient(
-    64.18% 64.18% at 71.16% 35.69%,
-    #def9fa 0.89%,
-    #bef3f5 17.23%,
-    #9dedf0 42.04%,
-    #7de7eb 55.12%,
-    #5ce1e6 71.54%,
-    #33bbcf 100%
-  );
+  background:  radial-gradient(#9f793eff, #af8544ff, #cb9a4fff, #d4a152ff, #d8aa62ff, #dcb270ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
 }
+
+.button-gradient {
+  background: linear-gradient(315deg, #9f793eff, #af8544ff, #cb9a4fff, #d4a152ff, #d8aa62ff, #dcb270ff);
+}
+
 
 .bg-blue-gradient {
   background: linear-gradient(
