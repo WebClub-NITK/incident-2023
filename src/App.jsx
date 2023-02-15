@@ -9,6 +9,7 @@ import {
   Sponsors,
   Footer,
 } from "./components";
+import About from "./components/About";
 
 const App = () => {
   return (
@@ -30,9 +31,10 @@ const App = () => {
 
       <div className={`bg-background ${styles.flexCenter} ${styles.paddingX} `}>
         <div className={`${styles.boxWidth}`}>
-          <Events />
+          <About />
+          {/* <Events /> */}
           <Competitions />
-          <Sponsors />
+          {/* <Sponsors /> */}
         </div>
       </div>
       <Footer />
