@@ -11,7 +11,7 @@ const Hero = () => {
     <div>
       <div className='w-full'>
       <Player
-      
+        speed={10}
         autoplay
         loop
         src={animationdata}
@@ -20,7 +20,7 @@ const Hero = () => {
 
       </div>
 
-    <div className='boxWidth h-screen py-16 absolute inset-x-1 xl:top-[52%] md:top-[45%] sm:top-[55%] top-[380px]'>
+    <div className='boxWidth h-screen py-16 absolute inset-x-1 xl:top-[50%] lg:top-[45%] md:top-[35%] sm:top-[480px] top-[380px]'>
       
       <div className='text-white'>
         <div className='mx-auto flex flex-col justify-center'>
