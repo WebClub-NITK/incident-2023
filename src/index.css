@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,28 +17,27 @@
         /* Firefox */
     }
 }
+@font-face {
+    font-family: "Eland";
+    src: local("EnchantedLand"), url("./fonts/EnchantedLand.otf") format("opentype");
+}
 
 @font-face {
-  font-family: "Eland";   
-  src: local("EnchantedLand"),
-    url("./fonts/EnchantedLand.otf") format("opentype");
+    font-family: "ARMBook";
+    src: local("AllrounderMonumentTest-Book"), url("./fonts/AllrounderMonumentTest-Book.otf") format("opentype");
 }
+
 @font-face {
-  font-family: "ARMBook";   
-  src: local("AllrounderMonumentTest-Book"),
-    url("./fonts/AllrounderMonumentTest-Book.otf") format("opentype");
-}
-@font-face {
-  font-family: "RMMedium";   
+  font-family: "RMMedium";
   src: local("AllrounderMonumentTest-Medium"),
-    url("./fonts/AllrounderMonumentTest-Medium.otf") format("truetype");
-}
-@font-face {
-  font-family: "ARMRegular";   
-  src: local("AllrounderMonumentTest-Regular"),
-    url("./fonts/AllrounderMonumentTest-Regular.otf") format("truetype");
+    url("./fonts/AllrounderMonumentTest-Medium.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "ARMRegular";
+  src: local("AllrounderMonumentTest-Regular"),
+    url("./fonts/AllrounderMonumentTest-Regular.otf") format("opentype");
+}
 
 :root {
     --black-gradient: linear-gradient( 144.39deg, #ffffff -278.56%, #2e2e2c -78.47%, #1a2328 91.61%);
@@ -76,12 +77,17 @@
 }
 
 .text-gradient {
-    background: radial-gradient( 64.18% 64.18% at 71.16% 35.69%, #def9fa 0.89%, #bef3f5 17.23%, #9dedf0 42.04%, #7de7eb 55.12%, #5ce1e6 71.54%, #33bbcf 100%);
+    background:  radial-gradient(#9f793eff, #af8544ff, #cb9a4fff, #d4a152ff, #d8aa62ff, #dcb270ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
 }
+
+.button-gradient {
+  background: linear-gradient(315deg, #9f793eff, #af8544ff, #cb9a4fff, #d4a152ff, #d8aa62ff, #dcb270ff);
+}
+
 
 .bg-blue-gradient {
     background: linear-gradient( 157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29%);
@@ -216,6 +222,15 @@
     -webkit-line-clamp: 2;
     /* number of lines to show */
     -webkit-box-orient: vertical;
+}
+
+.faq-dropdown-hide {
+    overflow: hidden;
+    max-height: 0;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    transition-property: max-height;
 }
 
 .dropdown-container {
