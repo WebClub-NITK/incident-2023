@@ -31,12 +31,8 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="basis-full md:basis-1/2 flex justify-center items-end">
-          <img
-            src={about_us_asset}
-            alt=""
-            className="max-h-[384px] rounded-3xl shadow-xl shadow-slate-900 border-2 border-black"
-          />
+      <div className="basis-full md:basis-1/2 flex justify-center items-end mt-5">
+        <img src={about_us_asset} alt="" className="max-h-[384px] rounded-3xl"/>
       </div>
     </motion.div>
   );
