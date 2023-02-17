@@ -11,7 +11,7 @@ const Hero = () => {
     <div>
       <div className='w-full'>
       <Player
-        speed={10}
+        speed={5}
         autoplay
         loop
         src={animationdata}
