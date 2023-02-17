@@ -13,7 +13,7 @@ const Navbar = () => {
         <img
           src={incitext}
           alt="Incident 2023"
-          className="xl:h-[43px] md:h-[33px] sm:h-[28px] h-[22px] justify-end md:mx-20 mx-10"
+          className="xl:h-[43px] md:h-[33px] sm:h-[28px] h-[22px] justify-start md:mx-20 mx-4"
         />
       </a>
       
