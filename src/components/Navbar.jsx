@@ -2,6 +2,7 @@ import { useState } from "react";
 import { close, menu } from "../assets";
 import incitext from "../assets/incident-text.png";
 import { navLinks } from "../constants";
+import unstop from "../assets/unstop-logo.png";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -13,13 +14,14 @@ const Navbar = () => {
         <img
           src={incitext}
           alt="Incident 2023"
-          className="xl:h-[40px] md:h-[30px] sm:h-[28px] h-[22px] justify-end md:mx-20 mx-10"
+          className="xl:h-[43px] md:h-[33px] sm:h-[28px] h-[22px] justify-end md:mx-20 mx-10"
         />
       </a>
       
       {/* List of links */}
       <ul className="list-none md:flex hidden justify-end items-center flex-1">
-      <button className="font-[RMMedium] button-gradient p-1 px-2 font-bold xl:text-[15px] text-[12px] cursor-pointer rounded-md mx-8 hover:text-secondary">REGISTER NOW</button>
+      <button className="font-[RMMedium] button-gradient p-1 px-2 font-bold xl:text-[15px] text-[12px] cursor-pointer rounded-md mx-8 hover:text-secondary">
+        <img src={unstop} className="h-[20px] mx-auto"/>REGISTER NOW</button>
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -55,7 +57,8 @@ const Navbar = () => {
         min-w-[140px] rounded-xl sidebar`}
         >
           <ul className="list-none flex flex-col justify-end items-center flex-1">
-          <button className="font-[RMMedium] mb-4 text-primary p-1 font-bold text-[16px] cursor-pointer">REGISTER NOW</button>
+          <button className="font-[RMMedium] mb-4 text-primary p-2 font-bold text-[16px] cursor-pointer bg-secondary/[0.1] rounded-md">
+          <img src={unstop} className="h-[25px] mx-auto"/>REGISTER NOW</button>
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
