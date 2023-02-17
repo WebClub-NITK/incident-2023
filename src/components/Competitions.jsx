@@ -81,7 +81,7 @@ const Competitions = () => {
 
       {/* For coins */}
       <div className="hidden md:block md:transition-all md:duration-100 md:flex flex-wrap md:flex-row md:space-x-9 md:justify-center md:items-center flex items-center justify-center">
-        <div class="w-auto text-white font-bold py-2 px-4 border-b-4 border-[#d4a152] flex flex-row justify-evenly p-1 space-x-1">
+        <div className="w-auto text-white font-bold py-2 px-4 border-b-4 border-[#d4a152] flex flex-row justify-evenly p-1 space-x-1">
           {[
             "All Categories",
             "Biz",
@@ -182,6 +182,7 @@ const Competitions = () => {
             )
         )}
       </div>
+
       <div className="flex justify-center">
         <button
           className="m-2 p-2 font-poppins bg-gradient-to-r from-[#9f793eff]

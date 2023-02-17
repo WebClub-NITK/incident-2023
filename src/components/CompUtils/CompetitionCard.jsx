@@ -10,11 +10,11 @@ const CompetitionCard = (competition) => {
   };
   return (
     <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
-      <div className={`${styles.card}`}>
-        <div className="p-6 ">
-          {/* hover to some color */}
-          {/* text colors and bg are subject to change */}
-          <div className="text-primary">
+      <div className=''>
+      {/* className={`${styles.card}`} */}
+        <div className="p-3">
+         
+          {/* <div className="text-primary">
             <div className="flex flex-wrap flex-row justify-between">
               <h3 className="text-lg font-medium font-poppins inline">
                 {competition.title}
@@ -23,22 +23,25 @@ const CompetitionCard = (competition) => {
                 {competition.date}
               </h3>
             </div>
-          </div>
+          </div> */}
 
           {/* fix the hover, it should hover only for the head text and not the whole line */}
-          <div className="w-auto flex justify-center mt-3">
+          <div className="w-auto flex justify-center mt-2">
             {/* <p className='text-sm font-poppins text-neutral-50 mt-2 px-3'>{competition.details}</p> */}
-            <img src={competition.image} alt="Logo" className="max-w-1/2" />
           </div>
-          <div className="flex w-full justify-center px-2 mt-2">
+          <div className="w-full py-2 px-2 flex flex-row justify-evenly p-0 space-x-1">
             <button
-              className={`${styles.card_button}`}
+              className="max-w-[370px] flex justify-center px-2 mt-1 flex-wrap sm:flex-row md:flex-row"
               onClick={() => {
                 setShowModal(true);
                 document.body.style.overflow = "hidden"
               }}
             >
-              Click for more info
+              <img src={competition.image} 
+              alt="Logo" 
+              className="max-w-auto h-auto transition-all ease-in-out md:hover:translate-x-0.5 md:hover:-translate-y-0.5 duration-150"
+              />
+              {/* Click for more info */}
             </button>
           </div>
         </div>
