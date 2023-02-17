@@ -140,9 +140,8 @@ const Competitions = () => {
                 ].map((item, index) => (
                   <a
                     key={index}
-                    href="#"
                     className="block px-4 py-2 text-sm leading-5 text-[#1A2328] hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900 my-1 "
-                    onClick={() => {
+                    onClick={() => { 
                       handleCompetitionFilter(item);
                       toggleDropdown();
                     }}
@@ -156,7 +155,45 @@ const Competitions = () => {
         )}
       </div>
       {/* for desktop */}
-      <div className="flex flex-wrap sm:flex-row md:flex-row justify-center">
+      <div className="hidden md:flex md:flex-wrap md:flex-row  md:justify-center">
+        {filterCompetitions.map(
+          (competitions, index) =>
+            (showMore || (!showMore && index < 9)) && (
+              <div>
+                <div
+                  className="w-full rounded-lg overflow-hidden flex-initial justify-center"
+                  id={competitions.id}
+                >
+                  <CompetitionCard
+                    key={competitions.id}
+                    index={index}
+                    title={competitions.title}
+                    details={competitions.details}
+                    date={competitions.date}
+                    poc={competitions.poc}
+                    image={competitions.image}
+                  />
+                </div>
+              </div>
+            )
+        )}
+      </div>
+
+
+      {filterCompetitions.length > 9 && (
+        <div className="md:flex md:flex-wrap md:justify-center hidden">
+          <button
+            className="md:m-2 md:p-2 md:font-poppins md:bg-gradient-to-r from-[#9f793eff]
+              via-[#d4a152ff] to-[#dcb270ff] md:border-2 md:border-primary md:rounded-md back md:font-medium md:text-black md:transition-all md:duration-150 md:hover:scale-105"
+            onClick={() => {
+              setShowMore(!showMore);
+            }}
+          >
+            {buttonText}
+          </button>
+        </div>
+      )}
+        <div className="flex flex-wrap justify-center md:hidden">
         {filterCompetitions.map(
           (competitions, index) =>
             (showMore || (!showMore && index < 3)) && (
@@ -184,7 +221,7 @@ const Competitions = () => {
       {filterCompetitions.length > 3 && (
         <div className="flex justify-center">
           <button
-            className="m-2 p-2 font-poppins bg-gradient-to-r from-[#9f793eff]
+            className="m-2 p-2 font-poppins bg-gradient-to-r from-[#9f793eff] md:hidden
               via-[#d4a152ff] to-[#dcb270ff] border-2 border-primary rounded-md font-medium text-black transition-all duration-150 md:hover:scale-105"
             onClick={() => {
               setShowMore(!showMore);
