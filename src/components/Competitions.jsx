@@ -78,7 +78,6 @@ const Competitions = () => {
       <h1 className="flex-1 font-poppins font-semibold text-[45px] text-primary leading-[80px] justify-center">
         Competitions
       </h1>
-
       {/* For coins */}
       <div className="hidden md:block md:transition-all md:duration-100 md:flex flex-wrap md:flex-row md:space-x-9 md:justify-center md:items-center flex items-center justify-center">
         <div className="w-auto text-white font-bold py-2 px-4 border-b-4 border-[#d4a152] flex flex-row justify-evenly p-1 space-x-1">
@@ -105,7 +104,6 @@ const Competitions = () => {
           ))}
         </div>
       </div>
-
       {/* For dropdown */}
       <div className="md:hidden relative w-full min-w-max">
         <div className="flex justify-center">
@@ -157,7 +155,6 @@ const Competitions = () => {
           </div>
         )}
       </div>
-
       {/* for desktop */}
       <div className="flex flex-wrap sm:flex-row md:flex-row justify-center">
         {filterCompetitions.map(
@@ -183,17 +180,20 @@ const Competitions = () => {
         )}
       </div>
 
-      <div className="flex justify-center">
-        <button
-          className="m-2 p-2 font-poppins bg-gradient-to-r from-[#9f793eff]
-          via-[#d4a152ff] to-[#dcb270ff] border-2 border-primary rounded-md font-medium text-black transition-all duration-150 md:hover:scale-105"
-          onClick={() => {
-            setShowMore(!showMore);
-          }}
-        >
-          {buttonText}
-        </button>
-      </div>
+
+      {filterCompetitions.length > 3 && (
+        <div className="flex justify-center">
+          <button
+            className="m-2 p-2 font-poppins bg-gradient-to-r from-[#9f793eff]
+              via-[#d4a152ff] to-[#dcb270ff] border-2 border-primary rounded-md font-medium text-black transition-all duration-150 md:hover:scale-105"
+            onClick={() => {
+              setShowMore(!showMore);
+            }}
+          >
+            {buttonText}
+          </button>
+        </div>
+      )}
 
       {/* for mobile and tablet */}
       {/* <div className="flex flex-wrap">
