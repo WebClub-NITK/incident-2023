@@ -1,8 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
-import {ChevronDownIcon} from '@heroicons/react/20/solid';
+import { motion } from "framer-motion";
+import faq from "../assets/faq.png";
 import { qnaSrc } from '../constants/faq'
-import { Player, Controls } from '@lottiefiles/react-lottie-player';
+// import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import '../index.css'
 const FAQ = () => {
 
@@ -16,21 +17,27 @@ const FAQ = () => {
   }
 
   return (
+    
     <section className='mt-12 relative'>
 
     
     <div className='flex flex-wrap justify-center'>
       <div className='w-[1240px] mx-auto grid md:grid-cols-2'>
         <div>
-          <h2 className='text-primary md:text-7xl sm:text-6xl ss:text-5xl text-3xl p-4 font-[ARMRegular] md:leading-[6rem]' >
+          {/* <h2 className='text-primary md:text-7xl sm:text-6xl ss:text-5xl text-3xl p-4 font-[ARMRegular] md:leading-[6rem]' >
           Frequently asked questions
-          </h2>
-      
+          </h2> */}
+          <img src={faq} className="sm:w-[70%] w-[80%] mx-auto"/>
       
       
         </div>
 
-
+        <motion.div
+      className="h-fit rounded-xl shadow-sm flex flex-row flex-wrap my-5"
+      initial={{ x: "50%", opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.75 }}
+    > 
       <div className='w-full flex flex-col md:mt-9 mt-2'>
 
         {qnaSrc.map((item,i) => (
@@ -55,14 +62,14 @@ const FAQ = () => {
            </button>
 
             </div>
-
-                <div>{selected== i ? (<div className='text-secondary py-1 '> {item.answer}</div>) : (<div className=' py-1 hidden  '> {item.answer}</div>)}
-
+                <div>{selected== i ? (<div className='text-secondary py-1 font-[poppins] text-xl'> {item.answer}</div>) : (<div className=' py-1 hidden  '> {item.answer}</div>)}
             </div>
             </div>
         ))}
 
       </div>
+      </motion.div>
+      
       </div>
     </div>
      {/* <Player
@@ -78,6 +85,7 @@ const FAQ = () => {
           >
       </Player>  */}
     </section>
+    
   )
 }
 
