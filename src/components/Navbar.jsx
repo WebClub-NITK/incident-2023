@@ -2,7 +2,6 @@ import { useState } from "react";
 import { close, menu } from "../assets";
 import incitext from "../assets/incident-text.png";
 import { navLinks } from "../constants";
-import unstop from "../assets/unstop-logo.png";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -19,9 +18,7 @@ const Navbar = () => {
       </a>
       
       {/* List of links */}
-      <ul className="list-none md:flex hidden justify-end items-center flex-1">
-      <button className="font-[RMMedium] button-gradient p-1 px-2 font-bold xl:text-[15px] text-[12px] cursor-pointer rounded-md mx-8 hover:text-secondary">
-        <img src={unstop} className="h-[20px] mx-auto"/>REGISTER NOW</button>
+      <ul className="list-none md:flex hidden justify-end items-center flex-1 mx-10">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -57,8 +54,6 @@ const Navbar = () => {
         min-w-[140px] rounded-xl sidebar`}
         >
           <ul className="list-none flex flex-col justify-end items-center flex-1">
-          <button className="font-[RMMedium] mb-4 text-primary p-2 font-bold text-[16px] cursor-pointer bg-secondary/[0.1] rounded-md">
-          <img src={unstop} className="h-[25px] mx-auto"/>REGISTER NOW</button>
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}

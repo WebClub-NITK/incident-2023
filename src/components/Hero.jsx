@@ -2,7 +2,7 @@ import React from 'react';
 import art from '../assets/art-element.webp';
 import {Player} from '@lottiefiles/react-lottie-player';
 import animationdata from '../assets/Main_page_bg_lottie.json';
-
+import unstop from "../assets/unstop-logo.png";
 
 
 const Hero = () => {
@@ -20,15 +20,16 @@ const Hero = () => {
 
       </div>
 
-    <div className='boxWidth h-screen py-16 absolute inset-x-1 xl:top-[50%] lg:top-[45%] md:top-[35%] sm:top-[480px] top-[380px]'>
+    <div className='boxWidth h-screen py-16 absolute inset-x-1 xl:top-[50%] lg:top-[42%] md:top-[35%] sm:top-[500px] top-[380px]'>
       
       <div className='text-white'>
         <div className='mx-auto flex flex-col justify-center'>
-          <h1 className='text-gradient font-[RMMedium] xl:text-8xl md:text-6xl sm:text-8xl text-5xl font-bold md:py-6 mx-auto '>Incident '23</h1>
-          <p className='xl:text-7xl md:text-5xl sm:text-7xl text-4xl mt-2 font-[ELand] mx-auto'>A tale of Bards & Knights</p>
-          <img className='w-[320px] mx-auto mt-[-50px]' src={art}/>
-          <h1 className='text-primary font-[poppins] xl:text-3xl sm:text-3xl text-xl font-bold mx-auto mt-[-60px]'>16 March to 19 March</h1>
-          
+          <h1 className='text-gradient font-[RMMedium] xl:text-8xl lg:text-6xl md:text-6xl sm:text-8xl text-5xl font-bold md:py-6 mx-auto '>Incident '23</h1>
+          <p className='xl:text-7xl lg:text-5xl md:text-5xl sm:text-7xl text-4xl mt-2 font-[ELand] mx-auto'>A tale of Bards & Knights</p>
+          <img className='w-[320px] mx-auto my-[-60px]' src={art}/>
+          <h1 className='text-primary font-[poppins] xl:text-3xl lg:text-2xl sm:text-3xl text-xl font-bold mx-auto'>16 March to 19 March</h1>
+          <button className="text-dimMaroon flex mx-auto justify-center items-center my-6 xl:w-[350px] lg:w-[230px] w-[300px] font-[RMMedium] button-gradient p-2 px-2 font-bold xl:text-2xl lg:text-sm text-xl cursor-pointer rounded-md hover:text-white">
+        <img src={unstop} className="xl:h-[35px] lg:h-[20px] h-[35px] px-2"/>REGISTER NOW</button>
         </div>
         
       </div>
