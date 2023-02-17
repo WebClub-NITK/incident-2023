@@ -1,15 +1,14 @@
 import { React, useEffect } from "react";
 import { GiCrossedSabres } from "react-icons/gi";
 import styles from "../../style";
-import { logo } from "../../assets";
 import { motion, AnimatePresence } from "framer-motion";
-const Modal = ({ visible, details, title, date, poc, onClose }) => {
+const Modal = ({ visible, details, title, date, image, poc, onClose }) => {
   const handleOnClose = (e) => {
     if (e.target.id === "backdrop-div") onClose();
   };
   return (
     <AnimatePresence>
-      { visible && 
+      {visible && (
         <motion.div
           className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center font-poppins z-10"
           id="backdrop-div"
@@ -46,7 +45,7 @@ const Modal = ({ visible, details, title, date, poc, onClose }) => {
                   <p className="text-primary text-2xl font-semibold mb-5">
                     {date}
                   </p>
-                  <img src={`${logo}`} alt="" className="overflow-clip" />
+                  <img src={image} alt="" className="overflow-clip" />
                   <p className="text-primary text-xl text-right font-semibold mt-5">
                     {poc}
                   </p>
@@ -65,7 +64,7 @@ const Modal = ({ visible, details, title, date, poc, onClose }) => {
             </div>
           </div>
         </motion.div>
-      }
+      )}
     </AnimatePresence>
   );
 };
