@@ -28,8 +28,8 @@ const Hero = () => {
           <p className='xl:text-7xl lg:text-5xl md:text-5xl sm:text-7xl text-4xl mt-2 font-[ELand] mx-auto'>A tale of Bards & Knights</p>
           <img className='w-[320px] mx-auto my-[-60px]' src={art}/>
           <h1 className='text-primary font-[poppins] xl:text-3xl lg:text-2xl sm:text-3xl text-xl font-bold mx-auto'>16 March to 19 March</h1>
-          <button className="text-dimMaroon flex mx-auto justify-center items-center my-6 xl:w-[350px] lg:w-[230px] w-[300px] font-[RMMedium] button-gradient p-2 px-2 font-bold xl:text-2xl lg:text-sm text-xl cursor-pointer rounded-md hover:text-white">
-        <img src={unstop} className="xl:h-[35px] lg:h-[20px] h-[35px] px-2"/>REGISTER NOW</button>
+          <button className="text-dimMaroon flex mx-auto justify-center items-center my-6 xl:w-[350px] md:w-[230px] sm:w-[300px] w-[240px] font-[RMMedium] button-gradient p-2 px-2 font-bold xl:text-2xl md:text-base sm:text-xl text-sm cursor-pointer rounded-md hover:text-white">
+        <img src={unstop} className="xl:h-[35px]  md:h-[25px] sm:h-[30px] h-[25px] px-2"/>REGISTER NOW</button>
         </div>
         
       </div>
