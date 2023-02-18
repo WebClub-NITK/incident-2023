@@ -1,7 +1,7 @@
 import React from 'react';
 import art from '../assets/art-element.webp';
 import {Player} from '@lottiefiles/react-lottie-player';
-import animationdata from '../assets/Main_page_bg_lottie.json';
+import animationdata from '../assets/bg_lottie.json';
 import unstop from "../assets/unstop-logo.png";
 
 
@@ -11,7 +11,6 @@ const Hero = () => {
     <div>
       <div className='w-full'>
       <Player
-        speed={5}
         autoplay
         loop
         src={animationdata}
