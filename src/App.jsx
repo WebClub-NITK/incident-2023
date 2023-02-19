@@ -15,11 +15,9 @@ import About from "./components/About";
 const App = () => {
   return (
     <div className="bg-background w-full overflow-hidden">
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
           <Navbar />
-        </div>
-      </div>
+
+      
 
       {/* <div className={`bg-background ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
