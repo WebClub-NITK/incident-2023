@@ -80,7 +80,7 @@ const Competitions = () => {
       </div>
       {/* For coins */}
       <div className="hidden md:block md:transition-all md:duration-100 md:flex flex-wrap md:flex-row md:space-x-9 md:justify-center md:items-center flex items-center justify-center">
-        <div className="w-auto text-white font-poppins py-2 px-4 border-b-4 border-[#d4a152] flex flex-row justify-evenly p-1 space-x-1">
+        <div className="w-auto text-primary font-poppins py-2 px-4 border-b-4 border-[#d4a152] flex flex-row justify-evenly p-1 space-x-1">
           {[
             "All Categories",
             "Biz",
@@ -125,8 +125,8 @@ const Competitions = () => {
           </button>
         </div>
         {isOpen && (
-          <div className="{`absolute z-20 mt-3 text-center origin-top-right rounded-md shadow-lg overflow-y-auto shadow-10 shadow-black">
-            <div className="bg-secondary font-poppins rounded-md shadow-xs shadow-2 shadow-inner shadow-[#1A2328]">
+          <div className="{`absolute z-20 mt-3 text-center origin-top-right rounded-md shadow-lg overflow-y-auto shadow-10 shadow-black ">
+            <div className="bg-secondary font-poppins rounded-md shadow-xs shadow-2 shadow-inner shadow-[#1A2328] ">
               <div className="py-1">
                 {[
                   "All Categories",
@@ -155,7 +155,7 @@ const Competitions = () => {
         )}
       </div>
       {/* for desktop */}
-      <div className="hidden md:flex md:flex-wrap md:flex-row  md:justify-center">
+      <div className="hidden md:flex md:flex-wrap md:flex-row  md:justify-center ">
         {filterCompetitions.map(
           (competitions, index) =>
             (showMore || (!showMore && index < 9)) && (
