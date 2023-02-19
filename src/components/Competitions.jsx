@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import Filter from "./CompUtils/Filter";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import CompetitionCard from "./CompUtils/CompetitionCard";
 // import { Button } from "@headlessui/react";
@@ -11,7 +10,7 @@ import {
   fashion,
   lit,
   music,
-  
+
   sports,
 } from "../assets/index";
 // import Paginator from "./CompUtils/Paginator";
@@ -74,8 +73,8 @@ const Competitions = () => {
   // const currentPosts = competitions.slice(firstPostIndex, lastPostIndex)
 
   return (
-    <section id="competition">
-        <div className="basis-full text-start font-[ARMRegular] text-4xl md:text-6xl my-3 p-3 text-primary font-semibold">
+    <section id="competitions" className="">
+        <div className="basis-full text-start font-[ARMRegular] text-gradient text-4xl md:text-6xl mt-2 mb-10 p-3 text-primary font-semibold md:mt-20">
           Competitions
         </div>
       {/* For coins */}
@@ -88,7 +87,7 @@ const Competitions = () => {
             "Fashion",
             "Lit",
             "Music",
-            
+
             "Sports",
           ].map((item, index) => (
             <button key={index} className="max-w-[144px]">
@@ -135,7 +134,7 @@ const Competitions = () => {
                   "Fashion",
                   "Lit",
                   "Music",
-                  
+
                   "Sports",
                 ].map((item, index) => (
                   <a
@@ -238,7 +237,7 @@ const Competitions = () => {
               className="w-full rounded-lg overflow-hidden flex-initial justify-center"
               id={competitions.id}
             >
-              
+
               <CompetitionCard
                 key={competitions.id}
                 index={index}
@@ -250,7 +249,7 @@ const Competitions = () => {
               />
 
             </div>
-             
+
           </div>
         ))}
       </div> */}

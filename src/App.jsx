@@ -9,19 +9,19 @@ import {
   Sponsors,
   Footer,
   FAQ,
+  Flames,
+  About,
 } from "./components";
-import About from "./components/About";
 
 const App = () => {
   return (
     <div className="bg-background w-full overflow-hidden">
-          <Navbar />
-
-      
+      <Flames />
+      <Navbar />
 
       {/* <div className={`bg-background ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <Hero />
+        <Hero />
         </div>
       </div> */}
       <div className={`bg-background ${styles.flexStart}`}>
@@ -33,7 +33,7 @@ const App = () => {
           <About />
           {/* <Events /> */}
           <Competitions />
-          <FAQ/>
+          <FAQ />
           {/* <Sponsors /> */}
         </div>
       </div>

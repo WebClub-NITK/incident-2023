@@ -5,13 +5,14 @@ import sword from "../lotties/fire.json";
 const About = () => {
   return (
     <motion.div
-      className="h-fit rounded-xl shadow-sm flex flex-row flex-wrap my-5"
+      className="h-fit rounded-xl shadow-sm flex flex-row flex-wrap mt-5 mb-2 mt-10"
       initial={{ x: "-50%", opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.75 }}
+      id="about"
     >
       <div className="basis-full md:basis-1/2">
-        <div className="text-start font-[ARMRegular] text-6xl m-3 p-4 text-primary font-semibold">
+        <div className="text-start font-[ARMRegular] text-4xl md:text-6xl m-3 p-4 text-primary font-semibold text-gradient">
           About
         </div>
         <div className="text-wrap font-poppins text-xl text-primary mx-3 p-4">
