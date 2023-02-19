@@ -18,7 +18,7 @@ export const qnaSrc = [
     {
       id: "4",
       question: "How to reach NITK?",
-      answer: "The NITK campus is located approximately 20 km from Mangalore, Karnataka. It is located right on NH66 so you can hop onto express buses from Mangalore or Udupi and get down at the bus-stop right in front of the NITK main gate.By Rail, attendees can come till the Surathkal Railway Station which is just 3 km away from campus.The Mangalore International Airport is about 27 km away from campus so participants can fly over too!"
+      answer: "The NITK campus is located approximately 20 km from Mangalore, Karnataka. It is located right on NH66 so you can hop onto express buses from Mangalore or Udupi and get down at the bus-stop right in front of the NITK main gate.By Rail, attendees can come till the Surathkal Railway Station which is just 3 km away from the campus.The Mangalore International Airport is about 27 km away from campus so participants can fly over too!"
     },
     // {
     //   id: "5",
