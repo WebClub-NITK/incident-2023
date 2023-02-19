@@ -3,6 +3,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+}
 @font-face {
     font-family: "Eland";
     src: local("EnchantedLand"), url("./fonts/EnchantedLand.otf") format("opentype");
@@ -217,4 +230,17 @@
     transition-timing-function: ease-out;
     transition-delay: 0s;
     transition-property: max-height;
+}
+
+.dropdown-container {
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    overflow: hidden;
+    transition: bottom 0.3s ease-out;
+}
+
+.dropdown-container.open {
+    bottom: auto;
+    height: auto;
 }
