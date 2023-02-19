@@ -20,7 +20,7 @@ const Modal = ({ visible, details, title, date, image, poc, onClose }) => {
           transition={{ duration: 0.5 }}
           onClick={handleOnClose}
         >
-          <div className="bg-gradient-to-br from-slate-900 to-black rounded max-w-[85%] max-h-[90%] rounded-3xl md:max-w-[70%] shadow-md shadow-secondary overflow-y-auto no-scrollbar">
+          <div className="bg-gradient-to-br from-slate-900 to-black rounded max-w-[85%] max-h-[80%] rounded-3xl md:max-w-[70%] shadow-md shadow-secondary overflow-y-auto no-scrollbar">
             <div className="flex flex-row md-2 border-b-2 border-black">
               <div className="basis-1/12">{/*Padding*/}</div>
               <div className="basis-10/12">
