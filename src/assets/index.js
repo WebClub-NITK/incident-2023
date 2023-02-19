@@ -25,6 +25,13 @@ import manager from './cards/biz/Best_Manager.jpg'
 import marketing from './cards/biz/Marketing.jpg'
 import operation from './cards/biz/Operations.jpg'
 
+import alum from './cards/lit/alum.jpg'
+import debate from './cards/lit/debate.jpg'
+import lit1 from './cards/lit/lit.jpg'
+import major from './cards/lit/major.jpg'
+import open from './cards/lit/open.jpg'
+
+
 import haute from './cards/fashion/haute_couture.jpg'
 
 import pulse from './cards/music/pulse.jpg'
@@ -72,5 +79,10 @@ export {
   stunt,
   world,
   spike,
-  slam
+  slam,
+  alum,
+  debate,
+  lit1,
+  major,
+  open
 };
