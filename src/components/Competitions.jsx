@@ -75,7 +75,7 @@ const Competitions = () => {
 
   return (
     <section id="competitions">
-      <h1 className="flex-1 font-poppins font-semibold text-[45px] text-primary leading-[80px] justify-center">
+      <h1 className="flex-1 font-poppins font-semibold text-[45px] text-primary leading-[80px] justify-center ">
         Competitions
       </h1>
       {/* For coins */}
