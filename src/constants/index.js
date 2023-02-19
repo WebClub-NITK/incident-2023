@@ -54,7 +54,7 @@ export const socialMedia = [
 
 export const aboutMe = {
   name: "Incident 2023",
-  tagLineOne: "Contact: 6721462523",
-  tagLineTwo: "Email: <EmailHere>",
+  tagLineOne: "Contact: +91 8884147838",
+  tagLineTwo: "Email: incident@nitk.edu.in",
   intro: "South India's largest cultural fest?"
 }
