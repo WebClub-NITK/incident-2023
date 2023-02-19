@@ -74,10 +74,10 @@ const Competitions = () => {
   // const currentPosts = competitions.slice(firstPostIndex, lastPostIndex)
 
   return (
-    <section id="competitions">
-      <div className="text-start font-[ARMRegular] text-5xl md:text-6xl m-3 p-4 text-primary font-semibold">
-        Competitions
-      </div>
+    <section id="competition">
+        <div className="basis-full text-start font-[ARMRegular] text-4xl md:text-6xl my-3 p-3 text-primary font-semibold">
+          Competitions
+        </div>
       {/* For coins */}
       <div className="hidden md:block md:transition-all md:duration-100 md:flex flex-wrap md:flex-row md:space-x-9 md:justify-center md:items-center flex items-center justify-center">
         <div className="w-auto text-primary font-poppins py-2 px-4 border-b-4 border-[#d4a152] flex flex-row justify-evenly p-1 space-x-1">
@@ -141,7 +141,7 @@ const Competitions = () => {
                   <a
                     key={index}
                     className="block px-4 py-2 text-sm leading-5 text-[#1A2328] hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900 my-1 "
-                    onClick={() => { 
+                    onClick={() => {
                       handleCompetitionFilter(item);
                       toggleDropdown();
                     }}
@@ -179,7 +179,6 @@ const Competitions = () => {
         )}
       </div>
 
-
       {filterCompetitions.length > 9 && (
         <div className="md:flex md:flex-wrap md:justify-center hidden">
           <button
@@ -193,7 +192,7 @@ const Competitions = () => {
           </button>
         </div>
       )}
-        <div className="flex flex-wrap justify-center md:hidden">
+      <div className="flex flex-wrap justify-center md:hidden">
         {filterCompetitions.map(
           (competitions, index) =>
             (showMore || (!showMore && index < 3)) && (
@@ -216,7 +215,6 @@ const Competitions = () => {
             )
         )}
       </div>
-
 
       {filterCompetitions.length > 3 && (
         <div className="flex justify-center">
