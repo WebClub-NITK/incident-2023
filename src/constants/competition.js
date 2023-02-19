@@ -24,6 +24,12 @@ import {hog } from "../assets";
 import {stunt } from "../assets";
 import {world } from "../assets";
 
+import { alum } from "../assets";
+import { debate } from "../assets";
+import { lit1 } from "../assets";
+import { major } from "../assets";
+import { open } from "../assets";
+
 import {spike } from "../assets";
 import {slam } from "../assets";
 
@@ -153,55 +159,55 @@ export const compDetails = [
   },
 
 
-  {
-      id: "competition_14",
-      title: "Fine Arts",
-      details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo, veritatis velit nobis minima doloremque nesciunt pariatur earum autem tempora, consequatur voluptatem delectus accusantium tenetur! Doloribus accusamus enim eveniet consectetur, alias hic quis natus voluptatem, nostrum amet nam deserunt veniam! Repellendus inventore eligendi aliquid eveniet libero eum repellat praesentium ducimus.",
-      date: "Date",
-      category: "Special",
-      image: fine,
-      // poc: "POC"
-  },
+//   {
+//       id: "competition_14",
+//       title: "Fine Arts",
+//       details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo, veritatis velit nobis minima doloremque nesciunt pariatur earum autem tempora, consequatur voluptatem delectus accusantium tenetur! Doloribus accusamus enim eveniet consectetur, alias hic quis natus voluptatem, nostrum amet nam deserunt veniam! Repellendus inventore eligendi aliquid eveniet libero eum repellat praesentium ducimus.",
+//       date: "Date",
+//       category: "Special",
+//       image: fine,
+//       // poc: "POC"
+//   },
 
-  {
-    id: "competition_15",
-    title: "Gaming",
-    details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo, veritatis velit nobis minima doloremque nesciunt pariatur earum autem tempora, consequatur voluptatem delectus accusantium tenetur! Doloribus accusamus enim eveniet consectetur, alias hic quis natus voluptatem, nostrum amet nam deserunt veniam! Repellendus inventore eligendi aliquid eveniet libero eum repellat praesentium ducimus.",
-    date: "Date",
-    category: "Special",
-    image: gaming,
-    // poc: "POC"
-},
+//   {
+//     id: "competition_15",
+//     title: "Gaming",
+//     details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo, veritatis velit nobis minima doloremque nesciunt pariatur earum autem tempora, consequatur voluptatem delectus accusantium tenetur! Doloribus accusamus enim eveniet consectetur, alias hic quis natus voluptatem, nostrum amet nam deserunt veniam! Repellendus inventore eligendi aliquid eveniet libero eum repellat praesentium ducimus.",
+//     date: "Date",
+//     category: "Special",
+//     image: gaming,
+//     // poc: "POC"
+// },
 
-  {
-    id: "competition_16",
-    title: "Hogathon",
-    details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo, veritatis velit nobis minima doloremque nesciunt pariatur earum autem tempora, consequatur voluptatem delectus accusantium tenetur! Doloribus accusamus enim eveniet consectetur, alias hic quis natus voluptatem, nostrum amet nam deserunt veniam! Repellendus inventore eligendi aliquid eveniet libero eum repellat praesentium ducimus.",
-    date: "Date",
-    category: "Special",
-    image: hog,
-    // poc: "POC"
-},
+//   {
+//     id: "competition_16",
+//     title: "Hogathon",
+//     details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo, veritatis velit nobis minima doloremque nesciunt pariatur earum autem tempora, consequatur voluptatem delectus accusantium tenetur! Doloribus accusamus enim eveniet consectetur, alias hic quis natus voluptatem, nostrum amet nam deserunt veniam! Repellendus inventore eligendi aliquid eveniet libero eum repellat praesentium ducimus.",
+//     date: "Date",
+//     category: "Special",
+//     image: hog,
+//     // poc: "POC"
+// },
 
-  {
-    id: "competition_17",
-    title: "Stunt Show",
-    details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo, veritatis velit nobis minima doloremque nesciunt pariatur earum autem tempora, consequatur voluptatem delectus accusantium tenetur! Doloribus accusamus enim eveniet consectetur, alias hic quis natus voluptatem, nostrum amet nam deserunt veniam! Repellendus inventore eligendi aliquid eveniet libero eum repellat praesentium ducimus.",
-    date: "Date",
-    category: "Special",
-    image: stunt,
-    // poc: "POC"
-},
+//   {
+//     id: "competition_17",
+//     title: "Stunt Show",
+//     details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo, veritatis velit nobis minima doloremque nesciunt pariatur earum autem tempora, consequatur voluptatem delectus accusantium tenetur! Doloribus accusamus enim eveniet consectetur, alias hic quis natus voluptatem, nostrum amet nam deserunt veniam! Repellendus inventore eligendi aliquid eveniet libero eum repellat praesentium ducimus.",
+//     date: "Date",
+//     category: "Special",
+//     image: stunt,
+//     // poc: "POC"
+// },
 
-  {
-    id: "competition_18",
-    title: "World Fest",
-    details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo, veritatis velit nobis minima doloremque nesciunt pariatur earum autem tempora, consequatur voluptatem delectus accusantium tenetur! Doloribus accusamus enim eveniet consectetur, alias hic quis natus voluptatem, nostrum amet nam deserunt veniam! Repellendus inventore eligendi aliquid eveniet libero eum repellat praesentium ducimus.",
-    date: "Date",
-    category: "Special",
-    image: world,
-    // poc: "POC"
-},
+//   {
+//     id: "competition_18",
+//     title: "World Fest",
+//     details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo, veritatis velit nobis minima doloremque nesciunt pariatur earum autem tempora, consequatur voluptatem delectus accusantium tenetur! Doloribus accusamus enim eveniet consectetur, alias hic quis natus voluptatem, nostrum amet nam deserunt veniam! Repellendus inventore eligendi aliquid eveniet libero eum repellat praesentium ducimus.",
+//     date: "Date",
+//     category: "Special",
+//     image: world,
+//     // poc: "POC"
+// },
 
 
 
@@ -237,7 +243,7 @@ export const compDetails = [
     details: "A quiz that will put your wits and knowledge about everything under the sun to the test. Hosted by one of India's most esteemed quizmasters, Major Chandrakant Nair, this quiz will definitely satiate your tiny gray cells.",
     date: "Date",
     category: "Lit",
-    image: operation,
+    image: major,
     // poc: "POC"
 },
 
@@ -248,7 +254,7 @@ export const compDetails = [
     details: "Facts, Acts and Artefacts is the quiz for all you history buffs, bookworms and entertainment connoisseurs out there. Sharpen your brains and charge with your pens to the Tale of Bards and Knights.",
     date: "Date",
     category: "Lit",
-    image: operation,
+    image: alum,
     // poc: "POC"
 },
 
@@ -259,7 +265,7 @@ export const compDetails = [
     details: "The Asian Parliamentary Debate is a popular format of Parliamentary Debate which involves two teams of three members each, representing the Government and Opposition sides, who argue for and against a motion respectively. Each speaker is given a set amount of time to make their arguments and points. The format emphasizes teamwork, critical thinking, and the ability to think on one's feet.",
     date: "Date",
     category: "Lit",
-    image: operation,
+    image: debate,
     // poc: "POC"
 },
 
@@ -270,7 +276,7 @@ export const compDetails = [
     details: "A scintillating evening to showcase your talent or unleash your passion to perform. Any kind of piece ranging from music to stand-up is accepted in the given slot of 5 min.",
     date: "Date",
     category: "Lit",
-    image: operation,
+    image: open,
     // poc: "POC"
 },
 
@@ -281,7 +287,7 @@ export const compDetails = [
     details: "An online event comprising a series of short, medium and long format writing competitions based on various themes. Registration for the events is completely free. ",
     date: "Date",
     category: "Lit",
-    image: operation,
+    image: lit1,
     // poc: "POC"
 },
 ];

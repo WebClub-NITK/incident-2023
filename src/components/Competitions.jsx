@@ -11,7 +11,7 @@ import {
   fashion,
   lit,
   music,
-  special,
+  
   sports,
 } from "../assets/index";
 // import Paginator from "./CompUtils/Paginator";
@@ -23,7 +23,7 @@ const Competitions = () => {
   const [showMore, setShowMore] = useState(false);
 
   const buttonText = showMore ? "Show Less" : "Show More";
-  const coins = [logo, biz, dance, fashion, lit, music, special, sports];
+  const coins = [logo, biz, dance, fashion, lit, music,  sports];
   // const [currentPage, setCurrentPage] = useState(1)
   // const [postsPerPage, setPostsPerPage] = useState(2)
 
@@ -88,7 +88,7 @@ const Competitions = () => {
             "Fashion",
             "Lit",
             "Music",
-            "Special",
+            
             "Sports",
           ].map((item, index) => (
             <button key={index} className="max-w-[144px]">
@@ -135,7 +135,7 @@ const Competitions = () => {
                   "Fashion",
                   "Lit",
                   "Music",
-                  "Special",
+                  
                   "Sports",
                 ].map((item, index) => (
                   <a
