@@ -2,6 +2,7 @@ import { React, useEffect } from "react";
 import { GiCrossedSabres } from "react-icons/gi";
 import styles from "../../style";
 import { motion, AnimatePresence } from "framer-motion";
+
 const Modal = ({ visible, details, title, date, image, poc, onClose }) => {
   const handleOnClose = (e) => {
     if (e.target.id === "backdrop-div") onClose();
@@ -57,10 +58,10 @@ const Modal = ({ visible, details, title, date, image, poc, onClose }) => {
               </div>
             </div>
             <div className="flex justify-center items-center my-2 ">
-              <button className={`${styles.modal_button}`}>Register</button>
-              <button className={`${styles.modal_button}`} onClick={onClose}>
+              <button className={`text-[#1a2328] flex mx-auto justify-center items-center my-6 xl:w-[350px] md:w-[230px] sm:w-[300px] w-[240px] font-[RMMedium] p-2 px-2 font-bold xl:text-2xl md:text-base sm:text-xl text-sm cursor-pointer rounded-md hover:text-white button-gradient`}>Register</button>
+              {/* <button className={`${styles.modal_button}`} onClick={onClose}>
                 Close
-              </button>
+              </button> */}
             </div>
           </div>
         </motion.div>
