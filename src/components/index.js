@@ -9,13 +9,15 @@ import Sponsors from "./Sponsors";
 import Footer from "./Footer";
 import FAQ from "./FAQ";
 import Flames from "./Background_flames";
+import About from "./About";
 export {
-    Navbar,
-    Hero,
-    Events,
-    Competitions,
-    Sponsors,
-    Footer,
-    FAQ,
-    Flames,
+  Navbar,
+  Hero,
+  Events,
+  Competitions,
+  Sponsors,
+  Footer,
+  FAQ,
+  Flames,
+  About,
 };

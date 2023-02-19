@@ -10,8 +10,8 @@ import {
   Footer,
   FAQ,
   Flames,
+  About,
 } from "./components";
-import About from "./components/About";
 
 const App = () => {
   return (
@@ -37,7 +37,7 @@ const App = () => {
         </div>
       </div>
       <Footer />
-      <Flames/>
+      <Flames />
     </div>
   );
 };
