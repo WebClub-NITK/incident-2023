@@ -1,78 +1,92 @@
-import React from 'react';
-import { useState } from 'react';
+import React from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import faq from "../assets/faq.png";
-import { qnaSrc } from '../constants/faq'
+import { qnaSrc } from "../constants/faq";
 // import { Player, Controls } from '@lottiefiles/react-lottie-player';
-import '../index.css'
+import "../index.css";
 const FAQ = () => {
-
   const [selected, setSelected] = useState(null);
 
-  const toggle = (j) =>{
-    if(selected==j){
-      return setSelected(null)
+  const toggle = (j) => {
+    if (selected == j) {
+      return setSelected(null);
     }
-    setSelected(j)
-  }
+    setSelected(j);
+  };
 
   return (
-    
-    <section className='mt-12 relative'>
+    <section className="mt-12 relative" id="faq">
+      <div className="flex flex-wrap justify-center">
+        <div className="w-[1240px] mx-auto grid md:grid-cols-2">
+          <img src={faq} className="w-[70%] md:w-[60%] mx-auto mt-4" />
+          <motion.div
+            className="h-fit rounded-xl shadow-sm flex flex-row flex-wrap my-5"
+            initial={{ x: "50%", opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.75 }}
+          >
+            <div className="w-full flex flex-col md:mt-9 mt-2">
+              {qnaSrc.map((item, i) => (
+                <div className="m-1 p-1 px-2 rounded-md w-full">
+                  <div>
+                    <button
+                      className="font-[ARMBook] flex w-full justify-between py-3 mb-1 text-left border-t-2 font-bold leading-6 xl:leading-8 tracking-wider text-primary"
+                      type="button"
+                      onClick={() => toggle(i)}
+                    >
+                      <span className="md:text-xl sm:text-xl text-md">
+                        {item.question}
+                      </span>
 
-    
-    <div className='flex flex-wrap justify-center'>
-      <div className='w-[1240px] mx-auto grid md:grid-cols-2'>
-        <div>
-          {/* <h2 className='text-primary md:text-7xl sm:text-6xl ss:text-5xl text-3xl p-4 font-[ARMRegular] md:leading-[6rem]' >
-          Frequently asked questions
-          </h2> */}
-          <img src={faq} className="sm:w-[70%] w-[80%] mx-auto"/>
-      
-      
+                      <span>
+                        {selected != i ? (
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            className="w-6 h-6"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                        ) : (
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            className="w-6 h-6"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                        )}
+                      </span>
+                    </button>
+                  </div>
+                  <div>
+                    {selected == i ? (
+                      <div className="text-secondary py-1 font-[poppins] sm:text-xl text-md">
+                        {" "}
+                        {item.answer}
+                      </div>
+                    ) : (
+                      <div className=" py-1 hidden  "> {item.answer}</div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </motion.div>
         </div>
-
-        <motion.div
-      className="h-fit rounded-xl shadow-sm flex flex-row flex-wrap my-5"
-      initial={{ x: "50%", opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.75 }}
-    > 
-      <div className='w-full flex flex-col md:mt-9 mt-2'>
-
-        {qnaSrc.map((item,i) => (
-          <div className='m-1 p-1 px-2 rounded-md w-full'>
-            <div> 
-            <button className='font-[ARMBook] flex w-full justify-between py-3 mb-1 text-left border-t-2 font-bold leading-6 xl:leading-8 tracking-wider text-primary'type = "button" onClick={() => toggle(i)}>
-             <span className='md:text-xl sm:text-xl text-md'>{item.question}</span>
-
-             <span>{selected!= i?  (
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                      <path fillRule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clipRule="evenodd" />
-                  </svg>
-                )
-                : 
-                (
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                  <path fillRule="evenodd" d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z" clipRule="evenodd" />
-                </svg>
-                )}
-            </span>
-           
-           </button>
-
-            </div>
-                <div>{selected== i ? (<div className='text-secondary py-1 font-[poppins] sm:text-xl text-md'> {item.answer}</div>) : (<div className=' py-1 hidden  '> {item.answer}</div>)}
-            </div>
-            </div>
-        ))}
-
       </div>
-      </motion.div>
-      
-      </div>
-    </div>
-     {/* <Player
+      {/* <Player
           autoplay
           loop
           // src="https://assets9.lottiefiles.com/packages/lf20_zptgbuvm.json"
@@ -81,13 +95,11 @@ const FAQ = () => {
           style={{ height: '370px', width: '370px' , margin: '0px 70px'}}
           mode="scroll"
           className='md:absolute md:bottom-0 w-[45%] 2xl:w-1/3 hidden md:block md:mb-0 '
-          
+
           >
       </Player>  */}
     </section>
-    
-  )
-}
+  );
+};
 
-export default FAQ
-
+export default FAQ;
