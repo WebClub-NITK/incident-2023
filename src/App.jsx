@@ -16,11 +16,12 @@ import {
 const App = () => {
   return (
     <div className="bg-background w-full overflow-hidden">
+      <Flames />
       <Navbar />
 
       {/* <div className={`bg-background ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <Hero />
+        <Hero />
         </div>
       </div> */}
       <div className={`bg-background ${styles.flexStart}`}>
@@ -37,7 +38,6 @@ const App = () => {
         </div>
       </div>
       <Footer />
-      <Flames />
     </div>
   );
 };
