@@ -11,7 +11,7 @@ const Modal = ({ visible, details, title, date, image, poc, onClose }) => {
     <AnimatePresence>
       {visible && (
         <motion.div
-          className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center font-poppins z-10"
+          className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center font-poppins z-20"
           id="backdrop-div"
           key="backdrop-div"
           initial={{ opacity: 0 }}
@@ -41,28 +41,34 @@ const Modal = ({ visible, details, title, date, image, poc, onClose }) => {
             {/* Main Content */}
             <div className="flex h-fit items-top justify-center flex-wrap shrink-0 grow-0">
               {/* Image Div */}
-              <div className="basis-full my-5 m-5 border-2 border-transparent rounded-3xl md:basis-4/12 flex flex-wrap items-center">
-                <div className="h-full">
-                  <p className="text-primary text-2xl font-semibold mb-5">
-                    {date}
-                  </p>
-                  <img src={image} alt="" className="overflow-clip" />
-                  <p className="text-primary text-xl text-right font-semibold mt-5">
+              <div className="basis-full my-5 m-5 border-2 border-transparent rounded-3xl md:basis-4/12 flex flex-wrap justify-center items-center">
+                <img src={image} alt="" className="overflow-clip" />
+                {/* <p className="text-primary text-xl text-right font-semibold mt-5">
                     {poc}
-                  </p>
-                </div>
+                  </p>   
+                  NO DETAILS GIVEN AS OF NOW */}
               </div>
               {/* Text Div */}
               <div className="basis-full m-5 text-primary text-left text-lg md:basis-6/12 px-2">
-                <div className="flex h-full items-center">{details}</div>
+                <p className="text-primary text-2xl font-semibold mb-5">
+                  {date}
+                </p>
+                <div className="flex items-top my-5">{details}</div>
+                <div className="flex justify-center my-8">
+                <button
+                  className={`text-[#1a2328] flex justify-center items-center w-auto font-[RMMedium] px-5 py-2 font-bold xl:text-2xl md:text-base sm:text-xl text-sm cursor-pointer rounded-md hover:text-white button-gradient`}
+                >
+                  Register
+                </button>
+                </div>
               </div>
             </div>
-            <div className="flex justify-center items-center my-2 ">
-              <button className={`text-[#1a2328] flex mx-auto justify-center items-center my-6 xl:w-[350px] md:w-[230px] sm:w-[300px] w-[240px] font-[RMMedium] p-2 px-2 font-bold xl:text-2xl md:text-base sm:text-xl text-sm cursor-pointer rounded-md hover:text-white button-gradient`}>Register</button>
-              {/* <button className={`${styles.modal_button}`} onClick={onClose}>
+            {/* <div className="flex justify-center items-center">
+              
+              <button className={`${styles.modal_button}`} onClick={onClose}>
                 Close
-              </button> */}
-            </div>
+              </button>
+            </div> */}
           </div>
         </motion.div>
       )}
