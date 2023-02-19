@@ -43,7 +43,7 @@ const FAQ = () => {
         {qnaSrc.map((item,i) => (
           <div className='m-1 p-1 px-2 rounded-md w-full'>
             <div> 
-            <button className='font-[Cinzel] flex w-full justify-between py-3 mb-1 text-left border-t-2 font-bold leading-6 xl:leading-8 tracking-wider text-primary'type = "button" onClick={() => toggle(i)}>
+            <button className='font-[ARMBook] flex w-full justify-between py-3 mb-1 text-left border-t-2 font-bold leading-6 xl:leading-8 tracking-wider text-primary'type = "button" onClick={() => toggle(i)}>
              <span className='w-3/4 md:text-xl sm:text-xl text-md'>{item.question}</span>
 
              <span>{selected!= i?  (
