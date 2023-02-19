@@ -7,8 +7,8 @@ import Events from "./Events";
 import Competitions from "./Competitions";
 import Sponsors from "./Sponsors";
 import Footer from "./Footer";
-import FAQ from "./FAQ"
-
+import FAQ from "./FAQ";
+import Flames from "./Background_flames";
 export {
     Navbar,
     Hero,
@@ -16,5 +16,6 @@ export {
     Competitions,
     Sponsors,
     Footer,
-    FAQ
+    FAQ,
+    Flames,
 };

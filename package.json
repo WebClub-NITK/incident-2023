@@ -14,7 +14,8 @@
     "framer-motion": "^9.0.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-tsparticles": "^2.9.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

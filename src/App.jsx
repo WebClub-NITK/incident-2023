@@ -9,15 +9,14 @@ import {
   Sponsors,
   Footer,
   FAQ,
+  Flames,
 } from "./components";
 import About from "./components/About";
 
 const App = () => {
   return (
     <div className="bg-background w-full overflow-hidden">
-          <Navbar />
-
-      
+      <Navbar />
 
       {/* <div className={`bg-background ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
@@ -33,11 +32,12 @@ const App = () => {
           <About />
           {/* <Events /> */}
           <Competitions />
-          <FAQ/>
+          <FAQ />
           {/* <Sponsors /> */}
         </div>
       </div>
       <Footer />
+      <Flames/>
     </div>
   );
 };
