@@ -5,18 +5,23 @@ import unstop from "../assets/unstop-logo.png";
 import inciLogo from "../assets/incilogo.png"
 
 const Footer = () => (
-  <footer id="contactMe" className="bg-gray-900 sm:px-16 px-6">
+  <footer id="contactMe" className="bg-[#181823] sm:px-16 px-6">
     <div
       className={`${layout.sectionReverse} xl:max-w-[1280px] w-full mx-auto gap-y-4 `}
     >
       <div className={` ${layout.sectionInfo}`}>
-        <h2 className="text-xl font-bold text-gray-800 font-poppins dark:text-white hover:text-gray-700 dark:hover:text-gray-300 text-[30px]">
+        <h2 className="text-xl font-bold text-gray-800 font-[ARMRegular] dark:text-white hover:text-gray-700 dark:hover:text-gray-300 text-[30px]">
           {aboutMe.name}
         </h2>
         <p
-          className={`font-poppins font-normal dark:text-white hover:text-gray-700 dark:hover:text-gray-300 text-[20px] leading-[30.8px] max-w-[470px] mt-5`}
+          className={`font-[ARMRegular] font-normal dark:text-white hover:text-gray-700 dark:hover:text-gray-300 text-[20px] leading-[30.8px] max-w-[470px] mt-5`}
         >
-          {aboutMe.tagLine}
+          {aboutMe.tagLineOne}
+        </p>
+        <p
+          className={`font-[ARMRegular] font-normal dark:text-white hover:text-gray-700 dark:hover:text-gray-300 text-[20px] leading-[30.8px] max-w-[470px] mt-5`}
+        >
+          {aboutMe.tagLineTwo}
         </p>
         <div className="flex flex-row mt-4">
           {socialMedia.map((social, index) => (
@@ -41,7 +46,7 @@ const Footer = () => (
         <img
           src={inciLogo}
           alt="Incident Logo"
-          className="w-[200px] h-[200px] border-2 border-teal-200 relative z-[5] rounded-full"
+          className="w-[200px] h-[200px] relative z-[5] rounded-full"
         />
       </div>
     </div>
