@@ -1,3 +1,11 @@
+import {
+  AiFillGithub,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiFillMail,
+  AiOutlineTwitter,
+} from "react-icons/ai";
+
 export const navLinks = [
     {
       id:"about",
