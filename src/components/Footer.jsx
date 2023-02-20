@@ -14,7 +14,7 @@ const Footer = () => (
           {aboutMe.name}
         </h2>
         <a
-          href="tel:+918884147838"
+          href="tel:+919036973038"
           className={`font-[poppins] font-normal text-secondary md:hover:text-primary text-[18px] leading-[30.8px] max-w-[470px] mt-5`}
         >
           {aboutMe.tagLineOne}
