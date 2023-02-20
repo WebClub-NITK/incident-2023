@@ -5,7 +5,7 @@ import unstop from "../assets/unstop-logo.png";
 import inciLogo from "../assets/incilogo.png";
 
 const Footer = () => (
-  <footer id="contactUs" className="bg-[#212c33] sm:px-16 px-6">
+  <footer id="contactUs" className="bg-[#212c33] sm:px-16 px-6 ">
     <div
       className={`${layout.sectionReverse} xl:max-w-[1280px] w-full mx-auto gap-y-4 `}
     >
@@ -15,13 +15,13 @@ const Footer = () => (
         </h2>
         <a
           href="tel:+918884147838"
-          className={`font-[poppins] font-normal text-secondary hover:text-gradient text-[18px] leading-[30.8px] max-w-[470px] mt-5`}
+          className={`font-[poppins] font-normal text-secondary md:hover:text-primary text-[18px] leading-[30.8px] max-w-[470px] mt-5`}
         >
           {aboutMe.tagLineOne}
         </a>
         <a
           href="mailto:incident@nitk.edu.in"
-          className={`font-[poppins] font-normal text-secondary hover:text-gradient text-[18px] leading-[30.8px] max-w-[470px] mt-5`}
+          className={`font-[poppins] font-normal text-secondary md:hover:text-primary text-[18px] leading-[30.8px] max-w-[470px] mt-5`}
         >
           {aboutMe.tagLineTwo}
         </a>
