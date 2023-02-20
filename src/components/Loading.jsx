@@ -3,7 +3,7 @@ import inciload from "../assets/inci-loading.gif";
 
 function Loading() {
   return (
-    <div className='w-full h-screen'>Loading
+    <div className='w-full h-screen'>
         <img className='relative m-auto top-[40%] md:w-[6%] w-[20%]' src={inciload}/>
     </div>
   )
