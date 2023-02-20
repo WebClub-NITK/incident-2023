@@ -12,8 +12,23 @@ import {
   Flames,
   About,
 } from "./components";
+import Loading from "./components/Loading";
 
 const App = () => {
+  const [isLoading,setIsLoading] = React.useState(true);
+
+  React.useEffect(()=>{
+    setTimeout(()=>{setIsLoading(false)},1600);
+  },[])
+
+  if(isLoading){
+    return (
+      <div className="bg-background w-full overflow-hidden">
+        <Flames/>
+        <Loading/>
+      </div>
+    ) 
+  }else{
   return (
     <div className="bg-background w-full overflow-hidden">
       <Flames />
@@ -39,7 +54,7 @@ const App = () => {
       </div>
       <Footer />
     </div>
-  );
+  )};
 };
 
 export default App;
