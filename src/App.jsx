@@ -8,28 +8,34 @@ import {
   Competitions,
   Sponsors,
   Footer,
+  FAQ,
 } from "./components";
 import Icare from "./components/Icare";
+import About from "./components/About";
+
 const App = () => {
   return (
     <div className="bg-background w-full overflow-hidden">
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
           <Navbar />
-        </div>
-      </div>
 
-      <div className={`bg-background ${styles.flexStart}`}>
+      
+
+      {/* <div className={`bg-background ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Hero />
         </div>
+      </div> */}
+      <div className={`bg-background ${styles.flexStart}`}>
+        <Hero />
       </div>
 
       <div className={`bg-background ${styles.flexCenter} ${styles.paddingX} `}>
         <div className={`${styles.boxWidth}`}>
-          <Events />
+          <About />
+          {/* <Events /> */}
           <Competitions />
-          <Sponsors />
+          <FAQ/>
+          {/* <Sponsors /> */}
         </div>
       </div>
       <div className={`bg-background ${styles.flexStart}`}>

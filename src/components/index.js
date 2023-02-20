@@ -8,6 +8,8 @@ import Competitions from "./Competitions";
 import Sponsors from "./Sponsors";
 import Footer from "./Footer";
 import Icare from "./Icare";
+import FAQ from "./FAQ"
+
 export {
     Navbar,
     Hero,
@@ -16,4 +18,5 @@ export {
     Sponsors,
     Icare,
     Footer,
+    FAQ
 };
