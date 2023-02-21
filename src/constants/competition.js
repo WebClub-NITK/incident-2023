@@ -41,7 +41,7 @@ export const compDetails = [
     date: "Date",
     category: "Dance",
     image: tandav,
-    // poc: "POC" 
+    // poc: "POC"
   },
   {
     id: "competition_2",
@@ -223,17 +223,17 @@ export const compDetails = [
       // poc: "POC"
   },
 
-  {
-      id: "competition_20",
-      title: "Spike It!",
-      details: "Spike-It is the annual volleyball tournament of NITK and is also held across the 3 days of Incident. An arena with 6 passionate players on each side, both seperated across the net battling for the glory is a sight to behold.",
-      date: "Date",
-      category: "Sports",
-      image: spike,
-      // poc: "POC"
-  },
-  
-  
+  // {
+  //     id: "competition_20",
+  //     title: "Spike It!",
+  //     details: "Spike-It is the annual volleyball tournament of NITK and is also held across the 3 days of Incident. An arena with 6 passionate players on each side, both seperated across the net battling for the glory is a sight to behold.",
+  //     date: "Date",
+  //     category: "Sports",
+  //     image: spike,
+  //     // poc: "POC"
+  // },
+
+
 
 
 
