@@ -13,9 +13,9 @@ const About = () => {
     >
       <div className="basis-full md:basis-1/2">
         <div className="text-start font-[ARMRegular] text-4xl md:text-6xl m-3 p-4 text-primary font-semibold text-gradient">
-          About
+          About Us
         </div>
-        <div className="text-wrap font-poppins text-xl text-primary mx-3 p-4">
+        <div className="text-wrap font-poppins text-xl text-primary mx-3 p-4 text-justify">
           <p>
             What started as a small fest with a meagre budget in the 80s now
             stands as one of the best college festivals in India. Incident is a
