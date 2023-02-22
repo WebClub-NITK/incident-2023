@@ -146,29 +146,32 @@ const Competitions = () => {
         )}
       </div>
       {/* for desktop */}
-      <div className={`hidden md:flex md:flex-wrap md:flex-row md:justify-center ${(filterCompetitions.length > 3)?"min-h-[60vh]":"min-h-[30vh]"}`}>
-        {filterCompetitions.map(
-          (competitions, index) =>
-            (showMore || (!showMore && index < 9)) && (
-              <div>
-                <div
-                  className="w-full rounded-lg overflow-hidden flex-initial justify-center"
-                  id={competitions.id}
-                >
-                  <CompetitionCard
-                    key={competitions.id}
-                    index={index}
-                    title={competitions.title}
-                    details={competitions.details}
-                    date={competitions.date}
-                    poc={competitions.poc}
-                    image={competitions.image}
-                    reg_link={competitions.reg_link}
-                  />
-                </div>
-              </div>
-            )
-        )}
+      <div
+        className={`hidden md:flex md:flex-wrap md:flex-row md:justify-center ${
+          filterCompetitions.length > 3 ? "min-h-[60vh]" : "min-h-[30vh]"
+        }`}
+      >
+        {filterCompetitions.map((competitions, index) => (
+          <div>
+            <div
+              className={`w-full rounded-lg overflow-hidden flex-initial justify-center ${
+                showMore || (!showMore && index < 9) ? "visible" : "hidden"
+              }`}
+              id={competitions.id}
+            >
+              <CompetitionCard
+                key={competitions.id}
+                index={index}
+                title={competitions.title}
+                details={competitions.details}
+                date={competitions.date}
+                poc={competitions.poc}
+                image={competitions.image}
+                reg_link={competitions.reg_link}
+              />
+            </div>
+          </div>
+        ))}
       </div>
 
       {filterCompetitions.length > 9 && (
@@ -184,29 +187,32 @@ const Competitions = () => {
           </button>
         </div>
       )}
-      <div className={`flex flex-wrap justify-center md:hidden ${(filterCompetitions.length < 2)?"min-h-[30vh]":"min-h-[60vh]"}`}>
-        {filterCompetitions.map(
-          (competitions, index) =>
-            (showMore || (!showMore && index < 3)) && (
-              <div>
-                <div
-                  className="w-full rounded-lg overflow-hidden flex-initial justify-center"
-                  id={competitions.id}
-                >
-                  <CompetitionCard
-                    key={competitions.id}
-                    index={index}
-                    title={competitions.title}
-                    details={competitions.details}
-                    date={competitions.date}
-                    poc={competitions.poc}
-                    image={competitions.image}
-                    reg_link={competitions.reg_link}
-                  />
-                </div>
-              </div>
-            )
-        )}
+      <div
+        className={`flex flex-wrap justify-center md:hidden ${
+          filterCompetitions.length < 2 ? "min-h-[30vh]" : "min-h-[60vh]"
+        }`}
+      >
+        {filterCompetitions.map((competitions, index) => (
+          <div>
+            <div
+              className={`w-full rounded-lg overflow-hidden flex-initial justify-center ${
+                showMore || (!showMore && index < 3) ? "visible" : "hidden"
+              }`}
+              id={competitions.id}
+            >
+              <CompetitionCard
+                key={competitions.id}
+                index={index}
+                title={competitions.title}
+                details={competitions.details}
+                date={competitions.date}
+                poc={competitions.poc}
+                image={competitions.image}
+                reg_link={competitions.reg_link}
+              />
+            </div>
+          </div>
+        ))}
       </div>
 
       {filterCompetitions.length > 3 && (
