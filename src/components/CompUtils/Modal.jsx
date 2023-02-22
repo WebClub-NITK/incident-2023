@@ -3,7 +3,16 @@ import { GiCrossedSabres } from "react-icons/gi";
 import styles from "../../style";
 import { motion, AnimatePresence } from "framer-motion";
 
-const Modal = ({ visible, details, title, date, image, poc, onClose }) => {
+const Modal = ({
+  visible,
+  details,
+  title,
+  date,
+  image,
+  poc,
+  reg_link,
+  onClose,
+}) => {
   const handleOnClose = (e) => {
     if (e.target.id === "backdrop-div") onClose();
   };
@@ -51,15 +60,29 @@ const Modal = ({ visible, details, title, date, image, poc, onClose }) => {
               {/* Text Div */}
               <div className="basis-full m-5 text-primary text-left text-lg md:basis-6/12 px-2">
                 <p className="text-primary text-2xl font-semibold mb-5">
-                  {date}
+                  Date: {date}
                 </p>
                 <div className="flex items-top my-5">{details}</div>
                 <div className="flex justify-center my-8">
-                <button
-                  className={`text-[#1a2328] flex justify-center items-center w-auto font-[RMMedium] px-5 py-2 font-bold xl:text-2xl md:text-base sm:text-xl text-sm cursor-pointer rounded-md hover:text-white button-gradient`}
-                >
-                  Register
-                </button>
+                  {(reg_link != "" && (
+                    <a
+                      href={reg_link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button
+                        className={`text-[#1a2328] flex justify-center items-center w-auto font-[RMMedium] px-5 py-2 font-bold xl:text-2xl md:text-base sm:text-xl text-sm cursor-pointer rounded-md hover:text-white button-gradient`}
+                      >
+                        Register
+                      </button>
+                    </a>
+                  )) || (
+                    <button
+                      className={`text-[#1a2328] flex justify-center items-center w-auto font-[RMMedium] px-5 py-2 font-bold xl:text-2xl md:text-base sm:text-xl text-sm cursor-pointer rounded-md hover:text-white button-gradient disabled`}
+                    >
+                      Link will be added soon
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
