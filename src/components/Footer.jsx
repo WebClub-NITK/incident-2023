@@ -40,6 +40,7 @@ const Footer = () => (
         </div>
         <div className="grid grid-cols-2">
           {/* styles is a prop */}
+          <a href="https://unstop.com/o/IDMuHwt?lb=WCijcz3">
           <button className="text-dimMaroon flex mx-auto justify-center items-center my-6 md:w-[250px] sm:w-[300px] w-[240px] font-[RMMedium] button-gradient p-2 px-2 font-bold md:text-base sm:text-xl text-sm cursor-pointer rounded-md hover:text-white">
             <img
               src={unstop}
@@ -47,6 +48,7 @@ const Footer = () => (
             />
             REGISTER NOW
           </button>
+          </a>
         </div>
       </div>
       <div className="md:ml-auto mt-10 md:mt-0">
