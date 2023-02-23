@@ -16,7 +16,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="mt-12 relative" id="faq">
+    <section className="mt-12 relative pt-6" id="faq">
       <div className="flex flex-wrap justify-center">
         <div className="w-[1240px] mx-auto grid md:grid-cols-2">
           <img src={faq} className="w-[70%] md:w-[60%] mx-auto mt-4" />

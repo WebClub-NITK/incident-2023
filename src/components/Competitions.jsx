@@ -73,7 +73,7 @@ const Competitions = () => {
   // const currentPosts = competitions.slice(firstPostIndex, lastPostIndex)
 
   return (
-    <section id="competitions" className="">
+    <section id="competitions" className="pt-10">
         <div className="basis-full text-start font-[ARMRegular] text-gradient text-4xl md:text-6xl mt-2 mb-10 p-3 text-primary font-semibold md:mt-20">
           Competitions
         </div>

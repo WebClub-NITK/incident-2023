@@ -5,7 +5,7 @@ import sword from "../lotties/fire.json";
 const About = () => {
   return (
     <motion.div
-      className="h-fit rounded-xl shadow-sm flex flex-row flex-wrap mt-5 mb-2 mt-10"
+      className="h-fit rounded-xl shadow-sm flex flex-row flex-wrap mt-10 pt-10"
       initial={{ x: "-50%", opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.75 }}
