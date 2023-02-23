@@ -46,7 +46,6 @@ import world from './cards/specials/world_fest.jpg'
 import paper from "./paper-card.png";
 import spike from './cards/sports/spike.jpg'
 import slam from './cards/sports/slam_dunk.jpg'
-import paper from "./paper-card.png";
 export {
   menu,
   close,
@@ -85,8 +84,6 @@ export {
   lit1,
   major,
   open,
-    paper,
-    ,
-    paper,
-    
+  paper,
+
 };
