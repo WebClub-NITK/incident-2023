@@ -157,7 +157,7 @@ const FAQ = () => {
                         <Typography
                         sx={{fontFamily: 'Poppins',}}
                         >
-                            You can either register on Unstop (here) or get the passes in our campus for each Pro-Show (17th to 19th March).
+                            You can either register on Unstop <a href="https://unstop.com/festival/incident23-national-institute-of-technology-karnataka-nitk-surathkal-103359" target={"_blank"} className= "text-primary hover:text-white">here</a> or get the passes in our campus for each Pro-Show (17th to 19th March).
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -257,8 +257,8 @@ const FAQ = () => {
       fontSize: { xs: '1rem', sm: '1.5rem' },
     }}>
                         <Typography sx={{fontFamily: 'Poppins',}}>
-                        The NITK campus is located approximately 20 km from Mangalore, Karnataka.It is located right on NH66 so you can hop onto express buses from Mangalore or Udupi and get down at the bus-stop right in front of the NITK main gate.
-By Rail, attendees can come till the Surathkal Railway Station which is just 3 km away from the campus.The Mangalore International Airport is about 17 km away from campus so participants can fly over too!"
+                        The <a href="https://goo.gl/maps/Utk4bbZARK4md6ABA" target={"_blank"} className= "text-primary hover:text-white">NITK campus</a> is located approximately 20 km from Mangalore, Karnataka.It is located right on NH66 so you can hop onto express buses from Mangalore or Udupi and get down at the bus-stop right in front of the NITK main gate.
+By Rail, attendees can come till the Surathkal Railway Station which is just 3 km away from the campus.The Mangalore International Airport is about 17 km away from campus so participants can fly over too!
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
