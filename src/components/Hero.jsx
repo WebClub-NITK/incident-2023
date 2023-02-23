@@ -29,7 +29,7 @@ const Hero = () => {
             <h1 className="text-primary font-[poppins] xl:text-3xl lg:text-2xl sm:text-3xl text-xl font-bold mx-auto">
               16 March to 19 March
             </h1>
-            <a href="https://unstop.com/festival/incident23-national-institute-of-technology-karnataka-nitk-surathkal-103359">
+            <a href="https://unstop.com/festival/incident23-national-institute-of-technology-karnataka-nitk-surathkal-103359" target="_blank">
             <button className="text-dimMaroon flex mx-auto justify-center items-center my-6 xl:w-[350px] md:w-[230px] sm:w-[300px] w-[240px] font-[RMMedium] button-gradient p-2 px-2 font-bold xl:text-2xl md:text-base sm:text-xl text-sm cursor-pointer rounded-md hover:text-white">
               <img
                 src={unstop}
