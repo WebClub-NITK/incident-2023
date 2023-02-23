@@ -90,6 +90,7 @@ const FAQ = () => {
                     sx={{width: "100%",
                     fontFamily: 'ARMBook',
                     color: '#d4a152',
+                    fontWeight: 'bold',
                     fontSize:  {md: '20px',
                                 ss: '16px',
                                 sm: "18px" } ,}}>
@@ -140,6 +141,7 @@ const FAQ = () => {
                   <Typography 
                     sx={{width: "100%",
                     fontFamily: 'ARMBook',
+                    fontWeight: 'bold',
                     color: '#d4a152',
                     fontSize:  {md: '20px',
                     ss: '16px',
@@ -191,6 +193,7 @@ const FAQ = () => {
                   <Typography 
                     sx={{width: "100%",
                     fontFamily: 'ARMBook',
+                    fontWeight: 'bold',
                     color: '#d4a152',
                     fontSize:  {md: '20px',
                     ss: '16px',
@@ -242,6 +245,7 @@ const FAQ = () => {
                   <Typography 
                     sx={{width: "100%",
                     fontFamily: 'ARMBook',
+                    fontWeight: 'bold',
                     color: '#d4a152',
                     fontSize:  {md: '20px',
                     ss: '16px',
