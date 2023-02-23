@@ -13,6 +13,7 @@ import {
   About,
 } from "./components";
 import Loading from "./components/Loading";
+import { heart } from "./assets/index.js";
 
 const App = () => {
   const [isLoading,setIsLoading] = React.useState(true);
@@ -53,6 +54,9 @@ const App = () => {
         </div>
       </div>
       <Footer />
+      <div className="bg-background w-full text-secondary text-lg flex flex-nowrap p-2  justify-center gap-2 items-center">
+        Made with &#10084; by WEC-NITK
+      </div>
     </div>
   )};
 };
