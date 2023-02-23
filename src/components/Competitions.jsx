@@ -65,8 +65,8 @@ const Competitions = () => {
   // const currentPosts = competitions.slice(firstPostIndex, lastPostIndex)
 
   return (
-    <section id="competition">
-      <div className="basis-full text-start font-[ARMRegular] text-4xl md:text-6xl my-3 p-3 text-primary font-semibold">
+    <section id="competition" className="mt-24">
+      <div className="basis-full text-center font-[ARMRegular] text-4xl md:text-6xl my-3 p-3 text-primary text-gradient font-semibold sm:text-5xl md:text-left md:m-3 md:p-3">
         Competitions
       </div>
       {/* For coins */}
