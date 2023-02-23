@@ -187,9 +187,10 @@ export const compDetails = [
   //       id: "competition_14",
   //       title: "Fine Arts",
   //       details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo, veritatis velit nobis minima doloremque nesciunt pariatur earum autem tempora, consequatur voluptatem delectus accusantium tenetur! Doloribus accusamus enim eveniet consectetur, alias hic quis natus voluptatem, nostrum amet nam deserunt veniam! Repellendus inventore eligendi aliquid eveniet libero eum repellat praesentium ducimus.",
-  //       date: "TBD",
+  //       date: "19 March",
   //       category: "Special",
   //       image: fine,
+  //       reg_link: "https://unstop.com/o/B6kphOW?lb=WCijcz3"
   //       // poc: "POC"
   //   },
 
