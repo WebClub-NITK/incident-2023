@@ -43,7 +43,7 @@ import gaming from './cards/specials/gaming.jpg'
 import hog from './cards/specials/hogathon.jpg'
 import stunt from './cards/specials/stunt.jpg'
 import world from './cards/specials/world_fest.jpg'
-
+import paper from "./paper-card.png";
 import spike from './cards/sports/spike.jpg'
 import slam from './cards/sports/slam_dunk.jpg'
 import paper from "./paper-card.png";
@@ -85,6 +85,8 @@ export {
   lit1,
   major,
   open,
+    paper,
+    ,
     paper,
     
 };
