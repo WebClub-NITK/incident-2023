@@ -65,10 +65,10 @@ const Competitions = () => {
   // const currentPosts = competitions.slice(firstPostIndex, lastPostIndex)
 
   return (
-    <section id="competitions" className="pt-10">
-        <div className="basis-full text-start font-[ARMRegular] text-gradient text-4xl md:text-6xl mt-2 mb-10 p-3 text-primary font-semibold md:mt-20">
-          Competitions
-        </div>
+    <section id="competition" className="mt-16">
+      <div className="basis-full text-center font-[ARMRegular] text-4xl md:text-6xl my-3 p-3 text-primary text-gradient font-semibold sm:text-5xl md:text-left md:m-3 md:p-3">
+        Competitions
+      </div>
       {/* For coins */}
       <div className="hidden md:block md:transition-all md:duration-100 md:flex flex-wrap md:flex-row md:space-x-9 md:justify-center md:items-center flex items-center justify-center">
         <div className="w-auto text-primary font-poppins py-2 px-4 border-b-4 border-[#d4a152] flex flex-row justify-evenly p-1 space-x-1">
