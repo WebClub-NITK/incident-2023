@@ -34,7 +34,7 @@ const App = () => {
           {/* <Events /> */}
           <Competitions />
           <FAQ />
-          {/* <Sponsors /> */}
+          <Sponsors />
         </div>
       </div>
       <Footer />
