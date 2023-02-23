@@ -1,18 +1,10 @@
 import React, { useEffect, useState } from "react";
+// import Filter from "./CompUtils/Filter";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import CompetitionCard from "./CompUtils/CompetitionCard";
 // import { Button } from "@headlessui/react";
 import { compDetails } from "../constants/competition";
-import {
-  logo,
-  biz,
-  dance,
-  fashion,
-  lit,
-  music,
-
-  sports,
-} from "../assets/index";
+import { logo, biz, dance, fashion, lit, music, sports } from "../assets/index";
 // import Paginator from "./CompUtils/Paginator";
 
 const Competitions = () => {
@@ -22,7 +14,7 @@ const Competitions = () => {
   const [showMore, setShowMore] = useState(false);
 
   const buttonText = showMore ? "Show Less" : "Show More";
-  const coins = [logo, biz, dance, fashion, lit, music,  sports];
+  const coins = [logo, biz, dance, fashion, lit, music, sports];
   // const [currentPage, setCurrentPage] = useState(1)
   // const [postsPerPage, setPostsPerPage] = useState(2)
 
@@ -73,10 +65,10 @@ const Competitions = () => {
   // const currentPosts = competitions.slice(firstPostIndex, lastPostIndex)
 
   return (
-    <section id="competitions" className="">
-        <div className="basis-full text-start font-[ARMRegular] text-gradient text-4xl md:text-6xl mt-2 mb-10 p-3 text-primary font-semibold md:mt-20">
-          Competitions
-        </div>
+    <section id="competition">
+      <div className="basis-full text-start font-[ARMRegular] text-4xl md:text-6xl my-3 p-3 text-primary font-semibold">
+        Competitions
+      </div>
       {/* For coins */}
       <div className="hidden md:block md:transition-all md:duration-100 md:flex flex-wrap md:flex-row md:space-x-9 md:justify-center md:items-center flex items-center justify-center">
         <div className="w-auto text-primary font-poppins py-2 px-4 border-b-4 border-[#d4a152] flex flex-row justify-evenly p-1 space-x-1">
@@ -154,28 +146,32 @@ const Competitions = () => {
         )}
       </div>
       {/* for desktop */}
-      <div className="hidden md:flex md:flex-wrap md:flex-row  md:justify-center ">
-        {filterCompetitions.map(
-          (competitions, index) =>
-            (showMore || (!showMore && index < 9)) && (
-              <div>
-                <div
-                  className="w-full rounded-lg overflow-hidden flex-initial justify-center"
-                  id={competitions.id}
-                >
-                  <CompetitionCard
-                    key={competitions.id}
-                    index={index}
-                    title={competitions.title}
-                    details={competitions.details}
-                    date={competitions.date}
-                    poc={competitions.poc}
-                    image={competitions.image}
-                  />
-                </div>
-              </div>
-            )
-        )}
+      <div
+        className={`hidden md:flex md:flex-wrap md:flex-row md:justify-center ${
+          filterCompetitions.length > 3 ? "min-h-[60vh]" : "min-h-[30vh]"
+        }`}
+      >
+        {filterCompetitions.map((competitions, index) => (
+          <div>
+            <div
+              className={`w-full rounded-lg overflow-hidden flex-initial justify-center ${
+                showMore || (!showMore && index < 9) ? "visible" : "hidden"
+              }`}
+              id={competitions.id}
+            >
+              <CompetitionCard
+                key={competitions.id}
+                index={index}
+                title={competitions.title}
+                details={competitions.details}
+                date={competitions.date}
+                poc={competitions.poc}
+                image={competitions.image}
+                reg_link={competitions.reg_link}
+              />
+            </div>
+          </div>
+        ))}
       </div>
 
       {filterCompetitions.length > 9 && (
@@ -191,28 +187,32 @@ const Competitions = () => {
           </button>
         </div>
       )}
-      <div className="flex flex-wrap justify-center md:hidden">
-        {filterCompetitions.map(
-          (competitions, index) =>
-            (showMore || (!showMore && index < 3)) && (
-              <div>
-                <div
-                  className="w-full rounded-lg overflow-hidden flex-initial justify-center"
-                  id={competitions.id}
-                >
-                  <CompetitionCard
-                    key={competitions.id}
-                    index={index}
-                    title={competitions.title}
-                    details={competitions.details}
-                    date={competitions.date}
-                    poc={competitions.poc}
-                    image={competitions.image}
-                  />
-                </div>
-              </div>
-            )
-        )}
+      <div
+        className={`flex flex-wrap justify-center md:hidden ${
+          filterCompetitions.length < 2 ? "min-h-[30vh]" : "min-h-[60vh]"
+        }`}
+      >
+        {filterCompetitions.map((competitions, index) => (
+          <div>
+            <div
+              className={`w-full rounded-lg overflow-hidden flex-initial justify-center ${
+                showMore || (!showMore && index < 3) ? "visible" : "hidden"
+              }`}
+              id={competitions.id}
+            >
+              <CompetitionCard
+                key={competitions.id}
+                index={index}
+                title={competitions.title}
+                details={competitions.details}
+                date={competitions.date}
+                poc={competitions.poc}
+                image={competitions.image}
+                reg_link={competitions.reg_link}
+              />
+            </div>
+          </div>
+        ))}
       </div>
 
       {filterCompetitions.length > 3 && (
@@ -237,7 +237,7 @@ const Competitions = () => {
               className="w-full rounded-lg overflow-hidden flex-initial justify-center"
               id={competitions.id}
             >
-
+              
               <CompetitionCard
                 key={competitions.id}
                 index={index}
@@ -249,7 +249,7 @@ const Competitions = () => {
               />
 
             </div>
-
+             
           </div>
         ))}
       </div> */}
