@@ -31,7 +31,7 @@ const App = () => {
       <div className={`bg-background ${styles.flexCenter} ${styles.paddingX} `}>
         <div className={`${styles.boxWidth}`}>
           <About />
-          {/* <Events /> */}
+          <Events />
           <Competitions />
           <FAQ />
           {/* <Sponsors /> */}
