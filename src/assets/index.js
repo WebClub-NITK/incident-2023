@@ -46,6 +46,7 @@ import world from './cards/specials/world_fest.jpg'
 
 import spike from './cards/sports/spike.jpg'
 import slam from './cards/sports/slam_dunk.jpg'
+import heart from './heart.svg'
 
 export {
   menu,
@@ -84,5 +85,6 @@ export {
   debate,
   lit1,
   major,
-  open
+  open,
+  heart
 };
