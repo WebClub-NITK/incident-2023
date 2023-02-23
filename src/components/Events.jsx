@@ -5,6 +5,7 @@ import Slider from "react-slick"
 import { TfiArrowCircleRight, TfiArrowCircleLeft } from "react-icons/tfi"
 import "./Events.css"
 import {logo} from "../assets"
+import { motion } from "framer-motion";
 
 const Events = () => {
 
@@ -142,15 +143,19 @@ const Events = () => {
   return (
     <div className='flex justify-center items-center'>
       <div className="Events  text-center">
-        <div className='Heading  '>EVENTS</div>
-        <Slider {...settings} className='Slider w-[82vw] flex items-center' >
-          {slidedata.map((data) => (
-            <div className={data.index-1 === currentImage ? "slide activeSlide " : "slide"}>
-              <p>{data.heading}</p>
-              <img src={data.src} alt={data.src} className=' rounded-lg object-cover' onClick={() => { currentImageHandler(data.index-1) }} />
-            </div>
-          ))}
-        </Slider>
+        <motion.div
+              whileInView={{ y: [-20, 0], opacity: [0, 1] }}
+              transition={{ duration: 1 }}>
+          <div className='Heading font-[ARMRegular]'>EVENTS</div>
+          <Slider {...settings} className='Slider w-[82vw] flex items-center' >
+            {slidedata.map((data) => (
+              <div className={data.index-1 === currentImage ? "slide activeSlide hover:scale-[1.05] " : "slide hover:scale-[0.95]"}>
+                <p className='font-[ARMRegular]'>{data.heading}</p>
+                <img src={data.src} alt={data.src} className=' rounded-lg object-cover' onClick={() => { currentImageHandler(data.index-1) }} />
+              </div>
+            ))}
+          </Slider>
+        </motion.div>
       </div>
       {selected == true
         ? <EventDetails data={slidedata[selectedImage]} closeHandler={selectedHandler} className="transition-all ease-in-out duration-300" />
