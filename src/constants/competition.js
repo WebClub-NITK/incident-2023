@@ -1,5 +1,3 @@
-import { logo2b } from "../assets";
-
 import { tandav } from "../assets";
 import { promenade } from "../assets";
 import { nritya } from "../assets";
