@@ -24,7 +24,7 @@ import { hog } from "../assets";
 import { stunt } from "../assets";
 import { world } from "../assets";
 
-import { alum } from "../assets";
+import { themed_quiz } from "../assets";
 import { debate } from "../assets";
 import { lit1 } from "../assets";
 import { major } from "../assets";
@@ -95,7 +95,7 @@ export const compDetails = [
     title: "BisQuiz",
     details:
       "Got an innate insight into business? Apply your proficiency to navigate your way through this business trivia.",
-    date: "TBD",
+    date: "17 - 18 March",
     category: "Biz",
     image: bisquiz,
     reg_link: "",
@@ -107,7 +107,7 @@ export const compDetails = [
     title: "Colligo",
     details:
       "An activity enriched event that will introduce you to the intricacies of the HR industry and office culture.",
-    date: "TBD",
+    date: "17 - 18 March",
     category: "Biz",
     image: hr,
     reg_link: "",
@@ -119,7 +119,7 @@ export const compDetails = [
     title: "Marketing Maestro",
     details:
       "'Sell me this pen!' Well do you think you can? If your answer is a resounding yes, then this is your place to battle out your strategic and innovative brilliance.",
-    date: "TBD",
+    date: "17 - 18 March",
     category: "Biz",
     image: marketing,
     reg_link: "",
@@ -130,7 +130,7 @@ export const compDetails = [
     title: "Jack of all trades",
     details:
       "Confident about your managerial skill-set? If yes, this is the event for you to showcase your corporate and social leadership qualities.",
-    date: "TBD",
+    date: "17 - 18 March",
     category: "Biz",
     image: manager,
     reg_link: "https://unstop.com/o/sAKJl2o?lb=WCijcz3",
@@ -278,7 +278,7 @@ export const compDetails = [
       "Facts, Acts and Artefacts is the quiz for all you history buffs, bookworms and entertainment connoisseurs out there. Sharpen your brains and charge with your pens to the Tale of Bards and Knights.",
     date: "19 March",
     category: "Lit",
-    image: alum,
+    image: themed_quiz,
     reg_link: "https://unstop.com/o/B6kphOW?lb=WCijcz3",
     // poc: "POC"
   },
