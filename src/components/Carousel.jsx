@@ -27,19 +27,12 @@ React.useEffect(() => {
 
 return (
 <section id="carousel">
-        <div className='overflow-hidden relative'>
-          <div className='flex ease-in p-5' >
-            <div className='rounded-lg overflow-hidden slideshowSlider'>
-            {<img src={slides[current].src} className="object-contain flex justify-center" />}
+        <div className='flex overflow-hidden border-orange-300 border-solid relative'>
+          <div className=' ease-in text-center  justify-center  p-5 md:p-1' >
+            <div className='rounded-lg overflow-hidden slideshowSlider '>
+            {<img src={slides[current].src} className="object-contain" />}
             </div>
-            <div className='w-full h-full absolute top-0 left-0 z-0'>
-                <button onClick={prevSlide} className='p-4 text-primary absolute top-1/2 left-0 z-10 rounded-full'>
-            <ChevronLeft size={40}/>
-            </button>
-            <button onClick={nextSlide} className='p-4 text-primary   absolute top-1/2 right-0 z-10 rounded-full'>
-            <ChevronRight size={40}/>
-            </button>
-            </div>        
+             
           </div>
         </div>
         <div className="slideshowDots">
