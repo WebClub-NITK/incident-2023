@@ -1,5 +1,3 @@
-import { logo2b } from "../assets";
-
 import { tandav } from "../assets";
 import { promenade } from "../assets";
 import { nritya } from "../assets";
@@ -24,7 +22,7 @@ import { hog } from "../assets";
 import { stunt } from "../assets";
 import { world } from "../assets";
 
-import { alum } from "../assets";
+import { themed_quiz } from "../assets";
 import { debate } from "../assets";
 import { lit1 } from "../assets";
 import { major } from "../assets";
@@ -61,8 +59,8 @@ export const compDetails = [
     title: "Nritya",
     details:
       "Dance is a way of expressing the most intricate and soulful of thoughts. Carrying the legacy of Bharat, expressing the idea of India, Nritya is a classical eastern and contemporary solo dance competition. See our performers fly solo as they reach eagle-like heights in their pursuit of the Art.",
-    date: "TBD",
-    category: "19 March",
+    date: "19 March",
+    category: "Dance",
     image: nritya,
     reg_link: "",
     // poc: "POC"
@@ -95,7 +93,7 @@ export const compDetails = [
     title: "BisQuiz",
     details:
       "Got an innate insight into business? Apply your proficiency to navigate your way through this business trivia.",
-    date: "TBD",
+    date: "17 - 18 March",
     category: "Biz",
     image: bisquiz,
     reg_link: "",
@@ -107,7 +105,7 @@ export const compDetails = [
     title: "Colligo",
     details:
       "An activity enriched event that will introduce you to the intricacies of the HR industry and office culture.",
-    date: "TBD",
+    date: "17 - 18 March",
     category: "Biz",
     image: hr,
     reg_link: "",
@@ -119,7 +117,7 @@ export const compDetails = [
     title: "Marketing Maestro",
     details:
       "'Sell me this pen!' Well do you think you can? If your answer is a resounding yes, then this is your place to battle out your strategic and innovative brilliance.",
-    date: "TBD",
+    date: "17 - 18 March",
     category: "Biz",
     image: marketing,
     reg_link: "",
@@ -130,7 +128,7 @@ export const compDetails = [
     title: "Jack of all trades",
     details:
       "Confident about your managerial skill-set? If yes, this is the event for you to showcase your corporate and social leadership qualities.",
-    date: "TBD",
+    date: "17 - 18 March",
     category: "Biz",
     image: manager,
     reg_link: "https://unstop.com/o/sAKJl2o?lb=WCijcz3",
@@ -151,7 +149,7 @@ export const compDetails = [
     id: "competition_11",
     title: "Pulse",
     details:
-      "Does your heart beat to the rhythm of Rock Bands? Does it send a thrilling sense of excitement down your spine and give you goosebumps? If yes, then witness the spectacular Western Rock competition - Pulse, as bands lock horns and drum up a frenzy.",
+      "A rock battle of the bands competition. The stage is set, the amps are cranked up to eleven, and we wait for you to unleash your best original music and covers. Prepare yourself for an electrifying competition as some of the best student rock bands take the stage to compete in a Pulse - Rock Battle of Bands event!",
     date: "18 March",
     category: "Music",
     image: pulse,
@@ -163,7 +161,7 @@ export const compDetails = [
     id: "competition_12",
     title: "Raga Rhapsody",
     details:
-      "If serenading an audience with a melodious voice is your thing then Incident presents to you Raga Rhapsody, a solo-singing competition both Western and Indian Light Vocals.",
+      "A solo singing competition. Showcase the vocalist within you at Raaga Rhapsody - Solo Singing Competition! With your microphone and passion for music, take the stage and capture the hearts of the audience.",
     date: "17 - 18 March",
     category: "Music",
     image: raag,
@@ -175,7 +173,7 @@ export const compDetails = [
     id: "competition_13",
     title: "Bandish",
     details:
-      "Who says you can't have the best of two world's? Presenting to you - Bandish, the Hindustani or Carnatic Rock Band Showdown where your creativity runs wild blending Indian harmonies with mainstream Rock!!!",
+      "A fusion battle of the bands competition. Take away to a world of fusion music where modern Western instruments and traditional Indian music are flawlessly incorporated. Join us at Bandish - Fusion Battle of Bands and enthrall us with your spin on Hindustani or Carnatic Rock melodies!",
     date: "17 March",
     category: "Music",
     image: bandish,
@@ -278,7 +276,7 @@ export const compDetails = [
       "Facts, Acts and Artefacts is the quiz for all you history buffs, bookworms and entertainment connoisseurs out there. Sharpen your brains and charge with your pens to the Tale of Bards and Knights.",
     date: "19 March",
     category: "Lit",
-    image: alum,
+    image: themed_quiz,
     reg_link: "https://unstop.com/o/B6kphOW?lb=WCijcz3",
     // poc: "POC"
   },
