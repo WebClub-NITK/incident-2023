@@ -159,7 +159,7 @@ const FAQ = () => {
                         <Typography
                         sx={{fontFamily: 'Poppins',}}
                         >
-                            You can either register on Unstop <a href="https://unstop.com/festival/incident23-national-institute-of-technology-karnataka-nitk-surathkal-103359" target={"_blank"} className= "text-primary hover:text-white">here</a> or get the passes in our campus for each Pro-Show (17th to 19th March).
+                            You can get the passes in the NITK campus for each Pro-Show (17th to 19th March).
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
