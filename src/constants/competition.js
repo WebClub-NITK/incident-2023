@@ -61,8 +61,8 @@ export const compDetails = [
     title: "Nritya",
     details:
       "Dance is a way of expressing the most intricate and soulful of thoughts. Carrying the legacy of Bharat, expressing the idea of India, Nritya is a classical eastern and contemporary solo dance competition. See our performers fly solo as they reach eagle-like heights in their pursuit of the Art.",
-    date: "TBD",
-    category: "19 March",
+    date: "19 March",
+    category: "Dance",
     image: nritya,
     reg_link: "",
     // poc: "POC"
@@ -151,7 +151,7 @@ export const compDetails = [
     id: "competition_11",
     title: "Pulse",
     details:
-      "Does your heart beat to the rhythm of Rock Bands? Does it send a thrilling sense of excitement down your spine and give you goosebumps? If yes, then witness the spectacular Western Rock competition - Pulse, as bands lock horns and drum up a frenzy.",
+      "A rock battle of the bands competition. The stage is set, the amps are cranked up to eleven, and we wait for you to unleash your best original music and covers. Prepare yourself for an electrifying competition as some of the best student rock bands take the stage to compete in a Pulse - Rock Battle of Bands event!",
     date: "18 March",
     category: "Music",
     image: pulse,
@@ -163,7 +163,7 @@ export const compDetails = [
     id: "competition_12",
     title: "Raga Rhapsody",
     details:
-      "If serenading an audience with a melodious voice is your thing then Incident presents to you Raga Rhapsody, a solo-singing competition both Western and Indian Light Vocals.",
+      "A solo singing competition. Showcase the vocalist within you at Raaga Rhapsody - Solo Singing Competition! With your microphone and passion for music, take the stage and capture the hearts of the audience.",
     date: "17 - 18 March",
     category: "Music",
     image: raag,
@@ -175,7 +175,7 @@ export const compDetails = [
     id: "competition_13",
     title: "Bandish",
     details:
-      "Who says you can't have the best of two world's? Presenting to you - Bandish, the Hindustani or Carnatic Rock Band Showdown where your creativity runs wild blending Indian harmonies with mainstream Rock!!!",
+      "A fusion battle of the bands competition. Take away to a world of fusion music where modern Western instruments and traditional Indian music are flawlessly incorporated. Join us at Bandish - Fusion Battle of Bands and enthrall us with your spin on Hindustani or Carnatic Rock melodies!",
     date: "17 March",
     category: "Music",
     image: bandish,
