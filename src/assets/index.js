@@ -4,7 +4,6 @@
 import menu from "./menu.svg";
 import close from "./close.svg";
 import logo from "./incilogo.png";
-import logo2b from "./logo2b.png";
 import biz from "./coins/biz.png";
 import dance from "./coins/dance.png";
 import fashion from "./coins/fashion.png";
@@ -25,7 +24,7 @@ import manager from './cards/biz/Best_Manager.jpg'
 import marketing from './cards/biz/Marketing.jpg'
 import operation from './cards/biz/Operations.jpg'
 
-import alum from './cards/lit/alum.jpg'
+import themed_quiz from './cards/lit/themed_quiz.jpg'
 import debate from './cards/lit/debate.jpg'
 import lit1 from './cards/lit/lit.jpg'
 import major from './cards/lit/major.jpg'
@@ -52,7 +51,6 @@ export {
   menu,
   close,
   logo,
-  logo2b,
   biz,
   dance,
   fashion,
@@ -81,7 +79,7 @@ export {
   world,
   spike,
   slam,
-  alum,
+  themed_quiz,
   debate,
   lit1,
   major,
