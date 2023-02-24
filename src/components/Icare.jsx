@@ -1,39 +1,61 @@
-import React from 'react'
-import Carousel from './Carousel'
+import React,{useState} from 'react'
+import { motion } from "framer-motion";
+import ICareModal from './ICareModal';
+import {stunt} from '../assets/index';
 const Icare = () => {
+  const [showMore, setShowMore] = useState(false);
+  const buttonText = showMore ? "Show Less" : "Show More";
+
   return (
     <section id="icare">
-    <div className=" h-fit lg:rounded-xl shadow-sm flex flex-row flex-wrap my-5 py-3">
+    <motion.div className=" h-fit lg:rounded-xl shadow-sm flex flex-row justify-center flex-wrap my-5 py-3" 
+     initial={{ x: "-50%", opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.75 }}>
     {/* I-care Content */}
       <div className="sm:basis-full flex item-center justify-center text-center font-[ARMRegular] text-6xl m-3 p-4 text-primary font-semibold">
       I-CARE
       </div>
-      <div className="basis-full my-2 md:basis-1/2 font-poppins text-primary sm:text-1xl mx-3 p-4  my-2">
-        <p>
-        At Incident, a large-scale cultural fest is not only about fun, but also giving back to the community. i-CARE, the social wing of Incident, focuses on programmes such as social-awareness, health, rural-development, education, child-care and gender-equality. 
-        </p>
-        <br />
-        <p>
-        Through Beach Schooling, underprivileged students near NITK are tutored in the evenings.
-        </p>
-        <br />
-        <p>
-        Through this initiative, students have availed educational essentials such as school bags, stationery,
-        notebooks etc., and other medical essentials such as sanitisers and masks to keep them safe.
-        </p>
-        <br/>
-        <p>
-        Since 2019, i-Care has been quite active and numerous initiatives such as paper recycling, cloth collection drive, 
-        orphanage visits and multiple workshops have been carried out. We also plan to take up many more such noble initiatives in the future. 
-        </p>
-    {/* carousel section */}
-      </div>
-    <div className="basis-full md:basis-5/12 flex justify-center items-center">
-      <Carousel />
+<div className="flex flex-wrap justify-center item-center m-2">
+  <img src={stunt}></img>
+</div>
+{showMore && (
+ <div className="bg-gradient-to-br from-slate-900 to-black rounded max-w-[85%] max-h-[80%] rounded-3xl md:max-w-[70%] shadow-md shadow-secondary overflow-y-auto no-scrollbar">
+    <div
+
+      className="w-full rounded-lg overflow-hidden flex-initial justify-center"
+    >
+      
+       <ICareModal/>
+       <button
+            className="m-2 p-2 font-poppins bg-gradient-to-r from-[#9f793eff]
+              via-[#d4a152ff] to-[#dcb270ff] border-2 border-primary rounded-md back font-medium
+               text-black transition-all duration-150 hover:scale-105"
+              onClick={() => {
+                setShowMore(!showMore);
+              }}
+       >
+           {buttonText}
+          </button>
     </div>
   </div>
+)}
+{ showMore==false && (
+<div className="justify-content">
+          <button
+            className="m-2 p-2 font-poppins bg-gradient-to-r from-[#9f793eff]
+              via-[#d4a152ff] to-[#dcb270ff] border-2 border-primary rounded-md back font-medium
+               text-black transition-all duration-150 hover:scale-105"
+              onClick={() => {
+                setShowMore(!showMore);
+              }}
+       >
+           {buttonText}
+          </button>
+        </div>
+)}
+  </motion.div>
   </section>
   )
-}
-
+            }
 export default Icare

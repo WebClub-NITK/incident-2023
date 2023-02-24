@@ -33,10 +33,10 @@ return (
             {<img src={slides[current].src} className="object-contain flex justify-center" />}
             </div>
             <div className='w-full h-full absolute top-0 left-0 z-0'>
-                <button onClick={prevSlide} className='p-4 text-yellow-600 absolute top-1/2 left-0 z-10 rounded-full'>
+                <button onClick={prevSlide} className='p-4 text-primary absolute top-1/2 left-0 z-10 rounded-full'>
             <ChevronLeft size={40}/>
             </button>
-            <button onClick={nextSlide} className='p-4 text-yellow-600   absolute top-1/2 right-0 z-10 rounded-full'>
+            <button onClick={nextSlide} className='p-4 text-primary   absolute top-1/2 right-0 z-10 rounded-full'>
             <ChevronRight size={40}/>
             </button>
             </div>        
