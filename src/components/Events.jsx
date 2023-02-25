@@ -89,7 +89,7 @@ const Events = () => {
   const NextArrow = ({ onClick }) => {
     return (
 
-        <div className="arrow next " onClick={onClick}>
+        <div className="arrow next sm:flex hidden" onClick={onClick}>
           <TfiArrowCircleRight />
         </div>
     );
@@ -98,7 +98,7 @@ const Events = () => {
 
   const PrevArrow = ({ onClick }) => {
     return (
-      <div className="arrow prev" onClick={onClick}>
+      <div className="arrow prev sm:flex hidden" onClick={onClick}>
         <TfiArrowCircleLeft />
       </div>
     );
@@ -126,6 +126,9 @@ const Events = () => {
     setSelected(props)
   }
 
+
+
+
   const settings = {
     infinite: true,
     lazyLoad: true,
@@ -140,29 +143,58 @@ const Events = () => {
     beforeChange: (current, next) => setCurrentImage(next),
   };
 
-  return (
-    <div className='flex justify-center items-center'>
-      <div className="Events  text-center">
-        <motion.div
-              whileInView={{ y: [-20, 0], opacity: [0, 1] }}
-              transition={{ duration: 1 }}>
-          <div className='Heading font-[ARMRegular]'>EVENTS</div>
-          <Slider {...settings} className='Slider w-[82vw] flex items-center' >
-            {slidedata.map((data) => (
-              <div className={data.index-1 === currentImage ? "slide activeSlide hover:scale-[1.05] " : "slide hover:scale-[0.95]"}>
-                <p className='font-[ARMRegular]'>{data.heading}</p>
-                <img src={data.src} alt={data.src} className=' rounded-lg object-cover' onClick={() => { currentImageHandler(data.index-1) }} />
-              </div>
-            ))}
-          </Slider>
-        </motion.div>
+  function size() {
+    settings.slidesToShow=1
+  }
+  if(window.innerWidth>=760){
+    return (
+      <div className='flex justify-center items-center'>
+        <div className="Events  text-center">
+          <motion.div
+                whileInView={{ y: [-20, 0], opacity: [0, 1] }}
+                transition={{ duration: 1.5 }}>
+            <div className='Heading text-gradient font-[ARMRegular] leading-[2] md:text-[80px] text-[50px] font-bold float-left '>EVENTS</div>
+            <Slider {...settings} className={` Slider w-[82vw] flex items-center`}>
+              {slidedata.map((data) => (
+                <div className={data.index-1 === currentImage ? "slide activeSlide hover:scale-[1.05] "  : "slide hover:scale-[0.99]"}>
+                  <img src={data.src} alt={data.src} className=' rounded-full object-cover' onClick={() => { currentImageHandler(data.index-1) }} />
+                </div>
+              ))}
+            </Slider>
+          </motion.div>
+        </div>
+        {selected == true
+          ? <EventDetails data={slidedata[selectedImage]} closeHandler={selectedHandler} className="transition-all ease-in-out duration-300" />
+          : <div></div>
+        }
       </div>
-      {selected == true
-        ? <EventDetails data={slidedata[selectedImage]} closeHandler={selectedHandler} className="transition-all ease-in-out duration-300" />
-        : <div></div>
-      }
-    </div>
-  )
+    )
+  }
+  else{
+    settings.slidesToShow=1
+    return (
+      <div className='flex justify-center items-center'>
+        <div className="Events text-center">
+          <motion.div
+                whileInView={{ y: [-20, 0], opacity: [0, 1] }}
+                transition={{ duration: 1.5 }}>
+            <div className='Heading text-gradient font-[ARMRegular] leading-[2] md:text-[60px] text-[60px] font-bold'>EVENTS</div>
+            <Slider {...settings} className={` Slider w-[90vw] flex items-center`}>
+              {slidedata.map((data) => (
+                <div className={data.index-1 === currentImage ? "slide activeSlide hover:scale-[1.05] "  : "slide hover:scale-[0.99]"}>
+                  <img src={data.src} alt={data.src} className=' rounded-full object-cover' onClick={() => { currentImageHandler(data.index-1) }} />
+                </div>
+              ))}
+            </Slider>
+          </motion.div>
+        </div>
+        {selected == true
+          ? <EventDetails data={slidedata[selectedImage]} closeHandler={selectedHandler} className="transition-all ease-in-out duration-300" />
+          : <div></div>
+        }
+      </div>
+    )
+  }
 }
 
 export default Events
