@@ -40,17 +40,6 @@
 
 }
 
-.Heading{
-
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(94.75deg,#d19a08,#fedb7e 27.6%,#eac460 50%,#d19a08 66.15%,#d19a08);
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-size: 4vw;
-  font-weight: 700;
-  letter-spacing: .09em;
-
-}
 
 .arrow {
   cursor:pointer;
