@@ -40,7 +40,7 @@ export const compDetails = [
     date: "19 March",
     category: "Dance",
     image: tandav,
-    reg_link: "",
+    reg_link: "https://unstop.com/o/YJP7hK6?lb=WCijcz3",
     // poc: "POC"
   },
   {
@@ -62,7 +62,7 @@ export const compDetails = [
     date: "19 March",
     category: "Dance",
     image: nritya,
-    reg_link: "",
+    reg_link: "https://unstop.com/o/JAzgoQZ?lb=WCijcz3",
     // poc: "POC"
   },
   {
@@ -96,7 +96,7 @@ export const compDetails = [
     date: "17 - 18 March",
     category: "Biz",
     image: bisquiz,
-    reg_link: "",
+    reg_link: "https://unstop.com/o/VU4tzlC?lb=WCijcz3",
     // poc: "POC"
   },
 
@@ -108,7 +108,7 @@ export const compDetails = [
     date: "17 - 18 March",
     category: "Biz",
     image: hr,
-    reg_link: "",
+    reg_link: "https://unstop.com/o/9Qsb4Bo?lb=WCijcz3",
     // poc: "POC"
   },
 
@@ -120,7 +120,7 @@ export const compDetails = [
     date: "17 - 18 March",
     category: "Biz",
     image: marketing,
-    reg_link: "",
+    reg_link: "https://unstop.com/o/hUA9CD3?lb=WCijcz3",
     // poc: "POC"
   },
   {
@@ -313,7 +313,7 @@ export const compDetails = [
     date: "16 - 19 March",
     category: "Lit",
     image: lit1,
-    reg_link: "",
+    reg_link: "https://unstop.com/o/eolJdxM?lb=WCijcz3",
     // poc: "POC"
   },
 ];
