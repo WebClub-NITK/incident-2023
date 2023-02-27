@@ -159,7 +159,7 @@ const FAQ = () => {
                         <Typography
                         sx={{fontFamily: 'Poppins',}}
                         >
-                            You can get the passes in the NITK campus for each Pro-Show (17th to 19th March).
+                            You can get the passes in the <a href="https://goo.gl/maps/Utk4bbZARK4md6ABA" target={"_blank"} className= "text-primary hover:text-white">NITK campus</a> for each Pro-Show (17th to 19th March).
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
