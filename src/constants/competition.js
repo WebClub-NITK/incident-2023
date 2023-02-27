@@ -92,71 +92,70 @@ export const compDetails = [
 
   {
     id: "competition_6",
-    title: "Nukkad Natak",
-    details:
-      "A picture can say a thousand words. Then imagine just how many words and emotions can be conveyed through a live performance. Telling the story of life's crossroads on the crossroads. This is Inci's flagship street play competition, Nukkad Natak.",
-    date: "19 March",
-    category: "Dance",
-    image: nn,
-    reg_link: "https://unstop.com/o/8MzUxTE?lb=WCijcz3",
-    // poc: "POC"
-  },
-
-  {
-    id: "competition_7",
     title: "BisQuiz",
     details:
       "Got an innate insight into business? Apply your proficiency to navigate your way through this business trivia.",
     date: "17 - 18 March",
-    category: "Biz",
+    category: "Business",
     image: bisquiz,
     reg_link: "https://unstop.com/o/VU4tzlC?lb=WCijcz3",
     // poc: "POC"
   },
 
   {
-    id: "competition_8",
+    id: "competition_7",
     title: "Colligo",
     details:
       "An activity enriched event that will introduce you to the intricacies of the HR industry and office culture.",
     date: "17 - 18 March",
-    category: "Biz",
+    category: "Business",
     image: hr,
     reg_link: "https://unstop.com/o/9Qsb4Bo?lb=WCijcz3",
     // poc: "POC"
   },
 
   {
-    id: "competition_9",
+    id: "competition_8",
     title: "Marketing Maestro",
     details:
       "'Sell me this pen!' Well do you think you can? If your answer is a resounding yes, then this is your place to battle out your strategic and innovative brilliance.",
     date: "17 - 18 March",
-    category: "Biz",
+    category: "Business",
     image: marketing,
     reg_link: "https://unstop.com/o/hUA9CD3?lb=WCijcz3",
     // poc: "POC"
   },
   {
-    id: "competition_10",
+    id: "competition_9",
     title: "Jack of all trades",
     details:
       "Confident about your managerial skill-set? If yes, this is the event for you to showcase your corporate and social leadership qualities.",
     date: "17 - 18 March",
-    category: "Biz",
+    category: "Business",
     image: manager,
     reg_link: "https://unstop.com/o/sAKJl2o?lb=WCijcz3",
     // poc: "POC"
   },
   {
-    id: "competition_11",
+    id: "competition_10",
     title: "Haute Couture",
     details:
       "Come, see and get conquered by the creation of impeccable, custom-fitted high-end fashion design. Incident brings you a treat for your eyes where you will encounter never seen before flamboyant fashion at one of our flagship events, Haute Couture!",
     date: "19 March",
-    category: "Fashion",
+    category: "Fashion & Drama",
     image: haute,
     reg_link: "https://unstop.com/o/FCWcfS3?lb=WCijcz3",
+    // poc: "POC"
+  },
+  {
+    id: "competition_11",
+    title: "Nukkad Natak",
+    details:
+      "A picture can say a thousand words. Then imagine just how many words and emotions can be conveyed through a live performance. Telling the story of life's crossroads on the crossroads. This is Inci's flagship street play competition, Nukkad Natak.",
+    date: "19 March",
+    category: "Fashion & Drama",
+    image: nn,
+    reg_link: "https://unstop.com/o/8MzUxTE?lb=WCijcz3",
     // poc: "POC"
   },
   {
@@ -276,7 +275,7 @@ export const compDetails = [
     details:
       "A quiz that will put your wits and knowledge about everything under the sun to the test. Hosted by one of India's most esteemed quizmasters, Major Chandrakant Nair, this quiz will definitely satiate your tiny gray cells.",
     date: "18 March",
-    category: "Lit",
+    category: "Literary",
     image: major,
     reg_link: "https://unstop.com/o/98NtXah?lb=WCijcz3",
     // poc: "POC"
@@ -289,7 +288,7 @@ export const compDetails = [
     details:
       "Facts, Acts and Artefacts is the quiz for all you history buffs, bookworms and entertainment connoisseurs out there. Sharpen your brains and charge with your pens to the Tale of Bards and Knights.",
     date: "19 March",
-    category: "Lit",
+    category: "Literary",
     image: themed_quiz,
     reg_link: "https://unstop.com/o/B6kphOW?lb=WCijcz3",
     // poc: "POC"
@@ -301,7 +300,7 @@ export const compDetails = [
     details:
       "The Asian Parliamentary Debate is a popular format of Parliamentary Debate which involves two teams of three members each, representing the Government and Opposition sides, who argue for and against a motion respectively. Each speaker is given a set amount of time to make their arguments and points. The format emphasizes teamwork, critical thinking, and the ability to think on one's feet.",
     date: "17 - 18 March",
-    category: "Lit",
+    category: "Literary",
     image: debate,
     reg_link: "https://unstop.com/o/Deb5aSW?lb=WCijcz3",
     // poc: "POC"
@@ -313,7 +312,7 @@ export const compDetails = [
     details:
       "A scintillating evening to showcase your talent or unleash your passion to perform. Any kind of piece ranging from music to stand-up is accepted in the given slot of 5 min.",
     date: "19 March",
-    category: "Lit",
+    category: "Literary",
     image: open,
     reg_link: "https://unstop.com/o/RYIW70T?lb=WCijcz3",
     // poc: "POC"
@@ -325,7 +324,7 @@ export const compDetails = [
     details:
       "An online event comprising a series of short, medium and long format writing competitions based on various themes. Registration for the events is completely free. ",
     date: "16 - 19 March",
-    category: "Lit",
+    category: "Literary",
     image: lit1,
     reg_link: "https://unstop.com/o/eolJdxM?lb=WCijcz3",
     // poc: "POC"
