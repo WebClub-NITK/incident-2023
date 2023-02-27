@@ -17,6 +17,7 @@ import promenade from './cards/dance/promenade.jpg'
 import nritya from './cards/dance/nritya.jpg'
 import solo from './cards/dance/hhi_solo.jpg'
 import duet from './cards/dance/hhi_duet.jpg'
+import nn from './cards/dance/nn.jpg'
 
 import bisquiz from './cards/biz/Business_Quiz.jpg'
 import hr from './cards/biz/HR_Management.jpg'
@@ -84,5 +85,6 @@ export {
   lit1,
   major,
   open,
-  heart
+  heart,
+  nn
 };
