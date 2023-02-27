@@ -74,10 +74,10 @@ const Competitions = () => {
         <div className="w-auto text-primary font-poppins py-2 px-4 border-b-4 border-[#d4a152] flex flex-row justify-evenly p-1 space-x-1">
           {[
             "All Categories",
-            "Biz",
+            "Business",
             "Dance",
-            "Fashion",
-            "Lit",
+            "Fashion & Drama",
+            "Literary",
             "Music",
 
             "Sports",
@@ -121,10 +121,10 @@ const Competitions = () => {
               <div className="py-1">
                 {[
                   "All Categories",
-                  "Biz",
+                  "Business",
                   "Dance",
-                  "Fashion",
-                  "Lit",
+                  "Fashion & Drama",
+                  "Literary",
                   "Music",
 
                   "Sports",
