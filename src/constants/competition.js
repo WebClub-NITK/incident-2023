@@ -3,6 +3,8 @@ import { promenade } from "../assets";
 import { nritya } from "../assets";
 import { solo } from "../assets";
 import { duet } from "../assets";
+import { nn } from "../assets";
+
 
 import { bisquiz } from "../assets";
 import { hr } from "../assets";
@@ -40,7 +42,7 @@ export const compDetails = [
     date: "19 March",
     category: "Dance",
     image: tandav,
-    reg_link: "",
+    reg_link: "https://unstop.com/o/YJP7hK6?lb=WCijcz3",
     // poc: "POC"
   },
   {
@@ -62,7 +64,7 @@ export const compDetails = [
     date: "19 March",
     category: "Dance",
     image: nritya,
-    reg_link: "",
+    reg_link: "https://unstop.com/o/JAzgoQZ?lb=WCijcz3",
     // poc: "POC"
   },
   {
@@ -94,9 +96,9 @@ export const compDetails = [
     details:
       "Got an innate insight into business? Apply your proficiency to navigate your way through this business trivia.",
     date: "17 - 18 March",
-    category: "Biz",
+    category: "Business",
     image: bisquiz,
-    reg_link: "",
+    reg_link: "https://unstop.com/o/VU4tzlC?lb=WCijcz3",
     // poc: "POC"
   },
 
@@ -106,9 +108,9 @@ export const compDetails = [
     details:
       "An activity enriched event that will introduce you to the intricacies of the HR industry and office culture.",
     date: "17 - 18 March",
-    category: "Biz",
+    category: "Business",
     image: hr,
-    reg_link: "",
+    reg_link: "https://unstop.com/o/9Qsb4Bo?lb=WCijcz3",
     // poc: "POC"
   },
 
@@ -118,9 +120,9 @@ export const compDetails = [
     details:
       "'Sell me this pen!' Well do you think you can? If your answer is a resounding yes, then this is your place to battle out your strategic and innovative brilliance.",
     date: "17 - 18 March",
-    category: "Biz",
+    category: "Business",
     image: marketing,
-    reg_link: "",
+    reg_link: "https://unstop.com/o/hUA9CD3?lb=WCijcz3",
     // poc: "POC"
   },
   {
@@ -129,7 +131,7 @@ export const compDetails = [
     details:
       "Confident about your managerial skill-set? If yes, this is the event for you to showcase your corporate and social leadership qualities.",
     date: "17 - 18 March",
-    category: "Biz",
+    category: "Business",
     image: manager,
     reg_link: "https://unstop.com/o/sAKJl2o?lb=WCijcz3",
     // poc: "POC"
@@ -140,13 +142,24 @@ export const compDetails = [
     details:
       "Come, see and get conquered by the creation of impeccable, custom-fitted high-end fashion design. Incident brings you a treat for your eyes where you will encounter never seen before flamboyant fashion at one of our flagship events, Haute Couture!",
     date: "19 March",
-    category: "Fashion",
+    category: "Fashion & Drama",
     image: haute,
     reg_link: "https://unstop.com/o/FCWcfS3?lb=WCijcz3",
     // poc: "POC"
   },
   {
     id: "competition_11",
+    title: "Nukkad Natak",
+    details:
+      "A picture can say a thousand words. Then imagine just how many words and emotions can be conveyed through a live performance. Telling the story of life's crossroads on the crossroads. This is Inci's flagship street play competition, Nukkad Natak.",
+    date: "19 March",
+    category: "Fashion & Drama",
+    image: nn,
+    reg_link: "https://unstop.com/o/8MzUxTE?lb=WCijcz3",
+    // poc: "POC"
+  },
+  {
+    id: "competition_12",
     title: "Pulse",
     details:
       "A rock battle of the bands competition. The stage is set, the amps are cranked up to eleven, and we wait for you to unleash your best original music and covers. Prepare yourself for an electrifying competition as some of the best student rock bands take the stage to compete in a Pulse - Rock Battle of Bands event!",
@@ -158,7 +171,7 @@ export const compDetails = [
   },
 
   {
-    id: "competition_12",
+    id: "competition_13",
     title: "Raga Rhapsody",
     details:
       "A solo singing competition. Showcase the vocalist within you at Raaga Rhapsody - Solo Singing Competition! With your microphone and passion for music, take the stage and capture the hearts of the audience.",
@@ -170,7 +183,7 @@ export const compDetails = [
   },
 
   {
-    id: "competition_13",
+    id: "competition_14",
     title: "Bandish",
     details:
       "A fusion battle of the bands competition. Take away to a world of fusion music where modern Western instruments and traditional Indian music are flawlessly incorporated. Join us at Bandish - Fusion Battle of Bands and enthrall us with your spin on Hindustani or Carnatic Rock melodies!",
@@ -182,7 +195,7 @@ export const compDetails = [
   },
 
   //   {
-  //       id: "competition_14",
+  //       id: "competition_15",
   //       title: "Fine Arts",
   //       details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo, veritatis velit nobis minima doloremque nesciunt pariatur earum autem tempora, consequatur voluptatem delectus accusantium tenetur! Doloribus accusamus enim eveniet consectetur, alias hic quis natus voluptatem, nostrum amet nam deserunt veniam! Repellendus inventore eligendi aliquid eveniet libero eum repellat praesentium ducimus.",
   //       date: "19 March",
@@ -193,7 +206,7 @@ export const compDetails = [
   //   },
 
   //   {
-  //     id: "competition_15",
+  //     id: "competition_16",
   //     title: "Gaming",
   //     details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo, veritatis velit nobis minima doloremque nesciunt pariatur earum autem tempora, consequatur voluptatem delectus accusantium tenetur! Doloribus accusamus enim eveniet consectetur, alias hic quis natus voluptatem, nostrum amet nam deserunt veniam! Repellendus inventore eligendi aliquid eveniet libero eum repellat praesentium ducimus.",
   //     date: "TBD",
@@ -203,7 +216,7 @@ export const compDetails = [
   // },
 
   //   {
-  //     id: "competition_16",
+  //     id: "competition_17",
   //     title: "Hogathon",
   //     details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo, veritatis velit nobis minima doloremque nesciunt pariatur earum autem tempora, consequatur voluptatem delectus accusantium tenetur! Doloribus accusamus enim eveniet consectetur, alias hic quis natus voluptatem, nostrum amet nam deserunt veniam! Repellendus inventore eligendi aliquid eveniet libero eum repellat praesentium ducimus.",
   //     date: "TBD",
@@ -213,7 +226,7 @@ export const compDetails = [
   // },
 
   //   {
-  //     id: "competition_17",
+  //     id: "competition_18",
   //     title: "Stunt Show",
   //     details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo, veritatis velit nobis minima doloremque nesciunt pariatur earum autem tempora, consequatur voluptatem delectus accusantium tenetur! Doloribus accusamus enim eveniet consectetur, alias hic quis natus voluptatem, nostrum amet nam deserunt veniam! Repellendus inventore eligendi aliquid eveniet libero eum repellat praesentium ducimus.",
   //     date: "TBD",
@@ -223,7 +236,7 @@ export const compDetails = [
   // },
 
   //   {
-  //     id: "competition_18",
+  //     id: "competition_19",
   //     title: "World Fest",
   //     details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo, veritatis velit nobis minima doloremque nesciunt pariatur earum autem tempora, consequatur voluptatem delectus accusantium tenetur! Doloribus accusamus enim eveniet consectetur, alias hic quis natus voluptatem, nostrum amet nam deserunt veniam! Repellendus inventore eligendi aliquid eveniet libero eum repellat praesentium ducimus.",
   //     date: "TBD",
@@ -233,7 +246,7 @@ export const compDetails = [
   // },
 
   {
-    id: "competition_19",
+    id: "competition_20",
     title: "Slam Dunk",
     details:
       "Slam Dunk is the one of the biggest sporting extravaganzas and the annual basketball tournament of NITK. Renowned teams from all over India shed their sweat for a period of 3 days to fight for the championship which is held across all the days of Incident.",
@@ -245,7 +258,7 @@ export const compDetails = [
   },
 
   // {
-  //   id: "competition_20",
+  //   id: "competition_21",
   //   title: "Spike It!",
   //   details:
   //     "Spike-It is the annual volleyball tournament of NITK and is also held across the 3 days of Incident. An arena with 6 passionate players on each side, both seperated across the net battling for the glory is a sight to behold.",
@@ -257,63 +270,63 @@ export const compDetails = [
   // },
 
   {
-    id: "competition_21",
+    id: "competition_22",
     title: "General Quiz with Major Chandrakant Nair",
     details:
       "A quiz that will put your wits and knowledge about everything under the sun to the test. Hosted by one of India's most esteemed quizmasters, Major Chandrakant Nair, this quiz will definitely satiate your tiny gray cells.",
     date: "18 March",
-    category: "Lit",
+    category: "Literary",
     image: major,
     reg_link: "https://unstop.com/o/98NtXah?lb=WCijcz3",
     // poc: "POC"
   },
 
   {
-    id: "competition_22",
+    id: "competition_23",
     title:
       "Facts, Acts and Artefacts (Lit, History, Ent) - Incident Themed Quiz",
     details:
       "Facts, Acts and Artefacts is the quiz for all you history buffs, bookworms and entertainment connoisseurs out there. Sharpen your brains and charge with your pens to the Tale of Bards and Knights.",
     date: "19 March",
-    category: "Lit",
+    category: "Literary",
     image: themed_quiz,
     reg_link: "https://unstop.com/o/B6kphOW?lb=WCijcz3",
     // poc: "POC"
   },
 
   {
-    id: "competition_23",
+    id: "competition_24",
     title: "Asian Parliamentary Debate",
     details:
       "The Asian Parliamentary Debate is a popular format of Parliamentary Debate which involves two teams of three members each, representing the Government and Opposition sides, who argue for and against a motion respectively. Each speaker is given a set amount of time to make their arguments and points. The format emphasizes teamwork, critical thinking, and the ability to think on one's feet.",
     date: "17 - 18 March",
-    category: "Lit",
+    category: "Literary",
     image: debate,
     reg_link: "https://unstop.com/o/Deb5aSW?lb=WCijcz3",
     // poc: "POC"
   },
 
   {
-    id: "competition_24",
+    id: "competition_25",
     title: "Open Mic",
     details:
       "A scintillating evening to showcase your talent or unleash your passion to perform. Any kind of piece ranging from music to stand-up is accepted in the given slot of 5 min.",
     date: "19 March",
-    category: "Lit",
+    category: "Literary",
     image: open,
     reg_link: "https://unstop.com/o/RYIW70T?lb=WCijcz3",
     // poc: "POC"
   },
 
   {
-    id: "competition_25",
+    id: "competition_26",
     title: "Litpourri",
     details:
       "An online event comprising a series of short, medium and long format writing competitions based on various themes. Registration for the events is completely free. ",
     date: "16 - 19 March",
-    category: "Lit",
+    category: "Literary",
     image: lit1,
-    reg_link: "",
+    reg_link: "https://unstop.com/o/eolJdxM?lb=WCijcz3",
     // poc: "POC"
   },
 ];
