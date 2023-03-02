@@ -34,7 +34,8 @@ Through Beach Schooling, underprivileged students near NITK are tutored in the e
 {showMore?
 (
  <motion.div className="fixed inset-0 py-1  bg-gradient-to-br from-slate-900 to-black rounded-3xl  shadow-md shadow-secondary overflow-y-auto md:no-scrollbar">
-    <div className="w-full rounded-lg overflow-hidden  flex-initial justify-center" 
+    <div className="w-full rounded-lg overflow-hidden  flex-initial justify-center"
+    href="#icare" 
          initial={{ opacity: 0 }}
          animate={{ opacity: 1 }}
          exit={{ opacity: 0 }}

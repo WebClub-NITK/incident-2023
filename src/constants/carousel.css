@@ -14,9 +14,6 @@
     margin: 15px 7px 0px;
     background-color: #c4c4c4;
   }
-.slideshowSlider{
-    transition: ease 1000ms;
-}
 .slideshowDot.active {
     background-color: #ad7a0df2;
   }
