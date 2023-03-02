@@ -1,4 +1,8 @@
-.slideshowDots {
+.carousel {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .slideshowDots {
     text-align: center;
   }
   .slideshowDot {

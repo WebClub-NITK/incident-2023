@@ -50,9 +50,10 @@ const App = () => {
             <About />
             {/* <Events /> */}
             <Competitions />
+            <Icare />
             <FAQ />
             {/* <Sponsors /> */}
-            <Icare />
+            
           </div>
         </div>
         <Footer />

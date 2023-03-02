@@ -44,4 +44,3 @@ orphanage visits and multiple workshops have been carried out. We also plan to t
  </section>
     )
 }
-
