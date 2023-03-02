@@ -9,4 +9,10 @@
     border-radius: 12px;
     border: 0.5px solid #563704;
     box-shadow: inset 0 0 10px #828583;
+    font-family: 'poppins';
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    flex-direction: column;
+    align-items: stretch;
 }
