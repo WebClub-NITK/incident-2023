@@ -18,16 +18,13 @@ const open=()=>{
 <p>
 At Incident, a large-scale cultural fest is not only about fun, but also giving back to the community. i-CARE, the social wing of Incident, focuses on programmes such as social-awareness, health, rural-development, education, child-care and gender-equality. 
 </p>
-<br />
 <p>
 Through Beach Schooling, underprivileged students near NITK are tutored in the evenings.
 </p>
-<br />
 <p>
 Through this initiative, students have availed educational essentials such as school bags, stationery,
 notebooks etc., and other medical essentials such as sanitisers and masks to keep them safe.
 </p>
-<br/>
 <p>
 Since 2019, i-Care has been quite active and numerous initiatives such as paper recycling, cloth collection drive, 
 orphanage visits and multiple workshops have been carried out. We also plan to take up many more such noble initiatives in the future. 

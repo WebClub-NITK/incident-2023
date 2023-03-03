@@ -10,7 +10,7 @@ const Icare = () => {
   return (
     <section id="icare">
       <AnimatePresence>
-    <motion.div className=" h-fit lg:rounded-xl shadow-sm flex flex-row justify-center flex-wrap my-5 py-5" 
+    <motion.div className="h-fit lg:rounded-xl shadow-sm flex flex-row justify-center flex-wrap my-5 py-5" 
      initial={{ x: "-50%", opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.75 }}>
@@ -33,26 +33,27 @@ Through Beach Schooling, underprivileged students near NITK are tutored in the e
 {/* opening card */}
 {showMore?
 (
- <motion.div className="fixed inset-0 py-1  bg-gradient-to-br from-slate-900 to-black rounded-3xl  shadow-md shadow-secondary overflow-y-auto md:no-scrollbar">
-    <div className="w-full rounded-lg overflow-hidden  flex-initial justify-center"
-    href="#icare" 
-         initial={{ opacity: 0 }}
-         animate={{ opacity: 1 }}
-         exit={{ opacity: 0 }}
-         transition={{ duration: 0.5 }}
+ <motion.div className="fixed inset-0 py-1  shadow-md rounded-3xl opacity-80 shadow-secondary overflow-y-auto no-scrollbar"    
+ href="#icare" 
+ initial={{ opacity: 0 }}
+ animate={{ opacity: 1 }}
+ exit={{ opacity: 0 }}
+ transition={{ duration: 0.5 }}>
+    <div className=" w-full overflow-y-auto  no-scrollbar  bg-gradient-to-br from-slate-900 to-black flex-initial justify-center "
+
     >
        <div className="basis-11/12 flex py-2">
                 <h1 className="basis-full font-poppins text-4xl text-center font-medium text-primary py-3">
                   About I-Care
                 </h1>
                 <button
-                  className="bg-transparent lg:hover:bg-background rounded p-3 inset-x-100"
+                  className="bg-transparent lg:hover:bg-background rounded p-4 inset-x-100"
                   onClick={() => {
                     setShowMore(!showMore);
                   }
                 }   
                 >
-                  <GiCrossedSabres className="text-primary " />
+                  <GiCrossedSabres className="text-primary" />
                   <div >
                 </div>
                 </button>
