@@ -52,7 +52,8 @@ import { motion,AnimatePresence } from "framer-motion";
 import slides from '../constants/carousel';
 import { red } from '@mui/material/colors';
 
-function Carousel() {
+function Carousel({
+}) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
@@ -72,13 +73,12 @@ function Carousel() {
   };
   
   React.useEffect(() => {
-    setTimeout(
+    const k=setTimeout(
       () =>
         nextSlide(),
       3000
     );
-  
-    return () => {};
+    return () => clearTimeout(k);
   }, [currentIndex]);
   return (
     <div className='max-w-[1400px] h-[440px] w-full m-auto py-16 px-4 relative group '>

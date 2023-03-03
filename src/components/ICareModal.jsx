@@ -38,7 +38,7 @@ orphanage visits and multiple workshops have been carried out. We also plan to t
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           >
-      <Carousel />
+      <Carousel autoslide={true}/>
  </div>
  </motion.div>
  </section>
