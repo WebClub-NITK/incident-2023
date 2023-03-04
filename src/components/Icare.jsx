@@ -87,7 +87,7 @@ Through Beach Schooling, underprivileged students near NITK are tutored in the e
 </AnimatePresence>
 </div>
 <div className="flex flex-wrap justify-center md:px-10 py-2">
-  <img src={icare} ></img>
+  <img src={icare} className="h-[370px]"></img>
 </div>
 </div>
   </motion.div>
