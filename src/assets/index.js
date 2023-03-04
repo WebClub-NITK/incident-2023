@@ -68,7 +68,7 @@ import yojaka from './sponsor/Sprite.png'
 import campco from './sponsor/campco.png'
 import safe from './sponsor/safe.png'
 import plum from './sponsor/plumbody.png'
-import dairy from './sponsor/dairy.png'
+import dairy from './sponsor/dairy.jpg'
 import unstop from "../assets/unstop-logo.png";
 import daurcom from './sponsor/daurcom.png'
 import mmj from './sponsor/mmj.png'
@@ -77,9 +77,9 @@ import belgian from './sponsor/belgian.png'
 import keventer from './sponsor/keventer.png'
 import mmc from './sponsor/mmc.jpg'
 import manforce from './sponsor/manforce.png'
-import seg from './sponsor/seg.svg'
-import nandini from './sponsor/nandini.jpeg'
-import twin from './sponsor/twin.png'
+import seg from './sponsor/seg.png'
+import nandini from './sponsor/nandini.png'
+import twin from './sponsor/twin.jpg'
 export {
   menu,
   close,
