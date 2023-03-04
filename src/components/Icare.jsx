@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { AnimatePresence, motion } from "framer-motion";
 import ICareModal from './ICareModal';
-import {stunt} from '../assets/index';
+import {icare} from '../assets/index';
 import { GiCrossedSabres } from "react-icons/gi";
 const Icare = () => {
   const [showMore, setShowMore] = useState(false);
@@ -18,9 +18,9 @@ const Icare = () => {
       <div className="basis-full text-center font-[ARMRegular] text-4xl md:text-6xl font-semibold my-3 p-3 text-primary text-gradient font-semibold sm:text-5xl md:text-left md:m-3 md:p-3">
       I-CARE
       </div>
-      <div className='flex'>
+      <div className='md:flex'>
       <div className=" my-2 basis-7/12 font-poppins text-primary  mx-3 p-4 ">
-        <div className='text-1xl'>
+        <div className='text-2xl'>
 <p>
 At Incident, a large-scale cultural fest is not only about fun, but also giving back to the community. i-CARE, the social wing of Incident, focuses on programmes such as social-awareness, health, rural-development, education, child-care and gender-equality. 
 </p>
@@ -86,8 +86,8 @@ Through Beach Schooling, underprivileged students near NITK are tutored in the e
 )}
 </AnimatePresence>
 </div>
-<div className="flex flex-wrap  m-2">
-  <img src={stunt}></img>
+<div className="flex flex-wrap justify-center md:px-10 py-2">
+  <img src={icare} ></img>
 </div>
 </div>
   </motion.div>

@@ -11,7 +11,7 @@ import lit from "./coins/lit.png";
 import music from "./coins/music.png";
 import special from "./coins/special.png";
 import sports from "./coins/sports.png";
-
+import icare from "./icare/icare_icon.png";
 import tandav from './cards/dance/tandav.jpg'
 import promenade from './cards/dance/promenade.jpg'
 import nritya from './cards/dance/nritya.jpg'
@@ -66,6 +66,7 @@ export {
   duet,
   bisquiz,
   hr,
+  icare,
   manager,
   marketing,
   operation,
