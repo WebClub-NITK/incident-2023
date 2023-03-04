@@ -48,6 +48,38 @@ import spike from './cards/sports/spike.jpg'
 import slam from './cards/sports/slam_dunk.jpg'
 import shield from "./sponsor-shield.png"
 
+import bosch from './sponsor/boblack.png'
+import hutti from './sponsor/Hutti.jpg'
+import kptcl from './sponsor/kptcl.svg'
+import vtpc from './sponsor/VTPC.jpg'
+import ksmcl from './sponsor/KSMCL.jpg'
+import shankar from './sponsor/shankar.jpg'
+import unimitsu from './sponsor/unimitsu.png'
+import rel from './sponsor/rel.jpg'
+import kspcb from './sponsor/kspcb_2.png'
+import mysore from './sponsor/mysore.jpg'
+import tribe from './sponsor/tribe.png'
+import tgp from './sponsor/tgp.png'
+import mrpl from './sponsor/mrpl.jpg'
+import hexa from './sponsor/hexa.png'
+import ramco from './sponsor/ramco.png'
+import nmpt from './sponsor/nmpt.png'
+import yojaka from './sponsor/Sprite.png'
+import campco from './sponsor/campco.png'
+import safe from './sponsor/safe.png'
+import plum from './sponsor/plumbody.png'
+import dairy from './sponsor/dairy.png'
+import unstop from "../assets/unstop-logo.png";
+import daurcom from './sponsor/daurcom.png'
+import mmj from './sponsor/mmj.png'
+import beardo from './sponsor/beardo.png'
+import belgian from './sponsor/belgian.png'
+import keventer from './sponsor/keventer.png'
+import mmc from './sponsor/mmc.jpg'
+import manforce from './sponsor/manforce.png'
+import seg from './sponsor/seg.svg'
+import nandini from './sponsor/nandini.jpeg'
+import twin from './sponsor/twin.png'
 export {
   menu,
   close,
@@ -86,5 +118,37 @@ export {
   lit1,
   major,
   open,
-    shield
+  shield,
+  bosch,
+  hutti,
+  kptcl,
+  vtpc,
+  ksmcl,
+  shankar,
+  unimitsu,
+  rel,
+  kspcb,
+  mysore,
+  tribe,
+  tgp,
+  mrpl,
+  hexa,
+  ramco,
+  nmpt,
+  yojaka,
+  campco,
+  safe,
+  plum,
+  dairy,
+  unstop,
+  daurcom,
+  mmj,
+  beardo,
+  belgian,
+  keventer,
+  mmc,
+  manforce,
+  seg,
+  nandini,
+  twin
 }

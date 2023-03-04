@@ -1,6 +1,7 @@
+
 .card {
-    height: 230px;
-    width: 320px;
+    height: 250px;
+    width: 360px;
     background: rgb(175, 175, 181);
     background: linear-gradient(150deg, rgba(130, 130, 131, 1) 1%, rgba(180, 180, 180, 0.7) 3%, rgba(0, 0, 0, 0) 69%, rgba(3, 0, 0, 0) 100%);
     backdrop-filter: blur(16px) saturate(116%);
@@ -12,7 +13,14 @@
     font-family: 'poppins';
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 3px;
     flex-direction: column;
     align-items: stretch;
+}
+.img{
+    display: flex;
+    max-width:290px;
+    max-height:150px;
+    width: auto;
+    height: auto;
 }
