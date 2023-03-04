@@ -1,53 +1,57 @@
 import React from 'react'
-import { shield } from '../assets';
+import { shield, twin } from '../assets';
 import "./Sponsors.css"
-
+import { bosch,hutti,kptcl,vtpc,ksmcl,shankar,unimitsu,rel,kspcb,mysore,tribe ,tgp,mrpl,hexa,ramco,nmpt,yojaka,campco,safe,plum,dairy,unstop,daurcom,mmj,beardo
+,belgian,keventer,mmc,manforce,seg,nandini} from '../assets';
 const Sponsors = () => {
 
   const SponsorsList = [
-    { src: "", title: "Title Sponsor", name: "TribeVibe" },
-    { src: "", title: "Co-Sponsors", name: "Reliance" },
-    { src: "", title: "Co-Sponsors", name: "Uniball" },
-    { src: "", title: "Associate Sponsor", name: "KSPCB" },
-    { src: "", title: "Associate Sponsor", name: "Mysore Sandal Soap" },
-    { src: "", title: "Platinum Sponsor", name: "Bosch" },
-    { src: "", title: "Diamond Sponsor", name: "KPTCL" },
-    { src: "", title: "Gold Sponsor", name: "Hutti Gold Mines" },
-    { src: "", title: "Bronze Sponsor", name: "KSMCL" },
-    { src: "", title: "Bronze Sponsor", name: "VTPC" },
-    { src: "", title: "Technology Partner", name: "Hexagon" },
-    { src: "", title: "IAS Coaching Partner", name: "Shankar IAS Academy" },
-    { src: "", title: "Infrastructure Partner ", name: "Ramco Cement" },
-    { src: "", title: "Sustainability Partner ", name: "MRPL" },
-    { src: "", title: "i-Care Partner", name: "NMPT" },
-    { src: "", title: "Marine Partner", name: "Yojaka" },
-    { src: "", title: "Higher Education Partner", name: "Global Point" },
-    { src: "", title: "Chocolate Partner", name: "Campco" },
-    { src: "", title: "Supply Chain Partner", name: "Safexpress" },
-    { src: "", title: "Bath and Body Partner", name: "Plumbody Lovin" },
-    { src: "", title: "Ice Cream Partner", name: "Dairy Day" },
-    { src: "", title: "Powered By Sponsor", name: "Unstop" },
-    { src: "", title: "Outreach Partner", name: "Daurcom" },
-    { src: "", title: "Social Media Partner", name: "MMJ" },
-    { src: "", title: "Official Grooming Partner", name: "Beardo" },
-    { src: "", title: "Waffle Partner", name: "Belgian Waffle" },
-    { src: "", title: "Milkshake Partner", name: "Keventers" },
-    { src: "", title: "Construction Partner", name: "M M Construction" },
-    { src: "", title: "Official Safety Partner", name: "Manforce " },
-    { src: "", title: "Automotive Partner", name: "SEG Automotive Inida Private Limited" },
-    { src: "", title: "Refreshments Partner", name: "Nandini" },
-    { src: "", title: "Women's Lifestyle Partner", name: "Twin Birds" },
+    { src: tribe, title: "Title Sponsor", name: "TribeVibe" },
+    { src: rel, title: "Co-Sponsors", name: "Reliance" },
+    { src: unimitsu, title: "Co-Sponsors", name: "Uniball" },
+    { src: kspcb, title: "Associate Sponsor", name: "KSPCB" },
+    { src: mysore, title: "Associate Sponsor", name: "Mysore Sandal Soap" },
+    { src: bosch, title: "Platinum Sponsor", name: "Bosch" },
+    { src: kptcl, title: "Diamond Sponsor", name: "KPTCL" },
+    { src: hutti, title: "Gold Sponsor", name: "Hutti Gold Mines" },
+    { src: ksmcl, title: "Bronze Sponsor", name: "KSMCL" },
+    { src: vtpc, title: "Bronze Sponsor", name: "VTPC" },
+    { src: hexa, title: "Technology Partner", name: "Hexagon" },
+    { src: shankar, title: "IAS Coaching Partner", name: "Shankar IAS Academy" },
+    { src: ramco, title: "Infrastructure Partner ", name: "Ramco Cement" },
+    { src: mrpl, title: "Sustainability Partner ", name: "MRPL" },
+    { src: nmpt, title: "i-Care Partner", name: "NMPT" },
+    { src: yojaka, title: "Marine Partner", name: "Yojaka" },
+    { src: tgp, title: "Higher Education Partner", name: "Global Point" },
+    { src: campco, title: "Chocolate Partner", name: "Campco" },
+    { src: safe, title: "Supply Chain Partner", name: "Safexpress" },
+    { src: plum, title: "Bath and Body Partner", name: "Plumbody Lovin" },
+    { src: dairy, title: "Ice Cream Partner", name: "Dairy Day" },
+    { src: unstop, title: "Powered By Sponsor", name: "Unstop" },
+    { src: daurcom, title: "Outreach Partner", name: "Daurcom" },
+    { src: mmj, title: "Social Media Partner", name: "MMJ" },
+    { src: beardo, title: "Official Grooming Partner", name: "Beardo" },
+    { src: belgian, title: "Waffle Partner", name: "Belgian Waffle" },
+    { src: keventer, title: "Milkshake Partner", name: "Keventers" },
+    { src: mmc, title: "Construction Partner", name: "M M Construction" },
+    { src: manforce, title: "Official Safety Partner", name: "Manforce " },
+    { src: seg, title: "Automotive Partner", name: "SEG Automotive Inida Private Limited" },
+    { src: nandini, title: "Refreshments Partner", name: "Nandini" },
+    { src: twin, title: "Women's Lifestyle Partner", name: "Twin Birds" },
 
   ]
 
   return (
     <div className=' mt-5 mb-10'>
+      <div className='basis-full text-start font-[ARMRegular] text-4xl  md:text-6xl  my-3 p-3 text-primary font-semibold'><h1>Sponsors</h1></div>
       <div className=' grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-5 justify-items-center'>
         {SponsorsList.map((data) => {
           return (
             <div alt="sponsor" className="card" >
-              <img src={data.src} />
-              <div className='font-poppins text-xl text-primary m-auto'>{data.title}</div>
+              <div className='img m-auto' >
+                <img  classname='relative object-cover ' src={data.src} />
+              </div>
+              <div className='font-poppins text-[25px] text-primary m-auto'>{data.title}</div>
             </div>
           )
         })}
