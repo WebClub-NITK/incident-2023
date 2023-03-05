@@ -81,6 +81,10 @@
   #popUp {
     min-height: 350px;
   }
+
+  .image-box{
+    display: none;
+  }
 }
 
 #popUp {
