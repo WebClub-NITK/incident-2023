@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
 .slide {
-  transform: scale(0.85);
+  transform: scale(0.9);
   transition: transform 300ms;
   opacity: 0.5;
   position: relative;
@@ -13,7 +13,7 @@
 
 }
 .activeSlide {
-  transform: scale(1);
+  transform: scale(1.01);
   opacity: 1;
 
 }
