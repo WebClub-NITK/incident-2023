@@ -3,7 +3,7 @@ import icare2 from '../constants/images/icare2.jpg';
 import icare3 from '../constants/images/icare3.jpg';
 import icare4 from '../constants/images/icare4.jpg';
 import icare5 from '../constants/images/icare5.jpg';
-const slides=[
+const items=[
     {
         src:icare1,
     },
@@ -20,4 +20,4 @@ const slides=[
         src:icare5,
     }
 ];
-export default slides;
+export default items;

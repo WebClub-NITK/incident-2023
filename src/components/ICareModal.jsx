@@ -31,11 +31,11 @@ orphanage visits and multiple workshops have been carried out. We also plan to t
 </p>
 </div>
 {/* carousel */}
-<div className="basis-full md:basis-5/12 flex justify-center items-center" 
+<div className="basis-full md:basis-5/12 flex justify-center items-center py-2" 
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           >
-      <Carousel autoslide={true}/>
+      <Carousel />
  </div>
  </motion.div>
  </section>

@@ -30,6 +30,7 @@
     "react-feather": "^2.0.10",
     "react-icons": "^4.7.1",
     "react-tsparticles": "^2.9.3",
+    "reactstrap": "^9.1.6",
     "tsparticles": "^2.9.3"
   },
   "devDependencies": {
