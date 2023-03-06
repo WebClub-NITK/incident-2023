@@ -47,6 +47,7 @@ import world from './cards/specials/world_fest.jpg'
 import spike from './cards/sports/spike.jpg'
 import slam from './cards/sports/slam_dunk.jpg'
 import shield from "./sponsor-shield.png"
+import heart from "./heart.svg"
 
 
 import bosch from './sponsor/boblack.png'
@@ -161,6 +162,8 @@ export {
   nandini,
   twin,
   sbi,
+  nn,
+  heart,
 }
 
 
