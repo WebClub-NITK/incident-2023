@@ -11,7 +11,7 @@ const Icare = () => {
   return (
     <section id="icare">
       <AnimatePresence>
-    <motion.div className="h-[1110px] md:h-[600px] lg:rounded-xl shadow-sm flex flex-row justify-center flex-wrap my-5 py-5" 
+    <motion.div className="h-[1000px] md:h-[600px] lg:rounded-xl shadow-sm flex flex-row justify-center flex-wrap my-5 py-5" 
      initial={{ x: "-50%", opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.75 }}>
@@ -20,6 +20,21 @@ const Icare = () => {
       I-CARE
       </div>
       <div className='md:flex'>
+      <div className={`flex  flex-wrap  justify-center md:px-10 py-2 ${
+                showMore ? "hidden" : "visible" 
+              }`}>
+  <Player
+          autoplay
+          loop
+          src={icare}
+          style={{ height: "400px", width: "100%" }}
+        >
+          <Controls
+            visible={false}
+            buttons={["play", "repeat", "frame", "debug"]}
+          />
+        </Player>
+</div>
       <div className=" font-poppins text-primary  basis-7/12">
         <div className='text-wrap text-xl text-justify mx-3 p-4 '>
 <p>
@@ -83,21 +98,6 @@ Through Beach Schooling, underprivileged students near NITK are tutored in the e
           </div>
   )}
       </div>
-  <div className={`flex flex-wrap  justify-center md:px-10 py-2 ${
-                showMore ? "hidden" : "visible" 
-              }`}>
-  <Player
-          autoplay
-          loop
-          src={icare}
-          style={{ height: "500px", width: "100%" }}
-        >
-          <Controls
-            visible={false}
-            buttons={["play", "repeat", "frame", "debug"]}
-          />
-        </Player>
-</div>
 </div>
   </motion.div>
   </AnimatePresence>
