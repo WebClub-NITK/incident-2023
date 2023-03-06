@@ -24,6 +24,10 @@ export const navLinks = [
       title: "FAQ"
     },
     {
+      id: "sponsors",
+      title: "Sponsors"
+    },
+    {
       id: "contactUs",
       title: "Contact Us",
     }

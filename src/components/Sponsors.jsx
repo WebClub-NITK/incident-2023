@@ -49,7 +49,7 @@ const Sponsors = () => {
   ]
 
   return (
-    <div className=' mt-5 mb-10'>
+    <div className=' mt-5 mb-10' id="sponsors">
       <div className='basis-full text-start font-[ARMRegular] text-4xl  md:text-6xl  my-3 p-3 text-primary font-semibold'><h1>Sponsors</h1></div>
       <div className=' grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-5 justify-items-center'>
         {SponsorsList.map((data) => {
