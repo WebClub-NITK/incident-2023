@@ -56,11 +56,11 @@ import ksmcl from './sponsor/KSMCL.jpg'
 import shankar from './sponsor/shankar.jpg'
 import unimitsu from './sponsor/unimitsu.png'
 import rel from './sponsor/rel.jpg'
-import kspcb from './sponsor/kspcb_2.png'
+import kspcb from './sponsor/kspcb.png'
 import mysore from './sponsor/mysore.jpg'
 import tribe from './sponsor/tribe.png'
 import tgp from './sponsor/tgp.png'
-import mrpl from './sponsor/mrpl.jpg'
+import mrpl from './sponsor/mrpl.png'
 import hexa from './sponsor/hexa.png'
 import ramco from './sponsor/ramco.png'
 import nmpt from './sponsor/nmpt.png'
@@ -80,6 +80,11 @@ import manforce from './sponsor/manforce.png'
 import seg from './sponsor/seg.png'
 import nandini from './sponsor/nandini.png'
 import twin from './sponsor/twin.jpg'
+import sbi from './sponsor/sbi.png'
+import golive from './sponsor/Golive-Logo.png'
+import gatsby from './sponsor/GATSBY.gif'
+import ims from './sponsor/ims.png'
+import Vi from './sponsor/Vi.png'
 export {
   menu,
   close,
@@ -131,6 +136,10 @@ export {
   mysore,
   tribe,
   tgp,
+  golive,
+  ims,
+  Vi,
+  gatsby,
   mrpl,
   hexa,
   ramco,
@@ -150,5 +159,6 @@ export {
   manforce,
   seg,
   nandini,
-  twin
+  twin,
+  sbi,
 }

@@ -1,8 +1,10 @@
 import React from 'react'
 import { shield, twin } from '../assets';
 import "./Sponsors.css"
-import { bosch,hutti,kptcl,vtpc,ksmcl,shankar,unimitsu,rel,kspcb,mysore,tribe ,tgp,mrpl,hexa,ramco,nmpt,yojaka,campco,safe,plum,dairy,unstop,daurcom,mmj,beardo
-,belgian,keventer,mmc,manforce,seg,nandini} from '../assets';
+import {
+  bosch, hutti, kptcl, vtpc, ksmcl, shankar, unimitsu, rel, kspcb, mysore, tribe, tgp, mrpl, hexa, ramco, nmpt, yojaka, campco, safe, plum, dairy, unstop, daurcom, mmj, beardo
+  , belgian, keventer, mmc, manforce, seg, nandini, sbi, golive, ims, Vi, gatsby,
+} from '../assets';
 const Sponsors = () => {
 
   const SponsorsList = [
@@ -14,6 +16,7 @@ const Sponsors = () => {
     { src: bosch, title: "Platinum Sponsor", name: "Bosch" },
     { src: kptcl, title: "Diamond Sponsor", name: "KPTCL" },
     { src: hutti, title: "Gold Sponsor", name: "Hutti Gold Mines" },
+    { src: sbi, title: "Silver Sponsor", name: "SBI" },
     { src: ksmcl, title: "Bronze Sponsor", name: "KSMCL" },
     { src: vtpc, title: "Bronze Sponsor", name: "VTPC" },
     { src: hexa, title: "Technology Partner", name: "Hexagon" },
@@ -38,6 +41,10 @@ const Sponsors = () => {
     { src: seg, title: "Automotive Partner", name: "SEG Automotive Inida Private Limited" },
     { src: nandini, title: "Refreshments Partner", name: "Nandini" },
     { src: twin, title: "Women's Lifestyle Partner", name: "Twin Birds" },
+    { src: ims, title: "MBA Coaching Partner", name: "IMS" },
+    { src: Vi, title: "Connectivity Partner", name: "VI" },
+    { src: gatsby, title: "Styling Partner", name: "Gatsby" },
+    { src: golive, title: "E-Sports & Gaming Partner", name: "GoLive Games Studios Pvt. Ltd." },
 
   ]
 
@@ -49,7 +56,7 @@ const Sponsors = () => {
           return (
             <div alt="sponsor" className="card" >
               <div className='img m-auto' >
-                <img  classname='relative object-cover ' src={data.src} />
+                <img classname='relative object-cover ' src={data.src} />
               </div>
               <div className='font-poppins text-[25px] text-primary m-auto'>{data.title}</div>
             </div>
