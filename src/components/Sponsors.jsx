@@ -1,11 +1,18 @@
 import React from 'react'
 import { shield, twin } from '../assets';
+import { useState } from 'react';
 import "./Sponsors.css"
 import {
   bosch, hutti, kptcl, vtpc, ksmcl, shankar, unimitsu, rel, kspcb, mysore, tribe, tgp, mrpl, hexa, ramco, nmpt, yojaka, campco, safe, plum, dairy, unstop, daurcom, mmj, beardo
   , belgian, keventer, mmc, manforce, seg, nandini, sbi, golive, ims, Vi, gatsby,
 } from '../assets';
+import { motion } from "framer-motion";
+
+
 const Sponsors = () => {
+
+  const [showMore, setShowMore] = useState(false);
+  const buttonText = showMore ? "Show Less" : "Show More";
 
   const SponsorsList = [
     { src: tribe, title: "Title Sponsor", name: "TribeVibe" },
@@ -52,17 +59,33 @@ const Sponsors = () => {
     <div className=' mt-5 mb-10' id="sponsors">
       <div className='basis-full text-start font-[ARMRegular] text-4xl  md:text-6xl  my-3 p-3 text-primary font-semibold'><h1>Sponsors</h1></div>
       <div className=' grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-5 justify-items-center'>
-        {SponsorsList.map((data) => {
+        {SponsorsList.map((data, index) => {
           return (
-            <div alt="sponsor" className="card" >
-              <div className='img m-auto' >
-                <img classname='relative object-cover ' src={data.src} />
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className={`${showMore || (!showMore && index < 9) ? "visible" : "hidden"}`}>
+              <div alt="sponsor" className={`card`} key={index}>
+                <div className='img m-auto' >
+                  <img classname='relative object-cover ' src={data.src} />
+                </div>
+                <div className='font-poppins text-[25px] text-primary m-auto'>{data.title}</div>
               </div>
-              <div className='font-poppins text-[25px] text-primary m-auto'>{data.title}</div>
-            </div>
+            </motion.div>
           )
         })}
+
       </div>
+      {SponsorsList.length > 9 && (
+        <div className="flex flex-wrap justify-center">
+          <button
+            className="m-2 p-2 font-poppins bg-gradient-to-r from-[#9f793eff]
+              via-[#d4a152ff] to-[#dcb270ff] border-2 border-primary rounded-md back md:font-medium text-black md:transition-all duration-150 hover:scale-105"
+            onClick={() => {
+              setShowMore(!showMore);
+            }}
+          >
+            {buttonText}
+          </button>
+        </div>
+      )}
     </div>
   )
 }
