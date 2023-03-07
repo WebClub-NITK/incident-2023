@@ -101,9 +101,8 @@ const Competitions = () => {
           <button
             // removed the following
             // transform translate-y-1/2
-            className={`text-center py-2 flex items-center justify-center px-4 px-4 py-2 rounded-lg text-[#1A2328] bg-primary border border-[#89352a] focus:outline-none focus:shadow-outline hover:border-[#672c1a] shadow-2 shadow-inner shadow-[#672c1a] ${
-              isOpen ? "w-full" : "w-fit"
-            }`}
+            className={`text-center py-2 flex items-center justify-center px-4 px-4 py-2 rounded-lg text-[#1A2328] bg-primary border border-[#89352a] focus:outline-none focus:shadow-outline hover:border-[#672c1a] shadow-2 shadow-inner shadow-[#672c1a] ${isOpen ? "w-full" : "w-fit"
+              }`}
             onClick={toggleDropdown}
           >
             <div className="flex justify-center">
@@ -147,16 +146,14 @@ const Competitions = () => {
       </div>
       {/* for desktop */}
       <div
-        className={`hidden md:flex md:flex-wrap md:flex-row md:justify-center ${
-          filterCompetitions.length > 3 ? "min-h-[60vh]" : "min-h-[30vh]"
-        }`}
+        className={`hidden md:flex md:flex-wrap md:flex-row md:justify-center ${filterCompetitions.length > 3 ? "min-h-[60vh]" : "min-h-[30vh]"
+          }`}
       >
         {filterCompetitions.map((competitions, index) => (
           <div>
             <div
-              className={`w-full rounded-lg overflow-hidden flex-initial justify-center ${
-                showMore || (!showMore && index < 9) ? "visible" : "hidden"
-              }`}
+              className={`w-full rounded-lg overflow-hidden flex-initial justify-center ${showMore || (!showMore && index < 9) ? "visible" : "hidden"
+                }`}
               id={competitions.id}
             >
               <CompetitionCard
@@ -188,16 +185,14 @@ const Competitions = () => {
         </div>
       )}
       <div
-        className={`flex flex-wrap justify-center md:hidden ${
-          filterCompetitions.length < 2 ? "min-h-[30vh]" : "min-h-[60vh]"
-        }`}
+        className={`flex flex-wrap justify-center md:hidden ${filterCompetitions.length < 2 ? "min-h-[30vh]" : "min-h-[60vh]"
+          }`}
       >
         {filterCompetitions.map((competitions, index) => (
           <div>
             <div
-              className={`w-full rounded-lg overflow-hidden flex-initial justify-center ${
-                showMore || (!showMore && index < 3) ? "visible" : "hidden"
-              }`}
+              className={`w-full rounded-lg overflow-hidden flex-initial justify-center ${showMore || (!showMore && index < 3) ? "visible" : "hidden"
+                }`}
               id={competitions.id}
             >
               <CompetitionCard
