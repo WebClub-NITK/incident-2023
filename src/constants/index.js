@@ -11,30 +11,30 @@ export const navLinks = [
   //   id: "events",
   //   title: "Events",
   // },
-    {
-      id:"about",
-      title: "About"
-    },
-    {
-      id: "competitions",
-      title: "Competitions",
-    },
-    // {
-    //   id: "icare",
-    //   title: "I-Care"
-    // },
-    {
-      id: "faq",
-      title: "FAQ"
-    },
-    {
-      id: "sponsors",
-      title: "Sponsors"
-    },
-    {
-      id: "contactUs",
-      title: "Contact Us",
-    }
+  {
+    id: "about",
+    title: "About"
+  },
+  {
+    id: "competitions",
+    title: "Competitions",
+  },
+  // {
+  //   id: "icare",
+  //   title: "I-Care"
+  // },
+  {
+    id: "sponsors",
+    title: "Sponsors"
+  },
+  {
+    id: "faq",
+    title: "FAQ"
+  },
+  {
+    id: "contactUs",
+    title: "Contact Us",
+  }
 ];
 
 export const socialMedia = [

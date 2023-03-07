@@ -53,8 +53,8 @@ const App = () => {
             {/* <Events /> */}
             <Competitions />
             <Icare />
-            <FAQ />
             <Sponsors />
+            <FAQ />
           </div>
         </div>
         <Footer />
