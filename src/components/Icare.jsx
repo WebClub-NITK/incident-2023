@@ -40,7 +40,7 @@ const Icare = () => {
               </Player>
             </div>
             <div className=" font-poppins text-primary  basis-7/12">
-              <div className="text-wrap text-xl text-justify mx-3 md:ml-32 p-6 ">
+              <div className="text-wrap text-xl text-justify mx-3 md:ml-32 xs:p-6 ">
                 <p>
                   At Incident, a large-scale cultural fest is not only about
                   fun, but also giving back to the community. i-CARE, the social
