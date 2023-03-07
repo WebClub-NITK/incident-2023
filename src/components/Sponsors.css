@@ -17,6 +17,14 @@
     flex-direction: column;
     align-items: stretch;
 }
+
+@media screen and (max-width:1200px) {
+    .card{
+        width:310px;
+        padding: 12px;
+    }
+}
+
 .img{
     display: flex;
     max-width:290px;

@@ -7,10 +7,10 @@ import {
 } from "react-icons/ai";
 
 export const navLinks = [
-  {
-    id: "events",
-    title: "Events",
-  },
+  // {
+  //   id: "events",
+  //   title: "Events",
+  // },
     {
       id:"about",
       title: "About"
@@ -19,10 +19,10 @@ export const navLinks = [
       id: "competitions",
       title: "Competitions",
     },
-    {
-      id: "icare",
-      title: "I-Care"
-    },
+    // {
+    //   id: "icare",
+    //   title: "I-Care"
+    // },
     {
       id: "faq",
       title: "FAQ"
