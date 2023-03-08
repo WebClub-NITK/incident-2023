@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-node@v3
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        uses: bahmutov/npm-install@latest
 
       - name: Build project
         run: npm run build
