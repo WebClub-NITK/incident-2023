@@ -28,7 +28,8 @@ import operation from './cards/biz/Operations.jpg'
 import themed_quiz from './cards/lit/themed_quiz.jpg'
 import debate from './cards/lit/debate.jpg'
 import lit1 from './cards/lit/lit.jpg'
-import major from './cards/lit/major.jpg'
+// import major from './cards/lit/major.jpg'
+import genquiz from './cards/lit/genquiz.jpg'
 import open from './cards/lit/open.jpg'
 
 
@@ -46,9 +47,15 @@ import world from './cards/specials/world_fest.jpg'
 
 import spike from './cards/sports/spike.jpg'
 import slam from './cards/sports/slam_dunk.jpg'
+
+import cc from './cards/ISTENEW/case.jpg'
+import gbogh from './cards/ISTENEW/gbogh.jpg'
+import mock from './cards/ISTENEW/mock.jpg'
+import reel from './cards/ISTENEW/reelit.jpg'
+
+
 import shield from "./sponsor-shield.png"
 import heart from "./heart.svg"
-
 
 import bosch from './sponsor/boblack.png'
 import hutti from './sponsor/Hutti.jpg'
@@ -123,7 +130,6 @@ export {
   themed_quiz,
   debate,
   lit1,
-  major,
   open,
   shield,
   bosch,
@@ -165,6 +171,11 @@ export {
   sbi,
   nn,
   heart,
+  cc,
+  reel,
+  gbogh,
+  mock,
+  genquiz
 }
 
 
