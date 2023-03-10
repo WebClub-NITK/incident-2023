@@ -19,7 +19,7 @@ const Events = () => {
     {
       index: 1,
       src: sunidhi,
-      date:"19/03/2023",
+      date:"19th March",
       info: "The headliner for the final day of Incident 2023 is none other than the Queen of Bollywood music, Sunidhi Chauhan!\n\nIn a career spanning over 2 decades, Sunidhi has lent her expressive voice to 200+ movies. With chartbusters like Sheila ki Jawani, Ra Ra Rakkamma and Crazy Kiya Re, She has truly been one of the flagbearers of Indian music.\n\nHer energy and flair are second to none and the time is nigh for these shores to witness it on the 19th of March at Incident 2023.",
       heading: 'BOLLYWOOD NIGHT'
 
@@ -30,21 +30,21 @@ const Events = () => {
        \n\nFrom wonderful originals like Nammooru, Freedom Rock and Samaya to creative mashups and covers of popular songs like Belageddu, Gulabi Aanken and Dil Chahta Hai, Mysore Xpress truly is the complete package for Fusion music lovers!`,
       heading: 'FUSION NIGHT',
       src: mx,
-      date:"17/03/2023",
+      date:"17th March",
     },
     {
       index: 3,
       src: cm1,
       info: "Coming soon...",
       heading: 'DJ NIGHT',
-      date:"18/03/2023",
+      date:"18th March",
     },
     {
       index: 4,
       info: "Coming soon..",
       src: cm2,
       heading: 'COMEDY NIGHT',
-      date:"16/03/2023",
+      date:"16th March",
     },
   ]
   const a = slidedata.map((data) => data.src);
