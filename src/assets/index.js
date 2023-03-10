@@ -179,7 +179,11 @@ export {
   reel,
   gbogh,
   mock,
-  genquiz
+  genquiz,
+  sunidhi,
+  mx,
+  cm1,
+  cm2
 }
 
 
