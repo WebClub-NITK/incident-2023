@@ -142,7 +142,7 @@ const Events = () => {
             whileInView={{ y: [-20, 0], opacity: [0, 1] }}
             transition={{ duration: 1.5 }}>
             <div className='Heading text-gradient font-[ARMRegular] leading-[2] md:text-[60px] text-[60px] font-bold'>EVENTS</div>
-            <Slider {...settings} className={` Slider w-[60vw] flex items-center`}>
+            <Slider {...settings} className={` Slider w-[70vw] items-center m-auto`}>
               {slidedata.map((data) => (
                 <div className={data.index-1 === currentImage ? "slide activeSlide scale:[0.8] hover:scale-[0.99] "  : "slide hover:scale-[0.9]"}>
                   <img src={data.src} alt={data.src} className=' rounded-3xl object-cover' onClick={() => { currentImageHandler(data.index-1) }} />
