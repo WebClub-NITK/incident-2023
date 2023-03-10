@@ -44,10 +44,14 @@ import gaming from './cards/specials/gaming.jpg'
 import hog from './cards/specials/hogathon.jpg'
 import stunt from './cards/specials/stunt.jpg'
 import world from './cards/specials/world_fest.jpg'
-
+import paper from "./paper-card.png";
 import spike from './cards/sports/spike.jpg'
 import slam from './cards/sports/slam_dunk.jpg'
 
+import sunidhi from './proshows/Sunhidi.jpg'
+import mx from './proshows/mx.jpg'
+import cm1 from './proshows/cm1.jpg'
+import cm2 from './proshows/cm2.jpg'
 import cc from './cards/ISTENEW/case.jpg'
 import gbogh from './cards/ISTENEW/gbogh.jpg'
 import mock from './cards/ISTENEW/mock.jpg'
@@ -175,7 +179,11 @@ export {
   reel,
   gbogh,
   mock,
-  genquiz
+  genquiz,
+  sunidhi,
+  mx,
+  cm1,
+  cm2
 }
 
 
