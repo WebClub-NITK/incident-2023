@@ -5,15 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
 .slide {
-  transform: scale(0.9);
-  transition: transform 300ms;
+  transform: scale(0.8);
+  transition: transform 500ms;
   opacity: 0.5;
   position: relative;
   left:-6%;
-
 }
 .activeSlide {
-  transform: scale(1.01);
+  transform: scale(0.9);
   opacity: 1;
 
 }
