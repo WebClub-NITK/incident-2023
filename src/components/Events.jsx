@@ -117,7 +117,7 @@ const Events = () => {
             transition={{ duration: 1.5 }}
           >
             <div className='Heading text-gradient font-[ARMRegular] leading-[2] md:text-[80px] text-[50px] font-bold float-left '>EVENTS</div>
-            <Slider {...settings} className={` Slider w-[80vw] flex items-center`}>
+            <Slider {...settings} className={` Slider w-[70vw] flex items-center m-auto`}>
               {slidedata.map((data) => (
                 <div className={data.index-1 === currentImage ? "slide activeSlide hover:scale-[0.99] "  : "slide hover:scale-[0.9]"}>
                   <img src={data.src} alt={data.src} className=' rounded-3xl object-cover' onClick={() => { currentImageHandler(data.index-1) }} />
@@ -144,7 +144,7 @@ const Events = () => {
             <div className='Heading text-gradient font-[ARMRegular] leading-[2] md:text-[60px] text-[60px] font-bold'>EVENTS</div>
             <Slider {...settings} className={` Slider w-[70vw] items-center m-auto`}>
               {slidedata.map((data) => (
-                <div className={data.index-1 === currentImage ? "slide activeSlide scale:[0.8] hover:scale-[0.99] "  : "slide hover:scale-[0.9]"}>
+                <div className={data.index-1 === currentImage ? "slide activeSlide scale:[0.7] hover:scale-[0.8] "  : "slide hover:scale-[0.7]"}>
                   <img src={data.src} alt={data.src} className=' rounded-3xl object-cover' onClick={() => { currentImageHandler(data.index-1) }} />
                 </div>
               ))}
