@@ -7,13 +7,13 @@ import {
 } from "react-icons/ai";
 
 export const navLinks = [
-  // {
-  //   id: "events",
-  //   title: "Events",
-  // },
   {
     id: "about",
     title: "About"
+  },
+  {
+    id: "events",
+    title: "Events",
   },
   {
     id: "competitions",

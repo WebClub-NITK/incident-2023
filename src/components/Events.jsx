@@ -19,7 +19,7 @@ const Events = () => {
     {
       index: 1,
       src: sunidhi,
-      date:"19th March",
+      date: "19th March",
       info: "The headliner for the final day of Incident 2023 is none other than the Queen of Bollywood music, Sunidhi Chauhan!\n\nIn a career spanning over 2 decades, Sunidhi has lent her expressive voice to 200+ movies. With chartbusters like Sheila ki Jawani, Ra Ra Rakkamma and Crazy Kiya Re, She has truly been one of the flagbearers of Indian music.\n\nHer energy and flair are second to none and the time is nigh for these shores to witness it on the 19th of March at Incident 2023.",
       heading: 'BOLLYWOOD NIGHT'
 
@@ -30,21 +30,21 @@ const Events = () => {
        \n\nFrom wonderful originals like Nammooru, Freedom Rock and Samaya to creative mashups and covers of popular songs like Belageddu, Gulabi Aanken and Dil Chahta Hai, Mysore Xpress truly is the complete package for Fusion music lovers!`,
       heading: 'FUSION NIGHT',
       src: mx,
-      date:"17th March",
+      date: "17th March",
     },
     {
       index: 3,
       src: cm1,
       info: "Coming soon...",
       heading: 'DJ NIGHT',
-      date:"18th March",
+      date: "18th March",
     },
     {
       index: 4,
       info: "Coming soon..",
       src: cm2,
       heading: 'COMEDY NIGHT',
-      date:"16th March",
+      date: "16th March",
     },
   ]
   const a = slidedata.map((data) => data.src);
@@ -110,17 +110,17 @@ const Events = () => {
 
   if (window.innerWidth >= 760) {
     return (
-      <div className='flex justify-center items-center my-12' id="events">
+      <div className='flex justify-center items-center my-12 flex-col' id="events">
+        <div className='w-full text-center font-[ARMRegular] text-4xl md:text-6xl my-3 p-3 text-primary text-gradient font-semibold sm:text-5xl md:text-left md:m-3 md:p-3'>EVENTS</div>
         <div className="Events  text-center">
           <motion.div
             whileInView={{ y: [-20, 0], opacity: [0, 1] }}
             transition={{ duration: 1.5 }}
           >
-            <div className='Heading text-gradient font-[ARMRegular] leading-[2] md:text-[80px] text-[50px] font-bold float-left '>EVENTS</div>
             <Slider {...settings} className={` Slider w-[70vw] flex items-center m-auto`}>
               {slidedata.map((data) => (
-                <div className={data.index-1 === currentImage ? "slide activeSlide hover:scale-[0.99] "  : "slide hover:scale-[0.9]"}>
-                  <img src={data.src} alt={data.src} className=' rounded-3xl object-cover' onClick={() => { currentImageHandler(data.index-1) }} />
+                <div className={data.index - 1 === currentImage ? "slide activeSlide hover:scale-[0.99] " : "slide hover:scale-[0.9]"}>
+                  <img src={data.src} alt={data.src} className=' rounded-3xl object-cover' onClick={() => { currentImageHandler(data.index - 1) }} />
                 </div>
               ))}
             </Slider>
@@ -136,16 +136,17 @@ const Events = () => {
   else {
     settings.slidesToShow = 1
     return (
-      <div className='flex justify-center items-center'>
+      <div className='flex justify-center items-center flex-col'>
+        <div className='w-full text-center font-[ARMRegular] text-4xl md:text-6xl my-3 p-3 text-primary text-gradient font-semibold sm:text-5xl md:text-left md:m-3 md:p-3'>EVENTS</div>
         <div className="Events text-center">
           <motion.div
             whileInView={{ y: [-20, 0], opacity: [0, 1] }}
             transition={{ duration: 1.5 }}>
-            <div className='Heading text-gradient font-[ARMRegular] leading-[2] md:text-[60px] text-[60px] font-bold'>EVENTS</div>
+            
             <Slider {...settings} className={` Slider w-[70vw] items-center m-auto`}>
               {slidedata.map((data) => (
-                <div className={data.index-1 === currentImage ? "slide activeSlide scale:[0.7] hover:scale-[0.8] "  : "slide hover:scale-[0.7]"}>
-                  <img src={data.src} alt={data.src} className=' rounded-3xl object-cover' onClick={() => { currentImageHandler(data.index-1) }} />
+                <div className={data.index - 1 === currentImage ? "slide activeSlide scale:[0.7] hover:scale-[0.8] " : "slide hover:scale-[0.7]"}>
+                  <img src={data.src} alt={data.src} className=' rounded-3xl object-cover' onClick={() => { currentImageHandler(data.index - 1) }} />
                 </div>
               ))}
             </Slider>
