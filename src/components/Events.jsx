@@ -4,9 +4,9 @@ import EventDetails from "./EventDetails"
 import Slider from "react-slick"
 import { TfiArrowCircleRight, TfiArrowCircleLeft } from "react-icons/tfi"
 import "./Events.css"
-import {logo} from "../assets"
+import { logo } from "../assets"
 import { sunidhi } from '../assets'
-import { mx,cm1,cm2} from '../assets'
+import { mx, cm1, cm2 } from '../assets'
 import { motion } from "framer-motion";
 
 const Events = () => {
@@ -19,81 +19,44 @@ const Events = () => {
     {
       index: 1,
       src: sunidhi,
-      info: "1Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, doloremque!",
-      heading: 'EVENT 1'
+      date:"19/03/2023",
+      info: "The headliner for the final day of Incident 2023 is none other than the Queen of Bollywood music, Sunidhi Chauhan!\n\nIn a career spanning over 2 decades, Sunidhi has lent her expressive voice to 200+ movies. With chartbusters like Sheila ki Jawani, Ra Ra Rakkamma and Crazy Kiya Re, She has truly been one of the flagbearers of Indian music.\n\nHer energy and flair are second to none and the time is nigh for these shores to witness it on the 19th of March at Incident 2023.",
+      heading: 'BOLLYWOOD NIGHT'
 
     },
     {
       index: 2,
-      info: "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, repellendus?",
+      info: `Incident 2023 presents to you the Mysore-based fusion band, Mysore Xpress on the Fusion Night on March 17th.\n\n 
+       \n\nFrom wonderful originals like Nammooru, Freedom Rock and Samaya to creative mashups and covers of popular songs like Belageddu, Gulabi Aanken and Dil Chahta Hai, Mysore Xpress truly is the complete package for Fusion music lovers!`,
+      heading: 'FUSION NIGHT',
       src: mx,
-      heading: 'EVENT 2'
+      date:"17/03/2023",
     },
     {
       index: 3,
       src: cm1,
-      info: "3Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, repellendus?2Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, repellendus?2Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, repellendus?2Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, repellendus?",
-      heading: 'EVENT 3'
+      info: "Coming soon...",
+      heading: 'DJ NIGHT',
+      date:"18/03/2023",
     },
     {
       index: 4,
-      info: "4Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, repellendus?",
+      info: "Coming soon..",
       src: cm2,
-      heading: 'EVENT 4'
+      heading: 'COMEDY NIGHT',
+      date:"16/03/2023",
     },
-    // {
-    //   index: 5,
-    //   info: "4Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, repellendus?",
-    //   src: logo,
-    //   heading: 'EVENT 5'
-    // },
-
-    // {
-    //   index: 6,
-    //   src: logo,
-    //   info: "1Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, doloremque!",
-    //   heading: 'EVENT 6'
-    // },
-
-    // {
-    //   index: 7,
-    //   info: "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, repellendus?",
-    //   src: logo,      
-    //   heading: 'EVENT 7'
-    // },
-
-    // {
-    //   index: 8,
-    //   src: logo,      
-    //   info: "3Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, repellendus?",
-    //   heading: 'EVENT 8'
-    // },
-
-    // {
-    //   index: 9,
-    //   info: "4Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, repellendus?",
-    //   src: logo,      
-    //   heading: 'EVENT 9'
-    // },
-
-    // {
-    //   index: 10,
-    //   info: "4Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, repellendus?",
-    //   src: logo,      
-    //   heading: 'EVENT 10'
-    // },
-    
   ]
   const a = slidedata.map((data) => data.src);
-  const b = slidedata.map((data)=>data.heading);
+  const b = slidedata.map((data) => data.heading);
 
 
   const NextArrow = ({ onClick }) => {
     return (
 
-        <div className="arrow next sm:flex hidden" onClick={onClick}>
-          <TfiArrowCircleRight />
-        </div>
+      <div className="arrow next sm:flex hidden" onClick={onClick}>
+        <TfiArrowCircleRight />
+      </div>
     );
   };
 
@@ -139,22 +102,22 @@ const Events = () => {
     centerMode: true,
     autoplay: true,
     autoplaySpeed: 2500,
-    centerPadding:-20,
+    centerPadding: -20,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     beforeChange: (current, next) => setCurrentImage(next),
   };
-  
-  if(window.innerWidth>=760){
+
+  if (window.innerWidth >= 760) {
     return (
-      <div className='flex justify-center items-center'>
+      <div className='flex justify-center items-center my-12' id="events">
         <div className="Events  text-center">
           <motion.div
-                whileInView={{ y: [-20, 0], opacity: [0, 1] }}
-                transition={{ duration: 1.5 }}
-              >
+            whileInView={{ y: [-20, 0], opacity: [0, 1] }}
+            transition={{ duration: 1.5 }}
+          >
             <div className='Heading text-gradient font-[ARMRegular] leading-[2] md:text-[80px] text-[50px] font-bold float-left '>EVENTS</div>
-            <Slider {...settings} className={` Slider w-[80vw] flex items-center`}>
+            <Slider {...settings} className={` Slider w-[70vw] flex items-center m-auto`}>
               {slidedata.map((data) => (
                 <div className={data.index-1 === currentImage ? "slide activeSlide hover:scale-[0.99] "  : "slide hover:scale-[0.9]"}>
                   <img src={data.src} alt={data.src} className=' rounded-3xl object-cover' onClick={() => { currentImageHandler(data.index-1) }} />
@@ -170,18 +133,18 @@ const Events = () => {
       </div>
     )
   }
-  else{
-    settings.slidesToShow=1
+  else {
+    settings.slidesToShow = 1
     return (
       <div className='flex justify-center items-center'>
         <div className="Events text-center">
           <motion.div
-                whileInView={{ y: [-20, 0], opacity: [0, 1] }}
-                transition={{ duration: 1.5 }}>
+            whileInView={{ y: [-20, 0], opacity: [0, 1] }}
+            transition={{ duration: 1.5 }}>
             <div className='Heading text-gradient font-[ARMRegular] leading-[2] md:text-[60px] text-[60px] font-bold'>EVENTS</div>
             <Slider {...settings} className={` Slider w-[60vw] flex items-center`}>
               {slidedata.map((data) => (
-                <div className={data.index-1 === currentImage ? "slide activeSlide scale:[0.8] hover:scale-[0.99] "  : "slide hover:scale-[0.9]"}>
+                <div className={data.index-1 === currentImage ? "slide activeSlide scale:[0.7] hover:scale-[0.8] "  : "slide hover:scale-[0.7]"}>
                   <img src={data.src} alt={data.src} className=' rounded-3xl object-cover' onClick={() => { currentImageHandler(data.index-1) }} />
                 </div>
               ))}
