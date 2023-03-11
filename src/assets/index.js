@@ -28,7 +28,8 @@ import operation from './cards/biz/Operations.jpg'
 import themed_quiz from './cards/lit/themed_quiz.jpg'
 import debate from './cards/lit/debate.jpg'
 import lit1 from './cards/lit/lit.jpg'
-import major from './cards/lit/major.jpg'
+// import major from './cards/lit/major.jpg'
+import genquiz from './cards/lit/genquiz.jpg'
 import open from './cards/lit/open.jpg'
 
 
@@ -43,11 +44,60 @@ import gaming from './cards/specials/gaming.jpg'
 import hog from './cards/specials/hogathon.jpg'
 import stunt from './cards/specials/stunt.jpg'
 import world from './cards/specials/world_fest.jpg'
-
+import paper from "./paper-card.png";
 import spike from './cards/sports/spike.jpg'
 import slam from './cards/sports/slam_dunk.jpg'
-import heart from './heart.svg'
 
+import sunidhi from './proshows/Sunhidi.jpg'
+import mx from './proshows/mx.jpg'
+import cm1 from './proshows/cm1.jpg'
+import cm2 from './proshows/cm2.jpg'
+import cc from './cards/ISTENEW/case.jpg'
+import gbogh from './cards/ISTENEW/gbogh.jpg'
+import mock from './cards/ISTENEW/mock.jpg'
+import reel from './cards/ISTENEW/reelit.jpg'
+
+
+import shield from "./sponsor-shield.png"
+import heart from "./heart.svg"
+
+import bosch from './sponsor/boblack.png'
+import hutti from './sponsor/Hutti.jpg'
+import kptcl from './sponsor/kptcl.svg'
+import vtpc from './sponsor/VTPC.png'
+import ksmcl from './sponsor/KSMCL.png'
+import shankar from './sponsor/shankar.png'
+import unimitsu from './sponsor/unimitsu.png'
+import rel from './sponsor/rel.png'
+import kspcb from './sponsor/kspcb.png'
+import mysore from './sponsor/mysore.png'
+import tribe from './sponsor/tribe.png'
+import tgp from './sponsor/tgp.png'
+import mrpl from './sponsor/mrpl.png'
+import hexa from './sponsor/hexa.png'
+import ramco from './sponsor/ramco.png'
+import nmpt from './sponsor/nmpt.png'
+import yojaka from './sponsor/Sprite.png'
+import campco from './sponsor/campco.png'
+import safe from './sponsor/safe.png'
+import plum from './sponsor/plumbody.png'
+import dairy from './sponsor/dairy.png'
+import unstop from "../assets/unstop-logo.png";
+import daurcom from './sponsor/daurcom.png'
+import mmj from './sponsor/mmj.png'
+import beardo from './sponsor/beardo.png'
+import belgian from './sponsor/belgian.png'
+import keventer from './sponsor/keventer.png'
+import mmc from './sponsor/mmc.jpg'
+import manforce from './sponsor/manforce.png'
+import seg from './sponsor/seg.png'
+import nandini from './sponsor/nandini.png'
+import twin from './sponsor/twin.jpg'
+import sbi from './sponsor/sbi.png'
+import golive from './sponsor/Golive-Logo.png'
+import gatsby from './sponsor/GATSBY.gif'
+import ims from './sponsor/ims.png'
+import Vi from './sponsor/Vi.png'
 export {
   menu,
   close,
@@ -84,8 +134,56 @@ export {
   themed_quiz,
   debate,
   lit1,
-  major,
   open,
+  shield,
+  bosch,
+  hutti,
+  kptcl,
+  vtpc,
+  ksmcl,
+  shankar,
+  unimitsu,
+  rel,
+  kspcb,
+  mysore,
+  tribe,
+  tgp,
+  golive,
+  ims,
+  Vi,
+  gatsby,
+  mrpl,
+  hexa,
+  ramco,
+  nmpt,
+  yojaka,
+  campco,
+  safe,
+  plum,
+  dairy,
+  unstop,
+  daurcom,
+  mmj,
+  beardo,
+  belgian,
+  keventer,
+  mmc,
+  manforce,
+  seg,
+  nandini,
+  twin,
+  sbi,
+  nn,
   heart,
-  nn
-};
+  cc,
+  reel,
+  gbogh,
+  mock,
+  genquiz,
+  sunidhi,
+  mx,
+  cm1,
+  cm2
+}
+
+

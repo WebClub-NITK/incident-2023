@@ -41,31 +41,32 @@ const App = () => {
         <Hero />
         </div>
       </div> */}
-        <div className={`bg-background ${styles.flexStart}`}>
-          <Hero />
-        </div>
+      <div className={`bg-background ${styles.flexStart}`}>
+        <Hero />
+      </div>
 
         <div className={`bg-background ${styles.flexCenter} ${styles.paddingX} `}>
           <div className={`${styles.boxWidth}`}>
             <About />
-            {/* <Events /> */}
+            <Events />
             <Competitions />
             <Icare />
+            <Sponsors />
             <FAQ />
-            {/* <Sponsors /> */}
-            
           </div>
         </div>
         <Footer />
 
+
         <div className="bg-background w-full text-secondary text-lg flex flex-nowrap p-2  justify-center gap-2 items-center">
-          Made with <img src={heart} className="w-5"/> by <a href="https://webclub.nitk.ac.in/" target="_blank" className="no-underline hover:text-primary">WEC-NITK</a>
+          Made with <img src={heart} className="w-5" /> by <a href="https://webclub.nitk.ac.in/" target="_blank" className="no-underline hover:text-primary">WEC-NITK</a>
         </div>
       
       </div>
     );
   }
 };
+
 
 
 export default App;
