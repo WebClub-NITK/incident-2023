@@ -7,19 +7,18 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="xl:w-[80%] md:w-[90%] w-[90%] flex justify-between items-center fixed z-50 md:p-3 pt-6">
+    <nav className="w-full z-50 md:p-3 py-4 flex justify-between items-center backdrop-blur-md fixed top-0">
       {/* Logo */}
       <a href="#home">
         <img
           src={incitext}
           alt="Incident 2023"
-          className="xl:h-[40px] md:h-[30px] sm:h-[28px] h-[22px]"
+          className="xl:h-[43px] md:h-[33px] sm:h-[28px] h-[22px] justify-start md:mx-20 mx-4"
         />
       </a>
       
       {/* List of links */}
-      <ul className="list-none md:flex hidden justify-end items-center flex-1">
-      <button className="font-[RMMedium] button-gradient p-1 px-2 font-bold xl:text-[15px] text-[12px] cursor-pointer rounded-md mx-8 hover:text-secondary">REGISTER NOW</button>
+      <ul className="list-none md:flex hidden justify-end items-center flex-1 mx-10">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -38,12 +37,12 @@ const Navbar = () => {
       </ul>
 
       {/* only for mobile and tablet devices, created separately */}
-      <div className="md:hidden flex flex-1 justify-end items-center">
+      <div className="md:hidden items-center mx-4">
         {/* shows toggle icon based on its state */}
         <img
           src={toggle ? close : menu}
           alt="menu"
-          className="sm:w-[40px] w-[28px] h-[28px] object-contain"
+          className="sm:w-[40px] h-[28px] w-[28px]"
           // correct way to change state using the prev
           // version of the same state using a callback function
           onClick={() => setToggle((prev) => !prev)}
@@ -55,11 +54,10 @@ const Navbar = () => {
         min-w-[140px] rounded-xl sidebar`}
         >
           <ul className="list-none flex flex-col justify-end items-center flex-1">
-          <button className="font-[RMMedium] mb-4 text-primary p-1 font-bold text-[16px] cursor-pointer">REGISTER NOW</button>
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-[ARMBook]
+                className={`font-poppins
                 font-normal
                 cursor-pointer
                 text-[16px]

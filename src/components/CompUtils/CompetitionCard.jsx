@@ -53,6 +53,7 @@ const CompetitionCard = (competition) => {
         date={competition.date}
         poc={competition.poc}
         image={competition.image}
+        reg_link={competition.reg_link}
         onClose={handleOnClose}
       />
     </motion.div>

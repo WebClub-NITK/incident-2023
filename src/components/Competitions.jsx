@@ -4,16 +4,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import CompetitionCard from "./CompUtils/CompetitionCard";
 // import { Button } from "@headlessui/react";
 import { compDetails } from "../constants/competition";
-import {
-  logo,
-  biz,
-  dance,
-  fashion,
-  lit,
-  music,
-  special,
-  sports,
-} from "../assets/index";
+import { logo, biz, dance, fashion, lit, music, sports } from "../assets/index";
 // import Paginator from "./CompUtils/Paginator";
 
 const Competitions = () => {
@@ -23,7 +14,7 @@ const Competitions = () => {
   const [showMore, setShowMore] = useState(false);
 
   const buttonText = showMore ? "Show Less" : "Show More";
-  const coins = [logo, biz, dance, fashion, lit, music, special, sports];
+  const coins = [logo, biz, dance, fashion, lit, music, sports];
   // const [currentPage, setCurrentPage] = useState(1)
   // const [postsPerPage, setPostsPerPage] = useState(2)
 
@@ -74,21 +65,21 @@ const Competitions = () => {
   // const currentPosts = competitions.slice(firstPostIndex, lastPostIndex)
 
   return (
-    <section id="competitions">
-      <div className="text-start font-[ARMRegular] text-5xl md:text-6xl m-3 p-4 text-primary font-semibold">
+    <section id="competitions" className="pt-16">
+      <div className="basis-full text-center font-[ARMRegular] text-4xl md:text-6xl my-3 p-3 text-primary text-gradient font-semibold sm:text-5xl md:text-left md:m-3 md:p-3">
         Competitions
       </div>
       {/* For coins */}
       <div className="hidden md:block md:transition-all md:duration-100 md:flex flex-wrap md:flex-row md:space-x-9 md:justify-center md:items-center flex items-center justify-center">
-        <div className="w-auto text-white font-poppins py-2 px-4 border-b-4 border-[#d4a152] flex flex-row justify-evenly p-1 space-x-1">
+        <div className="w-auto text-primary font-poppins py-2 px-4 border-b-4 border-[#d4a152] flex flex-row justify-evenly p-1 space-x-1">
           {[
             "All Categories",
-            "Biz",
+            "Business",
             "Dance",
-            "Fashion",
-            "Lit",
+            "Fashion & Drama",
+            "Literary",
             "Music",
-            "Special",
+
             "Sports",
           ].map((item, index) => (
             <button key={index} className="max-w-[144px]">
@@ -110,9 +101,8 @@ const Competitions = () => {
           <button
             // removed the following
             // transform translate-y-1/2
-            className={`text-center py-2 flex items-center justify-center px-4 px-4 py-2 rounded-lg text-[#1A2328] bg-primary border border-[#89352a] focus:outline-none focus:shadow-outline hover:border-[#672c1a] shadow-2 shadow-inner shadow-[#672c1a] ${
-              isOpen ? "w-full" : "w-fit"
-            }`}
+            className={`text-center py-2 flex items-center justify-center px-4 px-4 py-2 rounded-lg text-[#1A2328] bg-primary border border-[#89352a] focus:outline-none focus:shadow-outline hover:border-[#672c1a] shadow-2 shadow-inner shadow-[#672c1a] ${isOpen ? "w-full" : "w-fit"
+              }`}
             onClick={toggleDropdown}
           >
             <div className="flex justify-center">
@@ -125,23 +115,23 @@ const Competitions = () => {
           </button>
         </div>
         {isOpen && (
-          <div className="{`absolute z-20 mt-3 text-center origin-top-right rounded-md shadow-lg overflow-y-auto shadow-10 shadow-black">
-            <div className="bg-secondary font-poppins rounded-md shadow-xs shadow-2 shadow-inner shadow-[#1A2328]">
+          <div className="{`absolute z-20 mt-3 text-center origin-top-right rounded-md shadow-lg overflow-y-auto shadow-10 shadow-black ">
+            <div className="bg-secondary font-poppins rounded-md shadow-xs shadow-2 shadow-inner shadow-[#1A2328] ">
               <div className="py-1">
                 {[
                   "All Categories",
-                  "Biz",
+                  "Business",
                   "Dance",
-                  "Fashion",
-                  "Lit",
+                  "Fashion & Drama",
+                  "Literary",
                   "Music",
-                  "Special",
+
                   "Sports",
                 ].map((item, index) => (
                   <a
                     key={index}
                     className="block px-4 py-2 text-sm leading-5 text-[#1A2328] hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900 my-1 "
-                    onClick={() => { 
+                    onClick={() => {
                       handleCompetitionFilter(item);
                       toggleDropdown();
                     }}
@@ -155,30 +145,31 @@ const Competitions = () => {
         )}
       </div>
       {/* for desktop */}
-      <div className="hidden md:flex md:flex-wrap md:flex-row  md:justify-center">
-        {filterCompetitions.map(
-          (competitions, index) =>
-            (showMore || (!showMore && index < 9)) && (
-              <div>
-                <div
-                  className="w-full rounded-lg overflow-hidden flex-initial justify-center"
-                  id={competitions.id}
-                >
-                  <CompetitionCard
-                    key={competitions.id}
-                    index={index}
-                    title={competitions.title}
-                    details={competitions.details}
-                    date={competitions.date}
-                    poc={competitions.poc}
-                    image={competitions.image}
-                  />
-                </div>
-              </div>
-            )
-        )}
+      <div
+        className={`hidden md:flex md:flex-wrap md:flex-row md:justify-center ${filterCompetitions.length > 3 ? "min-h-[60vh]" : "min-h-[30vh]"
+          }`}
+      >
+        {filterCompetitions.map((competitions, index) => (
+          <div>
+            <div
+              className={`w-full rounded-lg overflow-hidden flex-initial justify-center ${showMore || (!showMore && index < 9) ? "visible" : "hidden"
+                }`}
+              id={competitions.id}
+            >
+              <CompetitionCard
+                key={competitions.id}
+                index={index}
+                title={competitions.title}
+                details={competitions.details}
+                date={competitions.date}
+                poc={competitions.poc}
+                image={competitions.image}
+                reg_link={competitions.reg_link}
+              />
+            </div>
+          </div>
+        ))}
       </div>
-
 
       {filterCompetitions.length > 9 && (
         <div className="md:flex md:flex-wrap md:justify-center hidden">
@@ -193,30 +184,31 @@ const Competitions = () => {
           </button>
         </div>
       )}
-        <div className="flex flex-wrap justify-center md:hidden">
-        {filterCompetitions.map(
-          (competitions, index) =>
-            (showMore || (!showMore && index < 3)) && (
-              <div>
-                <div
-                  className="w-full rounded-lg overflow-hidden flex-initial justify-center"
-                  id={competitions.id}
-                >
-                  <CompetitionCard
-                    key={competitions.id}
-                    index={index}
-                    title={competitions.title}
-                    details={competitions.details}
-                    date={competitions.date}
-                    poc={competitions.poc}
-                    image={competitions.image}
-                  />
-                </div>
-              </div>
-            )
-        )}
+      <div
+        className={`flex flex-wrap justify-center md:hidden ${filterCompetitions.length < 2 ? "min-h-[30vh]" : "min-h-[60vh]"
+          }`}
+      >
+        {filterCompetitions.map((competitions, index) => (
+          <div>
+            <div
+              className={`w-full rounded-lg overflow-hidden flex-initial justify-center ${showMore || (!showMore && index < 3) ? "visible" : "hidden"
+                }`}
+              id={competitions.id}
+            >
+              <CompetitionCard
+                key={competitions.id}
+                index={index}
+                title={competitions.title}
+                details={competitions.details}
+                date={competitions.date}
+                poc={competitions.poc}
+                image={competitions.image}
+                reg_link={competitions.reg_link}
+              />
+            </div>
+          </div>
+        ))}
       </div>
-
 
       {filterCompetitions.length > 3 && (
         <div className="flex justify-center">
