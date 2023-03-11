@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React,{useState} from 'react'
 import { AnimatePresence, motion } from "framer-motion";
-import ICareModal from "./ICareModal";
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import ICareModal from './ICareModal';
+import { Player,Controls } from "@lottiefiles/react-lottie-player";
 import icare from "../lotties/icare.json";
 import { GiCrossedSabres } from "react-icons/gi";
 const Icare = () => {

@@ -18,7 +18,12 @@ import nritya from './cards/dance/nritya.jpg'
 import solo from './cards/dance/hhi_solo.jpg'
 import duet from './cards/dance/hhi_duet.jpg'
 import nn from './cards/dance/nn.jpg'
-
+import cricket_star from './cards/sports/cricket_stars.jpg'
+import FIFA from './cards/sports/FIFA.jpg'
+import CODM from './cards/sports/CODM.jpg'
+import Rocketleague from './cards/sports/Rocketleague.jpg'
+import Valorant from './cards/sports/Valorant.jpg'
+import Fallguys from './cards/sports/Fallguys.jpg'
 import bisquiz from './cards/biz/Business_Quiz.jpg'
 import hr from './cards/biz/HR_Management.jpg'
 import manager from './cards/biz/Best_Manager.jpg'
@@ -151,6 +156,12 @@ export {
   golive,
   ims,
   Vi,
+  FIFA,
+  CODM,
+  Rocketleague,
+  Valorant,
+  Fallguys,
+  cricket_star,
   gatsby,
   mrpl,
   hexa,
