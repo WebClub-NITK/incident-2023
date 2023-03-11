@@ -4,8 +4,13 @@ import { nritya } from "../assets";
 import { solo } from "../assets";
 import { duet } from "../assets";
 import { nn } from "../assets";
-
-
+import {FIFA } from "../assets";
+import { Fallguys } from "../assets";
+import { NewState } from "../assets";
+import { Valorant } from "../assets";
+import { Pokemonunite } from "../assets";
+import { Rocketleague } from "../assets";
+import { cricketstars } from "../assets";
 import { bisquiz } from "../assets";
 import { hr } from "../assets";
 import { manager } from "../assets";
@@ -385,4 +390,73 @@ export const compDetails = [
     reg_link: "https://unstop.com/o/eolJdxM?lb=WCijcz3",
     // poc: "POC"
   },
+  {
+    id: "competition_30",
+    title: "Fall Guys",
+    details:
+      "60 players have to compete over a series of obstacle courses, and only some of them will make it to the next round. In the final challenge, the last surviving competitor is the winner.",
+    date: "17 - 19 March",
+    category: "Sports",
+    image: Fallguys,
+    reg_link: "https://unstop.com/o/VeHrCmI?lb=lXF3Q0f",
+    // poc: "POC"
+  },
+  {
+    id: "competition_31",
+    title: "Valorant",
+    details:
+      "You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities. And, with one life per-round, you'll need to think faster than your opponent if you want to survive.",
+    date: "17 - 19 March",
+    category: "Sports",
+    image: Valorant,
+    reg_link: "https://unstop.com/o/Gj9O0Ik?lb=lXF3Q0f",
+    // poc: "POC"
+  },
+  {
+    id: "competition_32",
+    title: "Rocket League",
+    details:
+      "Rocket league is basically 'Soccer' with Rocket powered cars. The objective is to hit the ball in the opponent's net using whatever maneuver necessary with no rules/referee to bind you.",
+    date: "17 - 19 March",
+    category: "Sports",
+    image: Rocketleague,
+    reg_link: "https://unstop.com/o/IRm3bYu?lb=lXF3Q0f",
+    // poc: "POC"
+  },
+  {
+    id: "competition_33",
+    title: "FIFA",
+    details:
+      "FIFA is a series of association football simulation video games.",
+    date: "17 - 19 March",
+    category: "Sports",
+    image: FIFA,
+    reg_link: "https://unstop.com/o/yXVzfPp?lb=lXF3Q0f",
+    // poc: "POC"
+  },
+  {
+    id: "competition_34",
+    title: "Cricket Stars",
+    details:
+      "Collect bowling and batting cards and compete with the opponent in 1 over match. Play by selecting relevant cards for each ball and score more than your opponent to win.",
+    date: "17 - 19 March",
+    category: "Sports",
+    image: cricketstars,
+    reg_link: "https://unstop.com/o/KLDxIOA?lb=lXF3Q0f",
+    // poc: "POC"
+  },
+  {
+    id: "competition_35",
+    title: "CODM",
+    details:
+      "Experience the thrill of Call of Duty on the go. Play as iconic characters in battle royale and multiplayer in one of the best fps free mobile games.",
+    date: "17 - 19 March",
+    category: "Sports",
+    image: NewState,
+    reg_link: "https://unstop.com/o/S9XEZ68?lb=lXF3Q0f",
+    // poc: "POC"
+  },
+  
+  
+  
 ];

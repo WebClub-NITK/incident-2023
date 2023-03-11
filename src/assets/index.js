@@ -47,7 +47,13 @@ import world from './cards/specials/world_fest.jpg'
 import paper from "./paper-card.png";
 import spike from './cards/sports/spike.jpg'
 import slam from './cards/sports/slam_dunk.jpg'
-
+import cricketstars from './cards/sports/cricketstars.jpg'
+import Fallguys from './cards/sports/Fallguys.jpg'
+import FIFA from './cards/sports/FIFA.jpg'
+import NewState from './cards/sports/NewState.jpg'
+import Valorant from './cards/sports/Valorant.jpg'
+import Pokemonunite from './cards/sports/Pokemonunite.jpg'
+import Rocketleague from './cards/sports/Rocketleague.jpg'
 import sunidhi from './proshows/Sunhidi.jpg'
 import mx from './proshows/mx.jpg'
 import cm1 from './proshows/cm1.jpg'
@@ -98,6 +104,7 @@ import golive from './sponsor/Golive-Logo.png'
 import gatsby from './sponsor/GATSBY.gif'
 import ims from './sponsor/ims.png'
 import Vi from './sponsor/Vi.png'
+
 export {
   menu,
   close,
@@ -183,7 +190,14 @@ export {
   sunidhi,
   mx,
   cm1,
-  cm2
+  cm2,
+  cricketstars,
+  Fallguys,
+  FIFA,
+  NewState,
+  Valorant,
+  Pokemonunite,
+  Rocketleague,
 }
 
 
