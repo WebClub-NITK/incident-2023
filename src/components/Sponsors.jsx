@@ -17,7 +17,7 @@ const Sponsors = () => {
   const SponsorsList = [
     { src: tribe, title: "Title Sponsor", name: "TribeVibe",link:'https://www.tribevibe.live/' },
     { src: rel, title: "Co-Sponsors", name: "Reliance",link:'https://www.ril.com/' },
-    { src: unimitsu, title: "Co-Sponsors", name: "Uniball",link:'https://www.uniball.in/' },
+    // { src: unimitsu, title: "Co-Sponsors", name: "Uniball",link:'https://www.uniball.in/' },
     { src: kspcb, title: "Associate Sponsor", name: "KSPCB",link:'https://kspcb.karnataka.gov.in/' },
     { src: mysore, title: "Associate Sponsor", name: "Mysore Sandal Soap",link:'https://mysoresandal.karnataka.gov.in/english' },
     { src: bosch, title: "Platinum Sponsor", name: "Bosch",link:'https://www.bosch.in/' },
@@ -44,7 +44,7 @@ const Sponsors = () => {
     { src: belgian, title: "Waffle Partner", name: "Belgian Waffle" ,link:'https://www.instagram.com/belgianwaffleco_mangalore/?hl=en'},
     { src: keventer, title: "Milkshake Partner", name: "Keventers",link:'https://www.instagram.com/keventers_mangalore/?hl=en' },
     { src: mmc, title: "Construction Partner", name: "M M Construction" ,link:'https://goo.gl/maps/j2faCwteumiGAZwcA'},
-    { src: manforce, title: "Official Safety Partner", name: "Manforce " ,link:'https://manforcecondoms.com/'},
+    // { src: manforce, title: "Official Safety Partner", name: "Manforce " ,link:'https://manforcecondoms.com/'},
     { src: seg, title: "Automotive Partner", name: "SEG Automotive Inida Private Limited" ,link:'https://www.seg-automotive.com/'},
     { src: nandini, title: "Refreshments Partner", name: "Nandini",link:'https://www.kmfnandini.coop/en' },
     { src: twin, title: "Women's Lifestyle Partner", name: "Twin Birds",link:'https://www.twinbirds.co.in/' },
