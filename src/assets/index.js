@@ -68,7 +68,7 @@ import heart from "./heart.svg"
 
 import bosch from './sponsor/boblack.png'
 import hutti from './sponsor/Hutti.jpg'
-import kptcl from './sponsor/KPTCL.jpg'
+import kptcl from './sponsor/kptcl.png'
 import vtpc from './sponsor/VTPC.png'
 import ksmcl from './sponsor/KSMCL.png'
 import shankar from './sponsor/shankar.png'

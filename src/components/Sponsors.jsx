@@ -52,8 +52,7 @@ const Sponsors = () => {
     { src: Vi, title: "Connectivity Partner", name: "VI",link:'https://www.myvi.in/' },
     { src: gatsby, title: "Styling Partner", name: "Gatsby" ,link:'https://gatsbyindia.com/'},
     { src: golive, title: "E-Sports & Gaming Partner", name: "GoLive Games Studios Pvt. Ltd.",link:'https://golive.games/' },
-    { src: iocl, title: "talent fueling partner", name: "IOCL",link:'https://iocl.com/' },
-
+    { src: iocl, title: "Talent Fueling Partner", name: "IOCL",link:'https://iocl.com/' },
   ]
 
 
