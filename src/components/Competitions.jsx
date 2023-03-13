@@ -80,7 +80,7 @@ const Competitions = () => {
             "Literary",
             "Music",
 
-            "Gaming & Tech",
+            "Sports",
           ].map((item, index) => (
             <button key={index} className="max-w-[144px]">
               <img
@@ -126,7 +126,7 @@ const Competitions = () => {
                   "Literary",
                   "Music",
 
-                  "Gaming & Tech",
+                  "Sports",
                 ].map((item, index) => (
                   <a
                     key={index}

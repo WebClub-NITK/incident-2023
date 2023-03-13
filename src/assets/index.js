@@ -52,7 +52,6 @@ import world from './cards/specials/world_fest.jpg'
 import paper from "./paper-card.png";
 import spike from './cards/sports/spike.jpg'
 import slam from './cards/sports/slam_dunk.jpg'
-import ctf from './cards/sports/ctf.jpg'
 
 import sunidhi from './proshows/Sunhidi.jpg'
 import mx from './proshows/mx.jpg'
@@ -203,7 +202,6 @@ export {
   mc,
 
   iocl,
-  ctf
 
 }
 
