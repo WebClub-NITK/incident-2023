@@ -395,7 +395,7 @@ export const compDetails = [
     title: "Capture The Flag",
     details:
       "WEC CTF 2023 is a cybersecurity competition hosted by Web Enthusiasts' Club, NITK with challenges in various categories, such as cryptography, reverse engineering, web exploitation, binary exploitation, forensics, open source intelligence and more. The CTF is open to all, can be played individually or in teams of up to 3, and will be held hybrid.",
-    date: "17 - 19 March",
+    date: "18 - 19 March",
     category: "Gaming & Tech",
     image: ctf,
     reg_link: "http://wec-ctf.nitk.ac.in/",
