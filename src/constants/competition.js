@@ -42,6 +42,7 @@ import { gbogh } from "../assets";
 import { cc } from "../assets";
 import { mock } from "../assets";
 import { reel } from "../assets";
+import { ctf } from "../assets";
 
 
 export const compDetails = [
@@ -312,7 +313,7 @@ export const compDetails = [
     details:
       "Slam Dunk is the one of the biggest sporting extravaganzas and the annual basketball tournament of NITK. Renowned teams from all over India shed their sweat for a period of 3 days to fight for the championship which is held across all the days of Incident.",
     date: "16 - 19 March",
-    category: "Sports",
+    category: "Gaming & Tech",
     image: slam,
     reg_link: "https://unstop.com/o/9CjMpyq?lb=WCijcz3",
     // poc: "POC"
@@ -396,7 +397,7 @@ export const compDetails = [
     details:
       "60 players have to compete over a series of obstacle courses, and only some of them will make it to the next round. In the final challenge, the last surviving competitor is the winner.",
     date: "17 - 19 March",
-    category: "Sports",
+    category: "Gaming & Tech",
     image: Fallguys,
     reg_link: "https://unstop.com/o/VeHrCmI?lb=lXF3Q0f",
     // poc: "POC"
@@ -407,7 +408,7 @@ export const compDetails = [
     details:
       "FIFA is a series of association football simulation video games.",
     date: "17 - 19 March",
-    category: "Sports",
+    category: "Gaming & Tech",
     image: FIFA,
     reg_link: "https://unstop.com/o/yXVzfPp?lb=lXF3Q0f",
     // poc: "POC"
@@ -418,7 +419,7 @@ export const compDetails = [
     details:
       "Collect bowling and batting cards and compete with the opponent in 1 over match. Play by selecting relevant cards for each ball and score more than your opponent to win. ",
     date: "17 - 19 March",
-    category: "Sports",
+    category: "Gaming & Tech",
     image: cricket_star,
     reg_link: "https://unstop.com/o/KLDxIOA?lb=lXF3Q0f",
     // poc: "POC"
@@ -429,7 +430,7 @@ export const compDetails = [
     details:
       "You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities. And, with one life per-round, you'll need to think faster than your opponent if you want to survive.",
     date: "17 - 19 March",
-    category: "Sports",
+    category: "Gaming & Tech",
     image: Valorant,
     reg_link: "https://unstop.com/o/Gj9O0Ik?lb=lXF3Q0f",
     // poc: "POC"
@@ -440,7 +441,7 @@ export const compDetails = [
     details:
       "Experience the thrill of Call of Duty on the go. Play as iconic characters in battle royale and multiplayer in one of the best fps free mobile games.",
     date: "17 - 19 March",
-    category: "Sports",
+    category: "Gaming & Tech",
     image: CODM,
     reg_link: "https://unstop.com/o/S9XEZ68?lb=lXF3Q0f",
     // poc: "POC"
@@ -451,9 +452,20 @@ export const compDetails = [
     details:
       "Rocket league is basically 'Soccer' with Rocket powered cars. The objective is to hit the ball in the opponent's net using whatever maneuver necessary with no rules/referee to bind you.",
     date: "17 - 19 March",
-    category: "Sports",
+    category: "Gaming & Tech",
     image: Rocketleague,
     reg_link: "https://unstop.com/o/IRm3bYu?lb=lXF3Q0f",
+    // poc: "POC"
+  },
+  {
+    id: "competition_36",
+    title: "Capture The Flag",
+    details:
+      "WEC CTF 2023 is a cybersecurity competition hosted by Web Enthusiasts' Club, NITK with challenges in various categories, such as cryptography, reverse engineering, web exploitation, binary exploitation, forensics, open source intelligence and more. The CTF is open to all, can be played individually or in teams of up to 3, and will be held hybrid.",
+    date: "18 - 19 March",
+    category: "Gaming & Tech",
+    image: ctf,
+    reg_link: "http://wec-ctf.nitk.ac.in/",
     // poc: "POC"
   },
 ];

@@ -58,7 +58,7 @@ import mx from './proshows/mx.jpg'
 import cm1 from './proshows/cm1.jpg'
 import cm2 from './proshows/cm2.jpg'
 import mc from './proshows/mc.jpg'
-
+import ctf from './cards/sports/ctf.jpg'
 import cc from './cards/ISTENEW/case.jpg'
 import gbogh from './cards/ISTENEW/gbogh.jpg'
 import mock from './cards/ISTENEW/mock.jpg'
@@ -202,6 +202,7 @@ export {
   mc,
 
   iocl,
+  ctf
 
 }
 
