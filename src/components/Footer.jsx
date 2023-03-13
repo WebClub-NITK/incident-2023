@@ -9,7 +9,7 @@ const Footer = () => (
     <div
       className={`${layout.sectionReverse} xl:max-w-[1280px] w-full mx-auto gap-y-4 `}
     >
-      <div className={` ${layout.sectionInfo}`}>
+      <div className={` ${layout.sectionInfo} items-center flex justify-center md:items-start`}>
         <h2 className="text-xl font-bold font-[ARMRegular] text-gradient dark:text-white text-[30px]">
           {aboutMe.name}
         </h2>
@@ -38,16 +38,16 @@ const Footer = () => (
             </a>
           ))}
         </div>
-        <div className="grid grid-cols-2">
+        <div >
           {/* styles is a prop */}
           <a href="https://unstop.com/festival/incident23-national-institute-of-technology-karnataka-nitk-surathkal-103359" target="_blank">
-          <button className="text-dimMaroon flex mx-auto justify-center items-center my-6 md:w-[250px] sm:w-[300px] w-[240px] font-[RMMedium] button-gradient p-2 px-2 font-bold md:text-base sm:text-xl text-sm cursor-pointer rounded-md hover:text-white">
-            <img
-              src={unstop}
-              className="h-[30px] px-2"
-            />
-            REGISTER NOW
-          </button>
+            <button className="text-dimMaroon flex mx-auto justify-center items-center my-6 md:w-[250px] sm:w-[300px] w-[240px] font-[RMMedium] button-gradient p-2 px-2 font-bold md:text-base sm:text-xl text-sm cursor-pointer rounded-md hover:text-white">
+              <img
+                src={unstop}
+                className="h-[30px] px-2"
+              />
+              REGISTER NOW
+            </button>
           </a>
         </div>
       </div>

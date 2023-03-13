@@ -1,0 +1,64 @@
+@import "slick-carousel/slick/slick.css";
+
+@import "slick-carousel/slick/slick-theme.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+.slide {
+  transform: scale(0.8);
+  transition: transform 500ms;
+  opacity: 0.5;
+  position: relative;
+  left:-6%;
+}
+.activeSlide {
+  transform: scale(0.9);
+  opacity: 1;
+
+}
+
+.slide p {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(94.75deg,#d19a08,#f8770d 27.6%,#f85b12 50%,#efb60a 66.15%,#efd305);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2.5vw;
+  font-weight: 700;
+  letter-spacing: .02em;
+
+}
+
+.activeSlide p {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(94.75deg,#d19a08,#f8770d 27.6%,#f85b12 50%,#efb60a 66.15%,#efd305);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2.5vw;
+  font-weight: 200;
+  letter-spacing: .02em;
+
+}
+
+
+.arrow {
+  cursor:pointer;
+  z-index: 10;
+
+
+}
+
+
+.arrow svg {
+  transition: color 300ms;
+  width:3vw;
+  height: auto;
+  color:#eac460;
+
+}
+
+
+.arrow svg:hover {
+  color: #f37703;
+}
+
+

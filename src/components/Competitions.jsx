@@ -65,19 +65,19 @@ const Competitions = () => {
   // const currentPosts = competitions.slice(firstPostIndex, lastPostIndex)
 
   return (
-    <section id="competitions" className="pt-10">
-        <div className="basis-full text-start font-[ARMRegular] text-gradient text-4xl md:text-6xl mt-2 mb-10 p-3 text-primary font-semibold md:mt-20">
-          Competitions
-        </div>
+    <section id="competitions" className="pt-16">
+      <div className="basis-full text-center font-[ARMRegular] text-4xl md:text-6xl my-3 p-3 text-primary text-gradient font-semibold sm:text-5xl md:text-left md:m-3 md:p-3">
+        Competitions
+      </div>
       {/* For coins */}
       <div className="hidden md:block md:transition-all md:duration-100 md:flex flex-wrap md:flex-row md:space-x-9 md:justify-center md:items-center flex items-center justify-center">
         <div className="w-auto text-primary font-poppins py-2 px-4 border-b-4 border-[#d4a152] flex flex-row justify-evenly p-1 space-x-1">
           {[
             "All Categories",
-            "Biz",
+            "Business",
             "Dance",
-            "Fashion",
-            "Lit",
+            "Fashion & Drama",
+            "Literary",
             "Music",
 
             "Sports",
@@ -101,9 +101,8 @@ const Competitions = () => {
           <button
             // removed the following
             // transform translate-y-1/2
-            className={`text-center py-2 flex items-center justify-center px-4 px-4 py-2 rounded-lg text-[#1A2328] bg-primary border border-[#89352a] focus:outline-none focus:shadow-outline hover:border-[#672c1a] shadow-2 shadow-inner shadow-[#672c1a] ${
-              isOpen ? "w-full" : "w-fit"
-            }`}
+            className={`text-center py-2 flex items-center justify-center px-4 px-4 py-2 rounded-lg text-[#1A2328] bg-primary border border-[#89352a] focus:outline-none focus:shadow-outline hover:border-[#672c1a] shadow-2 shadow-inner shadow-[#672c1a] ${isOpen ? "w-full" : "w-fit"
+              }`}
             onClick={toggleDropdown}
           >
             <div className="flex justify-center">
@@ -121,10 +120,10 @@ const Competitions = () => {
               <div className="py-1">
                 {[
                   "All Categories",
-                  "Biz",
+                  "Business",
                   "Dance",
-                  "Fashion",
-                  "Lit",
+                  "Fashion & Drama",
+                  "Literary",
                   "Music",
 
                   "Sports",
@@ -147,16 +146,14 @@ const Competitions = () => {
       </div>
       {/* for desktop */}
       <div
-        className={`hidden md:flex md:flex-wrap md:flex-row md:justify-center ${
-          filterCompetitions.length > 3 ? "min-h-[60vh]" : "min-h-[30vh]"
-        }`}
+        className={`hidden md:flex md:flex-wrap md:flex-row md:justify-center ${filterCompetitions.length > 3 ? "min-h-[60vh]" : "min-h-[30vh]"
+          }`}
       >
         {filterCompetitions.map((competitions, index) => (
           <div>
             <div
-              className={`w-full rounded-lg overflow-hidden flex-initial justify-center ${
-                showMore || (!showMore && index < 9) ? "visible" : "hidden"
-              }`}
+              className={`w-full rounded-lg overflow-hidden flex-initial justify-center ${showMore || (!showMore && index < 9) ? "visible" : "hidden"
+                }`}
               id={competitions.id}
             >
               <CompetitionCard
@@ -188,16 +185,14 @@ const Competitions = () => {
         </div>
       )}
       <div
-        className={`flex flex-wrap justify-center md:hidden ${
-          filterCompetitions.length < 2 ? "min-h-[30vh]" : "min-h-[60vh]"
-        }`}
+        className={`flex flex-wrap justify-center md:hidden ${filterCompetitions.length < 2 ? "min-h-[30vh]" : "min-h-[60vh]"
+          }`}
       >
         {filterCompetitions.map((competitions, index) => (
           <div>
             <div
-              className={`w-full rounded-lg overflow-hidden flex-initial justify-center ${
-                showMore || (!showMore && index < 3) ? "visible" : "hidden"
-              }`}
+              className={`w-full rounded-lg overflow-hidden flex-initial justify-center ${showMore || (!showMore && index < 3) ? "visible" : "hidden"
+                }`}
               id={competitions.id}
             >
               <CompetitionCard
