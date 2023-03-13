@@ -48,13 +48,6 @@ const Events = () => {
       heading: 'DJ NIGHT',
       date: "18th March",
     },
-    {
-      index: 5,
-      info: "Coming soon..",
-      src: cm2,
-      heading: 'FUSION NIGHT',
-      date: "17th March",
-    },
   ]
   const a = slidedata.map((data) => data.src);
   const b = slidedata.map((data) => data.heading);
