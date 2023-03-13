@@ -45,8 +45,8 @@ const FAQ = () => {
   return (
     <section className="mt-12 relative pt-6" id="faq">
       <div className="flex flex-wrap justify-center">
-        <div className="w-[1240px] mx-auto flex flex-col md:flex-row-reverse sm:px-16 px-6">
-          <img src={faq} className="w-[80%] md:w-[40%] mx-auto md:ml-28 mt-4" />
+        <div className="w-[1240px] mx-auto grid md:grid-cols-2">
+          <img src={faq} className="w-[70%] md:w-[60%] mx-auto mt-4" />
           <motion.div
             className="h-fit rounded-xl shadow-sm flex flex-row flex-wrap my-5"
             initial={{ x: "50%", opacity: 0 }}
