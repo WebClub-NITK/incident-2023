@@ -27,16 +27,16 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
+    "react-feather": "^2.0.10",
     "react-icons": "^4.7.1",
     "react-markdown": "^8.0.5",
     "react-slick": "^0.29.0",
-    "react-feather": "^2.0.10",
     "react-tsparticles": "^2.9.3",
     "reactstrap": "^9.1.6",
-    "tsparticles": "^2.9.3",
     "slick-carousel": "^1.8.1",
     "swiper": "^9.0.0",
-    "tailwind-scrollbar-hide": "^1.1.7"
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "tsparticles": "^2.9.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

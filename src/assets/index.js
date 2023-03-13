@@ -18,7 +18,12 @@ import nritya from './cards/dance/nritya.jpg'
 import solo from './cards/dance/hhi_solo.jpg'
 import duet from './cards/dance/hhi_duet.jpg'
 import nn from './cards/dance/nn.jpg'
-
+import cricket_star from './cards/sports/cricket_stars.jpg'
+import FIFA from './cards/sports/FIFA.jpg'
+import CODM from './cards/sports/CODM.jpg'
+import Rocketleague from './cards/sports/Rocketleague.jpg'
+import Valorant from './cards/sports/Valorant.jpg'
+import Fallguys from './cards/sports/Fallguys.jpg'
 import bisquiz from './cards/biz/Business_Quiz.jpg'
 import hr from './cards/biz/HR_Management.jpg'
 import manager from './cards/biz/Best_Manager.jpg'
@@ -65,19 +70,19 @@ import heart from "./heart.svg"
 
 import bosch from './sponsor/boblack.png'
 import hutti from './sponsor/Hutti.jpg'
-import kptcl from './sponsor/kptcl.svg'
+import kptcl from './sponsor/kptcl.png'
 import vtpc from './sponsor/VTPC.png'
 import ksmcl from './sponsor/KSMCL.png'
 import shankar from './sponsor/shankar.png'
 import unimitsu from './sponsor/unimitsu.png'
-import rel from './sponsor/rel.png'
+import rel from './sponsor/rel.jpg'
 import kspcb from './sponsor/kspcb.png'
 import mysore from './sponsor/mysore.png'
 import tribe from './sponsor/tribe.png'
 import tgp from './sponsor/tgp.png'
 import mrpl from './sponsor/mrpl.png'
 import hexa from './sponsor/hexa.png'
-import ramco from './sponsor/ramco.png'
+import ramco from './sponsor/Ramco.jpg'
 import nmpt from './sponsor/nmpt.png'
 import yojaka from './sponsor/Sprite.png'
 import campco from './sponsor/campco.png'
@@ -100,6 +105,7 @@ import golive from './sponsor/Golive-Logo.png'
 import gatsby from './sponsor/GATSBY.gif'
 import ims from './sponsor/ims.png'
 import Vi from './sponsor/Vi.png'
+import iocl from './sponsor/IOCL_Logo.jpg'
 export {
   menu,
   close,
@@ -153,6 +159,12 @@ export {
   golive,
   ims,
   Vi,
+  FIFA,
+  CODM,
+  Rocketleague,
+  Valorant,
+  Fallguys,
+  cricket_star,
   gatsby,
   mrpl,
   hexa,
@@ -186,7 +198,11 @@ export {
   mx,
   cm1,
   cm2,
-  mc
+
+  mc,
+
+  iocl,
+
 }
 
 
