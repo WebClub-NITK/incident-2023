@@ -52,6 +52,8 @@ import sunidhi from './proshows/Sunhidi.jpg'
 import mx from './proshows/mx.jpg'
 import cm1 from './proshows/cm1.jpg'
 import cm2 from './proshows/cm2.jpg'
+import mc from './proshows/mc.jpg'
+
 import cc from './cards/ISTENEW/case.jpg'
 import gbogh from './cards/ISTENEW/gbogh.jpg'
 import mock from './cards/ISTENEW/mock.jpg'
@@ -183,7 +185,8 @@ export {
   sunidhi,
   mx,
   cm1,
-  cm2
+  cm2,
+  mc
 }
 
 
