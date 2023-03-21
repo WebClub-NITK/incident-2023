@@ -105,6 +105,7 @@ import gatsby from './sponsor/GATSBY.gif'
 import ims from './sponsor/ims.png'
 import Vi from './sponsor/Vi.png'
 import iocl from './sponsor/IOCL_Logo.jpg'
+import xtreme from './sponsor/xtreme.jpg'
 export {
   menu,
   close,
@@ -200,4 +201,5 @@ export {
   iocl,
   mc,
   ctf,
+  xtreme
 };

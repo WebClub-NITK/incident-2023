@@ -4,7 +4,7 @@ import { useState } from 'react';
 import "./Sponsors.css"
 import {
   bosch, hutti, kptcl, vtpc, ksmcl, shankar, unimitsu, rel, kspcb, mysore, tribe, tgp, mrpl, hexa, ramco, nmpt, yojaka, campco, safe, plum, dairy, unstop, daurcom, mmj, beardo
-  , belgian, keventer, mmc, manforce, seg, nandini, sbi, golive, ims, Vi, gatsby,iocl,
+  , belgian, keventer, mmc, manforce, seg, nandini, sbi, golive, ims, Vi, gatsby,iocl,xtreme
 } from '../assets';
 import { motion } from "framer-motion";
 
@@ -53,6 +53,7 @@ const Sponsors = () => {
     { src: gatsby, title: "Styling Partner", name: "Gatsby" ,link:'https://gatsbyindia.com/'},
     { src: golive, title: "E-Sports & Gaming Partner", name: "GoLive Games Studios Pvt. Ltd.",link:'https://golive.games/' },
     { src: iocl, title: "Talent Fueling Partner", name: "IOCL",link:'https://iocl.com/' },
+    { src: xtreme, title: "Fitnes Partner", name: "xtreme",link:'https://maps.app.goo.gl/CKHMf8WX4C1xFBKQ6?g_st=ic' },
   ]
 
 
