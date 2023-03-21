@@ -6,7 +6,7 @@ import { TfiArrowCircleRight, TfiArrowCircleLeft } from "react-icons/tfi"
 import "./Events.css"
 import { logo } from "../assets"
 import { sunidhi } from '../assets'
-import { mx, cm1, cm2 } from '../assets'
+import { mx, cm1, cm2,mc } from '../assets'
 import { motion } from "framer-motion";
 
 const Events = () => {
@@ -34,17 +34,19 @@ const Events = () => {
     },
     {
       index: 3,
+      info: `Presenting the headliner for the Fusion Night of Incident 2023, one of the very best fusion artists of India, Masala Coffee!\n\n
+      \n\nEver since the band's birth in 2014, Masala Coffee has truly risen up the ranks and their live performances are a treat for the ears. Some of their chartbusters include Kaantha, Aadiyilalo Anthamilalo and Manase Maya and it's no wonder that they've got 12 Lakh monthly listeners on Spotify. Bare witness to them setting the Inci stage on fire come March 17th at NITK!`,
+      heading: 'FUSION NIGHT',
+      src: mc,
+      date: "17th March",
+    },
+    
+    {
+      index: 4,
       src: cm1,
       info: "Coming soon...",
       heading: 'DJ NIGHT',
       date: "18th March",
-    },
-    {
-      index: 4,
-      info: "Coming soon..",
-      src: cm2,
-      heading: 'FUSION NIGHT',
-      date: "17th March",
     },
   ]
   const a = slidedata.map((data) => data.src);

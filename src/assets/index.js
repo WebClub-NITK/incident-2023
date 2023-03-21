@@ -12,59 +12,60 @@ import music from "./coins/music.png";
 import special from "./coins/special.png";
 import sports from "./coins/sports.png";
 import icare from "./icare/icare_icon.png";
-import tandav from './cards/dance/tandav.jpg'
-import promenade from './cards/dance/promenade.jpg'
-import nritya from './cards/dance/nritya.jpg'
-import solo from './cards/dance/hhi_solo.jpg'
-import duet from './cards/dance/hhi_duet.jpg'
-import nn from './cards/dance/nn.jpg'
-import cricket_star from './cards/sports/cricket_stars.jpg'
-import FIFA from './cards/sports/FIFA.jpg'
-import CODM from './cards/sports/CODM.jpg'
-import Rocketleague from './cards/sports/Rocketleague.jpg'
-import Valorant from './cards/sports/Valorant.jpg'
-import Fallguys from './cards/sports/Fallguys.jpg'
-import bisquiz from './cards/biz/Business_Quiz.jpg'
-import hr from './cards/biz/HR_Management.jpg'
-import manager from './cards/biz/Best_Manager.jpg'
-import marketing from './cards/biz/Marketing.jpg'
-import operation from './cards/biz/Operations.jpg'
+import tandav from "./cards/dance/tandav.jpg";
+import promenade from "./cards/dance/promenade.jpg";
+import nritya from "./cards/dance/nritya.jpg";
+import solo from "./cards/dance/hhi_solo.jpg";
+import duet from "./cards/dance/hhi_duet.jpg";
+import nn from "./cards/dance/nn.jpg";
+import cricket_star from "./cards/sports/cricket_stars.jpg";
+import FIFA from "./cards/sports/FIFA.jpg";
+import CODM from "./cards/sports/CODM.jpg";
+import Rocketleague from "./cards/sports/Rocketleague.jpg";
+import Valorant from "./cards/sports/Valorant.jpg";
+import Fallguys from "./cards/sports/Fallguys.jpg";
+import bisquiz from "./cards/biz/Business_Quiz.jpg";
+import hr from "./cards/biz/HR_Management.jpg";
+import manager from "./cards/biz/Best_Manager.jpg";
+import marketing from "./cards/biz/Marketing.jpg";
+import operation from "./cards/biz/Operations.jpg";
 
-import themed_quiz from './cards/lit/themed_quiz.jpg'
-import debate from './cards/lit/debate.jpg'
-import lit1 from './cards/lit/lit.jpg'
+import themed_quiz from "./cards/lit/themed_quiz.jpg";
+import debate from "./cards/lit/debate.jpg";
+import lit1 from "./cards/lit/lit.jpg";
 // import major from './cards/lit/major.jpg'
-import genquiz from './cards/lit/genquiz.jpg'
-import open from './cards/lit/open.jpg'
+import genquiz from "./cards/lit/genquiz.jpg";
+import open from "./cards/lit/open.jpg";
 
+import haute from "./cards/fashion/haute_couture.jpg";
 
-import haute from './cards/fashion/haute_couture.jpg'
+import pulse from "./cards/music/pulse.jpg";
+import raag from "./cards/music/RAAGA.png";
+import bandish from "./cards/music/BANDISH.jpg";
 
-import pulse from './cards/music/pulse.jpg'
-import raag from './cards/music/RAAGA.png'
-import bandish from './cards/music/BANDISH.jpg'
-
-import fine from './cards/specials/finearts.jpg'
-import gaming from './cards/specials/gaming.jpg'
-import hog from './cards/specials/hogathon.jpg'
-import stunt from './cards/specials/stunt.jpg'
-import world from './cards/specials/world_fest.jpg'
+import fine from "./cards/specials/finearts.jpg";
+import gaming from "./cards/specials/gaming.jpg";
+import hog from "./cards/specials/hogathon.jpg";
+import stunt from "./cards/specials/stunt.jpg";
+import world from "./cards/specials/world_fest.jpg";
 import paper from "./paper-card.png";
-import spike from './cards/sports/spike.jpg'
-import slam from './cards/sports/slam_dunk.jpg'
+import spike from "./cards/sports/spike.jpg";
+import slam from "./cards/sports/slam_dunk.jpg";
+import ctf from "./cards/sports/ctf.jpg";
 
-import sunidhi from './proshows/Sunhidi.jpg'
-import mx from './proshows/mx.jpg'
-import cm1 from './proshows/cm1.jpg'
-import cm2 from './proshows/cm2.jpg'
-import cc from './cards/ISTENEW/case.jpg'
-import gbogh from './cards/ISTENEW/gbogh.jpg'
-import mock from './cards/ISTENEW/mock.jpg'
-import reel from './cards/ISTENEW/reelit.jpg'
+import sunidhi from "./proshows/Sunhidi.jpg";
+import mx from "./proshows/mx.jpg";
+import cm1 from "./proshows/cm1.jpg";
+import cm2 from "./proshows/cm2.jpg";
+import mc from "./proshows/mc.jpg";
 
+import cc from "./cards/ISTENEW/case.jpg";
+import gbogh from "./cards/ISTENEW/gbogh.jpg";
+import mock from "./cards/ISTENEW/mock.jpg";
+import reel from "./cards/ISTENEW/reelit.jpg";
 
-import shield from "./sponsor-shield.png"
-import heart from "./heart.svg"
+import shield from "./sponsor-shield.png";
+import heart from "./heart.svg";
 
 import bosch from './sponsor/boblack.png'
 import hutti from './sponsor/Hutti.jpg'
@@ -196,7 +197,7 @@ export {
   mx,
   cm1,
   cm2,
-  iocl
-}
-
-
+  iocl,
+  mc,
+  ctf,
+};
