@@ -67,44 +67,45 @@ import reel from "./cards/ISTENEW/reelit.jpg";
 import shield from "./sponsor-shield.png";
 import heart from "./heart.svg";
 
-import bosch from "./sponsor/boblack.png";
-import hutti from "./sponsor/Hutti.jpg";
-import kptcl from "./sponsor/kptcl.png";
-import vtpc from "./sponsor/VTPC.png";
-import ksmcl from "./sponsor/KSMCL.png";
-import shankar from "./sponsor/shankar.png";
-import unimitsu from "./sponsor/unimitsu.png";
-import rel from "./sponsor/rel.jpg";
-import kspcb from "./sponsor/kspcb.png";
-import mysore from "./sponsor/mysore.png";
-import tribe from "./sponsor/tribe.png";
-import tgp from "./sponsor/tgp.png";
-import mrpl from "./sponsor/mrpl.png";
-import hexa from "./sponsor/hexa.png";
-import ramco from "./sponsor/Ramco.jpg";
-import nmpt from "./sponsor/nmpt.png";
-import yojaka from "./sponsor/Sprite.png";
-import campco from "./sponsor/campco.png";
-import safe from "./sponsor/safe.png";
-import plum from "./sponsor/plumbody.png";
-import dairy from "./sponsor/dairy.png";
+import bosch from './sponsor/boblack.png'
+import hutti from './sponsor/Hutti.jpg'
+import kptcl from './sponsor/kptcl.png'
+import vtpc from './sponsor/VTPC.png'
+import ksmcl from './sponsor/KSMCL.png'
+import shankar from './sponsor/shankar.png'
+import unimitsu from './sponsor/unimitsu.png'
+import rel from './sponsor/rel.jpg'
+import kspcb from './sponsor/kspcb.png'
+import mysore from './sponsor/mysore.png'
+import tribe from './sponsor/tribe.png'
+import tgp from './sponsor/tgp.png'
+import mrpl from './sponsor/mrpl.png'
+import hexa from './sponsor/hexa.png'
+import ramco from './sponsor/Ramco.jpg'
+import nmpt from './sponsor/nmpt.png'
+import yojaka from './sponsor/Sprite.png'
+import campco from './sponsor/campco.png'
+import safe from './sponsor/safe.png'
+import plum from './sponsor/plumbody.png'
+import dairy from './sponsor/dairy.png'
 import unstop from "../assets/unstop-logo.png";
-import daurcom from "./sponsor/daurcom.png";
-import mmj from "./sponsor/mmj.png";
-import beardo from "./sponsor/beardo.png";
-import belgian from "./sponsor/belgian.png";
-import keventer from "./sponsor/keventer.png";
-import mmc from "./sponsor/mmc.jpg";
-import manforce from "./sponsor/manforce.png";
-import seg from "./sponsor/seg.png";
-import nandini from "./sponsor/nandini.png";
-import twin from "./sponsor/twin.jpg";
-import sbi from "./sponsor/sbi.png";
-import golive from "./sponsor/Golive-Logo.png";
-import gatsby from "./sponsor/GATSBY.gif";
-import ims from "./sponsor/ims.png";
-import Vi from "./sponsor/Vi.png";
-import iocl from "./sponsor/IOCL_Logo.jpg";
+import daurcom from './sponsor/daurcom.png'
+import mmj from './sponsor/mmj.png'
+import beardo from './sponsor/beardo.png'
+import belgian from './sponsor/belgian.png'
+import keventer from './sponsor/keventer.png'
+import mmc from './sponsor/mmc.jpg'
+import manforce from './sponsor/manforce.png'
+import seg from './sponsor/seg.png'
+import nandini from './sponsor/nandini.png'
+import twin from './sponsor/twin.jpg'
+import sbi from './sponsor/sbi.png'
+import golive from './sponsor/Golive-Logo.png'
+import gatsby from './sponsor/GATSBY.gif'
+import ims from './sponsor/ims.png'
+import Vi from './sponsor/Vi.png'
+import iocl from './sponsor/IOCL_Logo.jpg'
+import xtreme from './sponsor/xtreme.jpg'
 export {
   menu,
   close,
@@ -197,7 +198,8 @@ export {
   mx,
   cm1,
   cm2,
-  mc,
   iocl,
+  mc,
   ctf,
+  xtreme
 };
