@@ -53,7 +53,7 @@ const Sponsors = () => {
     { src: gatsby, title: "Styling Partner", name: "Gatsby" ,link:'https://gatsbyindia.com/'},
     { src: golive, title: "E-Sports & Gaming Partner", name: "GoLive Games Studios Pvt. Ltd.",link:'https://golive.games/' },
     { src: iocl, title: "Talent Fueling Partner", name: "IOCL",link:'https://iocl.com/' },
-    { src: xtreme, title: "Fitnes Partner", name: "xtreme",link:'https://maps.app.goo.gl/CKHMf8WX4C1xFBKQ6?g_st=ic' },
+    { src: xtreme, title: "Fitnes Sponsor", name: "xtreme",link:'https://maps.app.goo.gl/CKHMf8WX4C1xFBKQ6?g_st=ic' },
   ]
 
 
